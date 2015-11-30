@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F45DAEE1C0CAD4600418917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
+		1F45DAF01C0CAD4600418917 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
+		1F45DAF21C0CAD4600418917 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
+		1F45DAF81C0CAD4600418917 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAF61C0CAD4600418917 /* InfoPlist.strings */; };
+		1F45DAFA1C0CAD4600418917 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAF91C0CAD4600418917 /* main.m */; };
+		1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAFD1C0CAD4600418917 /* AppDelegate.m */; };
+		1F45DB011C0CAD4600418917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAFF1C0CAD4600418917 /* Main.storyboard */; };
+		1F45DB041C0CAD4600418917 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB031C0CAD4600418917 /* ViewController.m */; };
+		1F45DB061C0CAD4600418917 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB051C0CAD4600418917 /* Images.xcassets */; };
+		1F45DB0D1C0CAD4700418917 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB0C1C0CAD4700418917 /* XCTest.framework */; };
+		1F45DB0E1C0CAD4700418917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
+		1F45DB0F1C0CAD4700418917 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
+		1F45DB171C0CAD4700418917 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB151C0CAD4700418917 /* InfoPlist.strings */; };
+		1F45DB191C0CAD4700418917 /* GlassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB181C0CAD4700418917 /* GlassTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F45DB101C0CAD4700418917 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F45DAE21C0CAD4600418917 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F45DAE91C0CAD4600418917;
+			remoteInfo = Glass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F45DAEA1C0CAD4600418917 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F45DAED1C0CAD4600418917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F45DAF11C0CAD4600418917 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F45DAF51C0CAD4600418917 /* Glass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Glass-Info.plist"; sourceTree = "<group>"; };
+		1F45DAF71C0CAD4600418917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F45DAF91C0CAD4600418917 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F45DAFB1C0CAD4600418917 /* Glass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Glass-Prefix.pch"; sourceTree = "<group>"; };
+		1F45DAFC1C0CAD4600418917 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F45DAFD1C0CAD4600418917 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F45DB001C0CAD4600418917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F45DB021C0CAD4600418917 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F45DB031C0CAD4600418917 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F45DB051C0CAD4600418917 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F45DB0B1C0CAD4700418917 /* GlassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F45DB0C1C0CAD4700418917 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1F45DB141C0CAD4700418917 /* GlassTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlassTests-Info.plist"; sourceTree = "<group>"; };
+		1F45DB161C0CAD4700418917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F45DB181C0CAD4700418917 /* GlassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlassTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F45DAE71C0CAD4600418917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DAF01C0CAD4600418917 /* CoreGraphics.framework in Frameworks */,
+				1F45DAF21C0CAD4600418917 /* UIKit.framework in Frameworks */,
+				1F45DAEE1C0CAD4600418917 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F45DB081C0CAD4700418917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DB0D1C0CAD4700418917 /* XCTest.framework in Frameworks */,
+				1F45DB0F1C0CAD4700418917 /* UIKit.framework in Frameworks */,
+				1F45DB0E1C0CAD4700418917 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F45DAE11C0CAD4600418917 = {
+			isa = PBXGroup;
+			children = (
+				1F45DAF31C0CAD4600418917 /* Glass */,
+				1F45DB121C0CAD4700418917 /* GlassTests */,
+				1F45DAEC1C0CAD4600418917 /* Frameworks */,
+				1F45DAEB1C0CAD4600418917 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F45DAEB1C0CAD4600418917 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DAEA1C0CAD4600418917 /* Glass.app */,
+				1F45DB0B1C0CAD4700418917 /* GlassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F45DAEC1C0CAD4600418917 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DAED1C0CAD4600418917 /* Foundation.framework */,
+				1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */,
+				1F45DAF11C0CAD4600418917 /* UIKit.framework */,
+				1F45DB0C1C0CAD4700418917 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F45DAF31C0CAD4600418917 /* Glass */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DAFC1C0CAD4600418917 /* AppDelegate.h */,
+				1F45DAFD1C0CAD4600418917 /* AppDelegate.m */,
+				1F45DAFF1C0CAD4600418917 /* Main.storyboard */,
+				1F45DB021C0CAD4600418917 /* ViewController.h */,
+				1F45DB031C0CAD4600418917 /* ViewController.m */,
+				1F45DB051C0CAD4600418917 /* Images.xcassets */,
+				1F45DAF41C0CAD4600418917 /* Supporting Files */,
+			);
+			path = Glass;
+			sourceTree = "<group>";
+		};
+		1F45DAF41C0CAD4600418917 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DAF51C0CAD4600418917 /* Glass-Info.plist */,
+				1F45DAF61C0CAD4600418917 /* InfoPlist.strings */,
+				1F45DAF91C0CAD4600418917 /* main.m */,
+				1F45DAFB1C0CAD4600418917 /* Glass-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F45DB121C0CAD4700418917 /* GlassTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DB181C0CAD4700418917 /* GlassTests.m */,
+				1F45DB131C0CAD4700418917 /* Supporting Files */,
+			);
+			path = GlassTests;
+			sourceTree = "<group>";
+		};
+		1F45DB131C0CAD4700418917 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DB141C0CAD4700418917 /* GlassTests-Info.plist */,
+				1F45DB151C0CAD4700418917 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F45DAE91C0CAD4600418917 /* Glass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "Glass" */;
+			buildPhases = (
+				1F45DAE61C0CAD4600418917 /* Sources */,
+				1F45DAE71C0CAD4600418917 /* Frameworks */,
+				1F45DAE81C0CAD4600418917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glass;
+			productName = Glass;
+			productReference = 1F45DAEA1C0CAD4600418917 /* Glass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F45DB0A1C0CAD4700418917 /* GlassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F45DB1F1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "GlassTests" */;
+			buildPhases = (
+				1F45DB071C0CAD4700418917 /* Sources */,
+				1F45DB081C0CAD4700418917 /* Frameworks */,
+				1F45DB091C0CAD4700418917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F45DB111C0CAD4700418917 /* PBXTargetDependency */,
+			);
+			name = GlassTests;
+			productName = GlassTests;
+			productReference = 1F45DB0B1C0CAD4700418917 /* GlassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F45DAE21C0CAD4600418917 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "grupo 04";
+				TargetAttributes = {
+					1F45DB0A1C0CAD4700418917 = {
+						TestTargetID = 1F45DAE91C0CAD4600418917;
+					};
+				};
+			};
+			buildConfigurationList = 1F45DAE51C0CAD4600418917 /* Build configuration list for PBXProject "Glass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F45DAE11C0CAD4600418917;
+			productRefGroup = 1F45DAEB1C0CAD4600418917 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F45DAE91C0CAD4600418917 /* Glass */,
+				1F45DB0A1C0CAD4700418917 /* GlassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F45DAE81C0CAD4600418917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DB061C0CAD4600418917 /* Images.xcassets in Resources */,
+				1F45DAF81C0CAD4600418917 /* InfoPlist.strings in Resources */,
+				1F45DB011C0CAD4600418917 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F45DB091C0CAD4700418917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DB171C0CAD4700418917 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F45DAE61C0CAD4600418917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DB041C0CAD4600418917 /* ViewController.m in Sources */,
+				1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */,
+				1F45DAFA1C0CAD4600418917 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F45DB071C0CAD4700418917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DB191C0CAD4700418917 /* GlassTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F45DB111C0CAD4700418917 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F45DAE91C0CAD4600418917 /* Glass */;
+			targetProxy = 1F45DB101C0CAD4700418917 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F45DAF61C0CAD4600418917 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F45DAF71C0CAD4600418917 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1F45DAFF1C0CAD4600418917 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F45DB001C0CAD4600418917 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F45DB151C0CAD4700418917 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F45DB161C0CAD4700418917 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F45DB1A1C0CAD4700418917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F45DB1B1C0CAD4700418917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F45DB1D1C0CAD4700418917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				INFOPLIST_FILE = "Glass/Glass-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F45DB1E1C0CAD4700418917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				INFOPLIST_FILE = "Glass/Glass-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1F45DB201C0CAD4700418917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Glass.app/Glass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GlassTests/GlassTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1F45DB211C0CAD4700418917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Glass.app/Glass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				INFOPLIST_FILE = "GlassTests/GlassTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F45DAE51C0CAD4600418917 /* Build configuration list for PBXProject "Glass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F45DB1A1C0CAD4700418917 /* Debug */,
+				1F45DB1B1C0CAD4700418917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "Glass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F45DB1D1C0CAD4700418917 /* Debug */,
+				1F45DB1E1C0CAD4700418917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F45DB1F1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "GlassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F45DB201C0CAD4700418917 /* Debug */,
+				1F45DB211C0CAD4700418917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F45DAE21C0CAD4600418917 /* Project object */;
+}
