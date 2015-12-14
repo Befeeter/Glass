@@ -71,4 +71,6 @@
     _glassType.hidden = !_glassType.hidden;
     
 }
+- (IBAction)slideValueChanged:(id)sender {
+}
 @end
