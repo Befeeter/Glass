@@ -97,6 +97,9 @@
                             <slider appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="S99-Sr-Oay">
                                 <rect key="frame" x="95" y="92" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="OwF-30-qDJ"/>
+                                </connections>
                             </slider>
                             <slider appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9ZF-7x-F96">
                                 <rect key="frame" x="95" y="130" width="118" height="31"/>
@@ -190,6 +193,7 @@
                     <navigationItem key="navigationItem" title="New Case" id="Vm0-AY-7AW"/>
                     <connections>
                         <outlet property="RI" destination="S99-Sr-Oay" id="adW-M8-jqI"/>
+                        <outlet property="RILabel" destination="GFc-3z-2cf" id="dK1-jg-0My"/>
                         <outlet property="glassType" destination="ucz-Qa-5uL" id="Mxo-yE-f3E"/>
                         <outlet property="selectType" destination="iZK-Qz-L0r" id="7a0-XP-45h"/>
                     </connections>
