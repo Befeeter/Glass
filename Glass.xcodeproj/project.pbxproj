@@ -22,6 +22,7 @@
 		1F45DB171C0CAD4700418917 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB151C0CAD4700418917 /* InfoPlist.strings */; };
 		1F45DB191C0CAD4700418917 /* GlassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB181C0CAD4700418917 /* GlassTests.m */; };
 		1F45DB231C0CAD5C00418917 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
+		843D1D901C1F35FA007365F5 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
 		CF0299FD1C1F2C780045C8E5 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		1F45DB161C0CAD4700418917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F45DB181C0CAD4700418917 /* GlassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlassTests.m; sourceTree = "<group>"; };
 		1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		843D1D8E1C1F35FA007365F5 /* CaseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseDetailViewController.h; sourceTree = "<group>"; };
+		843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseDetailViewController.m; sourceTree = "<group>"; };
 		CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glass.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +125,8 @@
 				1F45DAFC1C0CAD4600418917 /* AppDelegate.h */,
 				1F45DAFD1C0CAD4600418917 /* AppDelegate.m */,
 				1F45DAFF1C0CAD4600418917 /* Main.storyboard */,
+				843D1D8E1C1F35FA007365F5 /* CaseDetailViewController.h */,
+				843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */,
 				1F45DB021C0CAD4600418917 /* NewCaseViewController.h */,
 				1F45DB031C0CAD4600418917 /* NewCaseViewController.m */,
 				1F45DB051C0CAD4600418917 /* Images.xcassets */,
@@ -260,6 +265,7 @@
 				1F45DB041C0CAD4600418917 /* NewCaseViewController.m in Sources */,
 				1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */,
 				1F45DAFA1C0CAD4600418917 /* main.m in Sources */,
+				843D1D901C1F35FA007365F5 /* CaseDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
