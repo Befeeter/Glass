@@ -22,6 +22,7 @@
 		1F45DB171C0CAD4700418917 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB151C0CAD4700418917 /* InfoPlist.strings */; };
 		1F45DB191C0CAD4700418917 /* GlassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB181C0CAD4700418917 /* GlassTests.m */; };
 		1F45DB231C0CAD5C00418917 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
+		CF0299FD1C1F2C780045C8E5 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		1F45DB161C0CAD4700418917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F45DB181C0CAD4700418917 /* GlassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlassTests.m; sourceTree = "<group>"; };
 		1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glass.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		1F45DAE11C0CAD4600418917 = {
 			isa = PBXGroup;
 			children = (
+				CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */,
 				1F45DAF31C0CAD4600418917 /* Glass */,
 				1F45DB121C0CAD4700418917 /* GlassTests */,
 				1F45DAEC1C0CAD4600418917 /* Frameworks */,
@@ -234,6 +237,7 @@
 			files = (
 				1F45DB061C0CAD4600418917 /* Images.xcassets in Resources */,
 				1F45DAF81C0CAD4600418917 /* InfoPlist.strings in Resources */,
+				CF0299FD1C1F2C780045C8E5 /* Glass.sqlite in Resources */,
 				1F45DB011C0CAD4600418917 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
