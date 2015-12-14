@@ -193,6 +193,7 @@
                     <navigationItem key="navigationItem" title="New Case" id="Vm0-AY-7AW"/>
                     <connections>
                         <outlet property="RI" destination="S99-Sr-Oay" id="adW-M8-jqI"/>
+                        <outlet property="RILabel" destination="GFc-3z-2cf" id="dK1-jg-0My"/>
                         <outlet property="glassType" destination="ucz-Qa-5uL" id="Mxo-yE-f3E"/>
                         <outlet property="selectType" destination="iZK-Qz-L0r" id="7a0-XP-45h"/>
                     </connections>

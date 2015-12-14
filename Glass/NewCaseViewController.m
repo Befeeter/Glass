@@ -72,5 +72,6 @@
     
 }
 - (IBAction)slideValueChanged:(id)sender {
-}
+    // Set the label text to the value of the slider as it changes
+    self.RILabel.text = [NSString stringWithFormat:@"%f", self.RISlider.value];}
 @end
