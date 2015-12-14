@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *glassType;
 @property (weak, nonatomic) IBOutlet UIButton *selectType;
+@property (weak, nonatomic) IBOutlet UISlider *RI;
 
 - (IBAction)selectType:(id)sender;
 
