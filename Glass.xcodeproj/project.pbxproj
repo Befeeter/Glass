@@ -14,13 +14,14 @@
 		1F45DAFA1C0CAD4600418917 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAF91C0CAD4600418917 /* main.m */; };
 		1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAFD1C0CAD4600418917 /* AppDelegate.m */; };
 		1F45DB011C0CAD4600418917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAFF1C0CAD4600418917 /* Main.storyboard */; };
-		1F45DB041C0CAD4600418917 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB031C0CAD4600418917 /* ViewController.m */; };
+		1F45DB041C0CAD4600418917 /* NewCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB031C0CAD4600418917 /* NewCaseViewController.m */; };
 		1F45DB061C0CAD4600418917 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB051C0CAD4600418917 /* Images.xcassets */; };
 		1F45DB0D1C0CAD4700418917 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB0C1C0CAD4700418917 /* XCTest.framework */; };
 		1F45DB0E1C0CAD4700418917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
 		1F45DB0F1C0CAD4700418917 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
 		1F45DB171C0CAD4700418917 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB151C0CAD4700418917 /* InfoPlist.strings */; };
 		1F45DB191C0CAD4700418917 /* GlassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB181C0CAD4700418917 /* GlassTests.m */; };
+		1F45DB231C0CAD5C00418917 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,15 @@
 		1F45DAFC1C0CAD4600418917 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F45DAFD1C0CAD4600418917 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1F45DB001C0CAD4600418917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F45DB021C0CAD4600418917 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F45DB031C0CAD4600418917 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F45DB021C0CAD4600418917 /* NewCaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewCaseViewController.h; sourceTree = "<group>"; };
+		1F45DB031C0CAD4600418917 /* NewCaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewCaseViewController.m; sourceTree = "<group>"; };
 		1F45DB051C0CAD4600418917 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F45DB0B1C0CAD4700418917 /* GlassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F45DB0C1C0CAD4700418917 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1F45DB141C0CAD4700418917 /* GlassTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlassTests-Info.plist"; sourceTree = "<group>"; };
 		1F45DB161C0CAD4700418917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F45DB181C0CAD4700418917 /* GlassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlassTests.m; sourceTree = "<group>"; };
+		1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F45DB231C0CAD5C00418917 /* libsqlite3.dylib in Frameworks */,
 				1F45DAF01C0CAD4600418917 /* CoreGraphics.framework in Frameworks */,
 				1F45DAF21C0CAD4600418917 /* UIKit.framework in Frameworks */,
 				1F45DAEE1C0CAD4600418917 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		1F45DAEC1C0CAD4600418917 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */,
 				1F45DAED1C0CAD4600418917 /* Foundation.framework */,
 				1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */,
 				1F45DAF11C0CAD4600418917 /* UIKit.framework */,
@@ -115,8 +119,8 @@
 				1F45DAFC1C0CAD4600418917 /* AppDelegate.h */,
 				1F45DAFD1C0CAD4600418917 /* AppDelegate.m */,
 				1F45DAFF1C0CAD4600418917 /* Main.storyboard */,
-				1F45DB021C0CAD4600418917 /* ViewController.h */,
-				1F45DB031C0CAD4600418917 /* ViewController.m */,
+				1F45DB021C0CAD4600418917 /* NewCaseViewController.h */,
+				1F45DB031C0CAD4600418917 /* NewCaseViewController.m */,
 				1F45DB051C0CAD4600418917 /* Images.xcassets */,
 				1F45DAF41C0CAD4600418917 /* Supporting Files */,
 			);
@@ -249,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F45DB041C0CAD4600418917 /* ViewController.m in Sources */,
+				1F45DB041C0CAD4600418917 /* NewCaseViewController.m in Sources */,
 				1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */,
 				1F45DAFA1C0CAD4600418917 /* main.m in Sources */,
 			);
@@ -456,6 +460,7 @@
 				1F45DB1E1C0CAD4700418917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F45DB1F1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "GlassTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +469,7 @@
 				1F45DB211C0CAD4700418917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
