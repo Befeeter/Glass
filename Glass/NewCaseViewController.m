@@ -12,6 +12,15 @@
 {
  NSArray * _glassArray;
     NSString * _tipoCristal;
+    float _rI;
+    float _na;
+    float _mg;
+    float _al;
+    float _si;
+    float _k;
+    float _ca;
+    float _ba;
+    float _fe;
 }
 @end
 
@@ -73,5 +82,31 @@
 }
 - (IBAction)slideValueChanged:(id)sender {
     // Set the label text to the value of the slider as it changes
-    self.RILabel.text = [NSString stringWithFormat:@"%f", self.RISlider.value];}
+    self.RILabel.text = [NSString stringWithFormat:@"%.2f", self.RISlider.value];
+    self.NaLabel.text = [NSString stringWithFormat:@"%.2f", self.NaSlider.value];
+    self.MgLabel.text = [NSString stringWithFormat:@"%.2f", self.MgSlider.value];
+    self.AlLabel.text = [NSString stringWithFormat:@"%.2f", self.AlSlider.value];
+    self.SiLabel.text = [NSString stringWithFormat:@"%.2f", self.SiSlider.value];
+    self.KLabel.text =  [NSString stringWithFormat:@"%.2f", self.KSlider.value];
+    self.CaLabel.text = [NSString stringWithFormat:@"%.2f", self.CaSlider.value];
+    self.BaLabel.text = [NSString stringWithFormat:@"%.2f", self.BaSlider.value];
+    self.FeLabel.text = [NSString stringWithFormat:@"%.2f", self.FeSlider.value];
+    
+    //value asignation section
+    _rI = self.RISlider.value;
+    _na = self.NaSlider.value;
+    _mg = self.MgSlider.value;
+    _al = self.AlSlider.value;
+    _si = self.SiSlider.value;
+    _k = self.KSlider.value;
+    _ca = self.CaSlider.value;
+    _ba = self.BaSlider.value;
+    _fe = self.FeSlider.value;
+    
+    //test section
+    NSLog(@"%f", _rI);
+    NSLog(@"%f", _na);
+    
+
+}
 @end
