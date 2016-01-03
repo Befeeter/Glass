@@ -109,4 +109,8 @@
     
 
 }
+- (IBAction)GuardaDatos:(id)sender {
+    //Consulta Base de datos.
+    NSLog(@"Guardadatos");
+}
 @end
