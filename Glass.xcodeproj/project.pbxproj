@@ -25,6 +25,7 @@
 		843D1D901C1F35FA007365F5 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
 		CF0299FD1C1F2C780045C8E5 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
 		CF7147EA1C3975370084F8AD /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
+		F303ECF11C4420E600A03C87 /* GlassTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F303ECF01C4420E600A03C87 /* GlassTypeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glass.sqlite; sourceTree = "<group>"; };
 		CF7147E81C3975370084F8AD /* GestorBD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestorBD.h; sourceTree = "<group>"; };
 		CF7147E91C3975370084F8AD /* GestorBD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestorBD.m; sourceTree = "<group>"; };
+		F303ECEF1C4420E600A03C87 /* GlassTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassTypeViewController.h; sourceTree = "<group>"; };
+		F303ECF01C4420E600A03C87 /* GlassTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlassTypeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				1F45DAFC1C0CAD4600418917 /* AppDelegate.h */,
 				1F45DAFD1C0CAD4600418917 /* AppDelegate.m */,
 				1F45DAFF1C0CAD4600418917 /* Main.storyboard */,
+				F303ECEF1C4420E600A03C87 /* GlassTypeViewController.h */,
+				F303ECF01C4420E600A03C87 /* GlassTypeViewController.m */,
 				843D1D8E1C1F35FA007365F5 /* CaseDetailViewController.h */,
 				843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */,
 				1F45DB021C0CAD4600418917 /* NewCaseViewController.h */,
@@ -270,6 +275,7 @@
 				CF7147EA1C3975370084F8AD /* GestorBD.m in Sources */,
 				1F45DB041C0CAD4600418917 /* NewCaseViewController.m in Sources */,
 				1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */,
+				F303ECF11C4420E600A03C87 /* GlassTypeViewController.m in Sources */,
 				1F45DAFA1C0CAD4600418917 /* main.m in Sources */,
 				843D1D901C1F35FA007365F5 /* CaseDetailViewController.m in Sources */,
 			);
