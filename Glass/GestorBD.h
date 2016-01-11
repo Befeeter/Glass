@@ -14,6 +14,9 @@
 @property (nonatomic) int filasAfectadas;
 @property (nonatomic) long long ultimoID;
 
+- (NSArray*) selectFromDB:(NSString*) consulta;
+- (void) executeQuery: (NSString*) consulta;
+
 - (instancetype) initWithDatabaseFilename: (NSString *) dbFileName;
 
 @end

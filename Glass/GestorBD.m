@@ -112,4 +112,16 @@
                   sqlite3_finalize(consultaCompilada);
                   sqlite3_close(baseDeDatos);
         }
+
+- (NSArray*) selectFromDB:(NSString*) consulta{
+    [self ejecutaConsulta:[consulta UTF8String] esEjecutable:NO];
+    return self.arrResultados;
+    }
+
+
+- (void) executeQuery: (NSString*) consulta{
+    [self ejecutaConsulta:[consulta UTF8String]
+             esEjecutable:YES];
+    }
+
 @end
