@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2B9A271C442A63002D8190 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B9A261C442A63002D8190 /* NewDetectiveViewController.m */; };
 		1F45DAEE1C0CAD4600418917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
 		1F45DAF01C0CAD4600418917 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
 		1F45DAF21C0CAD4600418917 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F2B9A251C442A63002D8190 /* NewDetectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDetectiveViewController.h; sourceTree = "<group>"; };
+		1F2B9A261C442A63002D8190 /* NewDetectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetectiveViewController.m; sourceTree = "<group>"; };
 		1F45DAEA1C0CAD4600418917 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F45DAED1C0CAD4600418917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +134,8 @@
 				1F45DAFC1C0CAD4600418917 /* AppDelegate.h */,
 				1F45DAFD1C0CAD4600418917 /* AppDelegate.m */,
 				1F45DAFF1C0CAD4600418917 /* Main.storyboard */,
+				1F2B9A251C442A63002D8190 /* NewDetectiveViewController.h */,
+				1F2B9A261C442A63002D8190 /* NewDetectiveViewController.m */,
 				F303ECEF1C4420E600A03C87 /* GlassTypeViewController.h */,
 				F303ECF01C4420E600A03C87 /* GlassTypeViewController.m */,
 				843D1D8E1C1F35FA007365F5 /* CaseDetailViewController.h */,
@@ -275,6 +280,7 @@
 				CF7147EA1C3975370084F8AD /* GestorBD.m in Sources */,
 				1F45DB041C0CAD4600418917 /* NewCaseViewController.m in Sources */,
 				1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */,
+				1F2B9A271C442A63002D8190 /* NewDetectiveViewController.m in Sources */,
 				F303ECF11C4420E600A03C87 /* GlassTypeViewController.m in Sources */,
 				1F45DAFA1C0CAD4600418917 /* main.m in Sources */,
 				843D1D901C1F35FA007365F5 /* CaseDetailViewController.m in Sources */,
