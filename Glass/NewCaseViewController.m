@@ -16,6 +16,7 @@
     NSString * _tipoCristal;
     NSArray * _detectiveArr;
     NSString *_detective;
+    NSString *_nombre;
     float _rI;
     float _na;
     float _mg;
@@ -66,7 +67,7 @@
 
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
-    
+    if (pickerView.tag == 1){
     NSLog(@"Soy el picker 1");
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 22)];
     //label.backgroundColor = [UIColor lightGrayColor];
@@ -75,6 +76,17 @@
     label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:8];
     label.text = [NSString stringWithFormat:@"  %@", _glassArray[row]];
     return label;
+    }
+    else
+        NSLog(@"Soy el picker 2");
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 22)];
+    //label.backgroundColor = [UIColor lightGrayColor];
+    label.textColor = [UIColor blueColor];
+    label.textAlignment = NSTextAlignmentCenter ;
+    label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:8];
+    label.text = [NSString stringWithFormat:@"  %@", _detectiveArr[row]];
+    return label;
+   
     
 }
 -(NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
@@ -112,7 +124,7 @@
         [_selectDetective setTitle:_detective forState:UIControlStateNormal];
         //_selectType = _glassArray[row];
         _detectivePicker.hidden = !_detectivePicker.hidden;
-        _detectivePicker.hidden = !_detectivePicker.hidden;
+        _selectDetective.hidden = !_selectDetective.hidden;
         NSLog(@"%@",_detective);
 
     }
@@ -167,4 +179,22 @@
     //Consulta Base de datos.
     NSLog(@"Guardadatos");
 }
+
+- (IBAction)asignaNombre:(id)sender {
+    _nombre = self.NameText.text;
+    NSLog(@"%@", _nombre);
+}
+
+//Cerrar Teclado al pinchar fuera de pantalla.
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
+
+//Cerrar Teclado al pulsar Enter.
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO; //Retorna YES si se permiten saltos de linea
+}
+
 @end
