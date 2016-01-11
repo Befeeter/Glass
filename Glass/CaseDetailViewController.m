@@ -7,7 +7,7 @@
 //
 
 #import "CaseDetailViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
 @interface CaseDetailViewController ()
 
 @end
@@ -27,7 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.NAcell.
+    self.SI.layer.borderWidth=1.0;
+    self.SI.layer.borderColor=[UIColor greenColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning
