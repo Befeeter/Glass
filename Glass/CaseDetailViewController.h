@@ -10,4 +10,7 @@
 
 @interface CaseDetailViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *SI;
+
+
 @end
