@@ -1,18 +1,18 @@
 //
-//  CaseDetailViewController.m
+//  NewDetectiveViewController.m
 //  Glass
 //
-//  Created by Salvador Briones Rosales on 14/12/15.
-//  Copyright (c) 2015 grupo 04. All rights reserved.
+//  Created by Aula1 on 11/01/16.
+//  Copyright (c) 2016 grupo 04. All rights reserved.
 //
 
-#import "CaseDetailViewController.h"
-#import <QuartzCore/QuartzCore.h>
-@interface CaseDetailViewController ()
+#import "NewDetectiveViewController.h"
+
+@interface NewDetectiveViewController ()
 
 @end
 
-@implementation CaseDetailViewController
+@implementation NewDetectiveViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,8 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.SI.layer.borderWidth=1.0;
-    self.SI.layer.borderColor=[UIColor greenColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,4 +46,17 @@
 }
 */
 
+- (IBAction)guardar:(id)sender {
+}
+- (IBAction)ocultarTeclado1:(id)sender {
+}
+
+- (IBAction)ocultarTeclado2:(id)sender {
+}
+
+- (IBAction)ocultarTeclado3:(id)sender {
+}
+
+- (IBAction)ocultarTeclado4:(id)sender {
+}
 @end
