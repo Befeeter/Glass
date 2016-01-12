@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8Fg-0E-QNI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8Fg-0E-QNI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Home-->
+        <!--Glass Detective View Controller - Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="Home" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Home" id="vXZ-lx-hvc" customClass="GlassDetectiveViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -444,10 +444,10 @@
             </objects>
             <point key="canvasLocation" x="168" y="1576"/>
         </scene>
-        <!--View Controller - Case List-->
+        <!--Case List View Controller - Case List-->
         <scene sceneID="5Z8-uf-5km">
             <objects>
-                <viewController title="Case List" id="osR-Ea-Q3l" sceneMemberID="viewController">
+                <viewController title="Case List" id="osR-Ea-Q3l" customClass="CaseListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U8s-qi-7ev"/>
                         <viewControllerLayoutGuide type="bottom" id="Tfa-PZ-luq"/>
@@ -455,15 +455,46 @@
                     <view key="view" contentMode="scaleToFill" id="FeW-uP-jb8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableViewCell appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="msa-Xt-bdN" detailTextLabel="ZMO-W7-HGZ" style="IBUITableViewCellStyleSubtitle" translatesAutoresizingMaskIntoConstraints="NO" id="08a-jm-Bg5">
+                                <rect key="frame" x="0.0" y="69" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="08a-jm-Bg5" id="oyO-H3-pId">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="msa-Xt-bdN">
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZMO-W7-HGZ">
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Case List" id="Nkc-aa-NGe">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="S4q-cH-x2M"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="9Qu-7J-9ho">
                             <connections>
+                                <action selector="addRegistro:" destination="osR-Ea-Q3l" id="FZG-OD-Y1v"/>
                                 <segue destination="iCH-29-YpD" kind="push" id="ova-74-UXY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tabla" destination="FeW-uP-jb8" id="pH0-SQ-MD8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5d-9e-q9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -618,7 +649,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="7Zj-yL-hwq"/>
         <segue reference="ova-74-UXY"/>
-        <segue reference="YXH-NN-c2X"/>
     </inferredMetricsTieBreakers>
 </document>

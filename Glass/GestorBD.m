@@ -32,18 +32,16 @@
         self.carpetaDocumentos = [paths objectAtIndex:0]; self.nombreBD = dbFileName;
         [self copiarBDCarpetaDocumentos];
     }
+    NSLog(@"%@", self.carpetaDocumentos);
     return self;
 }
 
-- (void) copiarBDCarpetaDocumentos
-{
-    NSString* carpetaDestino; NSString* caminoFuente; NSError* error;
+- (void) copiarBDCarpetaDocumentos{ NSString* carpetaDestino; NSString* caminoFuente; NSError* error;
     carpetaDestino = [self.carpetaDocumentos stringByAppendingPathComponent:self.nombreBD];
-    if (![[NSFileManager defaultManager] fileExistsAtPath:carpetaDestino]){
-        caminoFuente = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:self.nombreBD];
-        [[NSFileManager defaultManager] copyItemAtPath:caminoFuente toPath:carpetaDestino error:&error];
-        if (error != nil)
-            NSLog(@"%@", [error localizedDescription]);
+    if (![[NSFileManager defaultManager] fileExistsAtPath:carpetaDestino]){ caminoFuente = [[[NSBundle mainBundle] resourcePath]
+                                                                                            stringByAppendingPathComponent:self.nombreBD]; [[NSFileManager defaultManager] copyItemAtPath:caminoFuente
+                                                                                                                                                                                   toPath:carpetaDestino error:&error];
+        if (error != nil) NSLog(@"%@", [error localizedDescription]);
     }
 }
 
@@ -111,5 +109,13 @@
                   
                   sqlite3_finalize(consultaCompilada);
                   sqlite3_close(baseDeDatos);
-        }
+}
+- (NSArray*) selectFromDB:(NSString*) consulta{
+    [self ejecutaConsulta:[consulta UTF8String] esEjecutable:NO];
+    return self.arrResultados;
+}
+- (void) executeQuery: (NSString*) consulta{
+    [self ejecutaConsulta:[consulta UTF8String]
+             esEjecutable:YES];
+}
 @end

@@ -15,5 +15,7 @@
 @property (nonatomic) long long ultimoID;
 
 - (instancetype) initWithDatabaseFilename: (NSString *) dbFileName;
+- (NSArray*) selectFromDB:(NSString*) consulta;
+- (void) executeQuery: (NSString*) consulta;
 
 @end
