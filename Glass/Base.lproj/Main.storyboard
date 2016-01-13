@@ -471,7 +471,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Case Detail" id="5Hn-Bu-K6D"/>
                     <connections>
+                        <outlet property="AlLabel" destination="HTF-hd-GdQ" id="nKW-BS-sdS"/>
+                        <outlet property="BaLabel" destination="A6C-Qm-FbY" id="JwE-C9-sj0"/>
+                        <outlet property="CaLabel" destination="N8c-fG-YnK" id="rco-xI-Heq"/>
+                        <outlet property="FeLabelç" destination="NGX-Su-vFP" id="VWl-pi-C05"/>
+                        <outlet property="KLabel" destination="8nh-ve-mpN" id="Alk-T9-LP3"/>
+                        <outlet property="MgLabel" destination="Bvy-iE-n5z" id="BSK-7a-QVp"/>
+                        <outlet property="NaLabel" destination="t8p-Na-ozx" id="Wzf-c0-6HM"/>
+                        <outlet property="RILabel" destination="2Bi-KA-ZLE" id="87O-TL-MXe"/>
                         <outlet property="SI" destination="sq0-WL-ETM" id="GRC-jR-cdy"/>
+                        <outlet property="SiLabel" destination="ret-Gd-lvc" id="yy9-Bb-WeQ"/>
                         <outlet property="foto" destination="oqn-Wb-vnY" id="3nX-ye-Yxp"/>
                     </connections>
                 </viewController>
