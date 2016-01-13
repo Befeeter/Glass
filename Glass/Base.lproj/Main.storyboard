@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uH-a2-SJK">
-                                <rect key="frame" x="113" y="374" width="94" height="30"/>
+                                <rect key="frame" x="113" y="374" width="104" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Detective List">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,6 +50,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Glass Detective" id="OhZ-C8-4hm"/>
+                    <connections>
+                        <outlet property="boton" destination="8uH-a2-SJK" id="vGy-ly-i56"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,10 +347,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oqn-Wb-vnY">
-                                <rect key="frame" x="56" y="357" width="195" height="135"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      RI:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sq0-WL-ETM">
                                 <rect key="frame" x="43" y="90" width="74" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -466,11 +465,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDr-UV-FsT">
-                                <rect key="frame" x="126" y="500" width="46" height="30"/>
+                                <rect key="frame" x="81" y="359" width="148" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="botonImagen:" destination="CxD-Jh-gPg" eventType="touchUpInside" id="I2B-Y5-C7k"/>
+                                    <segue destination="191-Bu-lot" kind="push" id="xlk-2T-MKP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -488,7 +491,7 @@
                         <outlet property="RILabel" destination="2Bi-KA-ZLE" id="87O-TL-MXe"/>
                         <outlet property="SI" destination="sq0-WL-ETM" id="GRC-jR-cdy"/>
                         <outlet property="SiLabel" destination="ret-Gd-lvc" id="yy9-Bb-WeQ"/>
-                        <outlet property="foto" destination="oqn-Wb-vnY" id="3nX-ye-Yxp"/>
+                        <outlet property="botonImagen" destination="IDr-UV-FsT" id="foc-dw-4RS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eX1-Od-c6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -744,7 +747,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="iFH-DH-lPO"/>
         <segue reference="7Zj-yL-hwq"/>
-        <segue reference="ova-74-UXY"/>
     </inferredMetricsTieBreakers>
 </document>
