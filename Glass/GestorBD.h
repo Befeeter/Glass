@@ -18,5 +18,7 @@
 - (void) executeQuery: (NSString*) consulta;
 
 - (instancetype) initWithDatabaseFilename: (NSString *) dbFileName;
+- (NSArray*) selectFromDB:(NSString*) consulta;
+- (void) executeQuery: (NSString*) consulta;
 
 @end
