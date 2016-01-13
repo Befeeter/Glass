@@ -1,18 +1,19 @@
 //
-//  CaseDetailViewController.m
+//  GlassDetectiveViewController.m
 //  Glass
 //
-//  Created by Salvador Briones Rosales on 14/12/15.
-//  Copyright (c) 2015 grupo 04. All rights reserved.
+//  Created by Salvador Briones Rosales on 11/1/16.
+//  Copyright (c) 2016 grupo 04. All rights reserved.
 //
 
-#import "CaseDetailViewController.h"
-#import <QuartzCore/QuartzCore.h>
-@interface CaseDetailViewController ()
+#import "GlassDetectiveViewController.h"
+
+@interface GlassDetectiveViewController ()
 
 @end
 
-@implementation CaseDetailViewController
+@implementation GlassDetectiveViewController
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,11 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.SiLabel.layer.borderWidth=1.0;
-    self.SiLabel.layer.borderColor=[UIColor greenColor].CGColor;
-    UIImage *imagen = [UIImage imageNamed:@"prueba.jpg"];
- [self.botonImagen setBackgroundImage:imagen forState:UIControlStateNormal];
+    // Do any additional setup after loading the view.ç
 
 }
 
@@ -51,6 +48,4 @@
 }
 */
 
-- (IBAction)botonImagen:(id)sender {
-}
 @end

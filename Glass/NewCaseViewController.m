@@ -7,11 +7,16 @@
 //
 
 #import "NewCaseViewController.h"
+#import "GestorBD.h"
 
 @interface NewCaseViewController ()
+
 {
  NSArray * _glassArray;
     NSString * _tipoCristal;
+    NSArray * _detectiveArr;
+    NSString *_detective;
+    NSString *_nombre;
     float _rI;
     float _na;
     float _mg;
@@ -21,7 +26,13 @@
     float _ca;
     float _ba;
     float _fe;
+    
+    
+    
 }
+
+@property (nonatomic, strong) GestorBD* gestorBD;
+
 @end
 
 @implementation NewCaseViewController
@@ -30,8 +41,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
+    self.NameText.text = @"Nombre";
     _tipoCristal = @"Select Type Glass";
     _glassArray = @[@"Edificio FLotado",@"Edificio no Flotado",@"Vehiculo Flotado",@"Vehiculo no Flotado",@"Contenedor", @"Vajilla",@"Lamparas"];
+    
+    [self cargarDetectives];
+    if (_detectiveArr == NULL)
+    _detectiveArr = @[@"Jorge",@"Salva"];
+    
+    self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
+    self.glassType.tag = 1;
+    self.detectivePicker.tag = 2;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,8 +67,12 @@
     return 1;
 }
 
+
+
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
+    if (pickerView.tag == 1){
+    NSLog(@"Soy el picker 1");
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 22)];
     //label.backgroundColor = [UIColor lightGrayColor];
     label.textColor = [UIColor blueColor];
@@ -54,23 +80,60 @@
     label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:8];
     label.text = [NSString stringWithFormat:@"  %@", _glassArray[row]];
     return label;
+    }
+    else
+        NSLog(@"Soy el picker 2");
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 22)];
+    //label.backgroundColor = [UIColor lightGrayColor];
+    label.textColor = [UIColor blueColor];
+    label.textAlignment = NSTextAlignmentCenter ;
+    label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:8];
+    label.text = [NSString stringWithFormat:@"  %@", _detectiveArr[row]];
+    return label;
+   
+    
 }
 -(NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return _glassArray.count;
-}
+    if (pickerView.tag == 1){
+        return _glassArray.count;
+    }
+    else {
+        return _detectiveArr.count;
+    }
+
+    }
 
 -(NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return _glassArray[row];
+    if (pickerView.tag == 1){
+        return _glassArray[row];
+    }
+    else {
+        return _detectiveArr[row];
+    }
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    if (pickerView.tag == 1){
     _tipoCristal = _glassArray[row];
+        
+        [_selectType setTitle:_tipoCristal forState:UIControlStateNormal];
+        //_selectType = _glassArray[row];
+        _glassType.hidden = !_glassType.hidden;
+        _selectType.hidden = !_selectType.hidden;
+        NSLog(@"%@",_tipoCristal);
+    }
+    else{
+        _detective = _detectiveArr[row];
+        
+        [_selectDetective setTitle:_detective forState:UIControlStateNormal];
+        //_selectType = _glassArray[row];
+        _detectivePicker.hidden = !_detectivePicker.hidden;
+        _selectDetective.hidden = !_selectDetective.hidden;
+        NSLog(@"%@",_detective);
+
+    }
     
-    [_selectType setTitle:_tipoCristal forState:UIControlStateNormal];
-    //_selectType = _glassArray[row];
-    _glassType.hidden = !_glassType.hidden;
-    _selectType.hidden = !_selectType.hidden;
-    NSLog(@"%@",_tipoCristal);
+    
     
 }
 
@@ -78,6 +141,13 @@
     //[sender setTitle:_tipoCristal forState:UIControlStateNormal];
     _selectType.hidden = !_selectType.hidden;
     _glassType.hidden = !_glassType.hidden;
+    
+
+    
+}
+- (IBAction)selectDetective:(id)sender {
+    _selectDetective.hidden = !_selectDetective.hidden;
+    _detectivePicker.hidden = !_detectivePicker.hidden;
     
 }
 - (IBAction)slideValueChanged:(id)sender {
@@ -113,4 +183,32 @@
     //Consulta Base de datos.
     NSLog(@"Guardadatos");
 }
+
+- (IBAction)asignaNombre:(id)sender {
+    _nombre = self.NameText.text;
+    NSLog(@"%@", _nombre);
+}
+
+//Cerrar Teclado al pinchar fuera de pantalla.
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
+
+//Cerrar Teclado al pulsar Enter.
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO; //Retorna YES si se permiten saltos de linea
+}
+
+-(void)cargarDetectives{
+    NSString* consulta = [NSString stringWithFormat:@"select nombre from detective"];
+    NSArray* resultado = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
+    for (int i = 0; i==resultado.count; i++) {
+     //   _detectiveArr = [[resultado objectAtIndex:i] objectAtIndex:[self.gestorBD.arrNombresCols:@"nombre"]];
+    }
+    _detectiveArr = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
+     NSLog(@"Conenido Array %@", _detectiveArr);
+}
+
 @end

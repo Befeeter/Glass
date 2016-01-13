@@ -12,6 +12,10 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *glassType;
 @property (weak, nonatomic) IBOutlet UIButton *selectType;
+@property (weak, nonatomic) IBOutlet UITextField *NameText;
+@property (weak, nonatomic) IBOutlet UIButton *selectDetective;
+@property (weak, nonatomic) IBOutlet UIPickerView *detectivePicker;
+
  //Sliders:
 @property (weak, nonatomic) IBOutlet UISlider *RISlider;
 @property (weak, nonatomic) IBOutlet UISlider *NaSlider;
@@ -34,6 +38,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *FeLabel;
 
 - (IBAction)selectType:(id)sender;
-
 
 @end
