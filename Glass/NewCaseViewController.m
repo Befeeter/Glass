@@ -41,9 +41,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
     self.NameText.text = @"Nombre";
     _tipoCristal = @"Select Type Glass";
     _glassArray = @[@"Edificio FLotado",@"Edificio no Flotado",@"Vehiculo Flotado",@"Vehiculo no Flotado",@"Contenedor", @"Vajilla",@"Lamparas"];
+    
+    [self cargarDetectives];
+    if (_detectiveArr == NULL)
     _detectiveArr = @[@"Jorge",@"Salva"];
     
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
@@ -195,6 +199,11 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return NO; //Retorna YES si se permiten saltos de linea
+}
+
+-(void)cargarDetectives{
+    NSString* consulta = [NSString stringWithFormat:@"select nombre from detective"];
+    _detectiveArr = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
 }
 
 @end
