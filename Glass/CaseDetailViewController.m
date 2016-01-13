@@ -29,6 +29,9 @@
     // Do any additional setup after loading the view.
     self.SiLabel.layer.borderWidth=1.0;
     self.SiLabel.layer.borderColor=[UIColor greenColor].CGColor;
+    UIImage *imagen = [UIImage imageNamed:@"prueba.jpg"];
+ [self.botonImagen setBackgroundImage:imagen forState:UIControlStateNormal];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,4 +51,6 @@
 }
 */
 
+- (IBAction)botonImagen:(id)sender {
+}
 @end

@@ -21,4 +21,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *BaLabel;
 @property (weak, nonatomic) IBOutlet UILabel *FeLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *botonImagen;
+
+- (IBAction)botonImagen:(id)sender;
+
 @end
