@@ -11,6 +11,7 @@
 
 @interface GestorBD()
 
+
 @property (nonatomic, strong) NSString* carpetaDocumentos;
 @property (nonatomic, strong) NSString* nombreBD;
 @property (nonatomic, strong) NSMutableArray *arrResultados;

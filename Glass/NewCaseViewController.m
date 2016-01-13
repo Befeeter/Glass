@@ -203,7 +203,12 @@
 
 -(void)cargarDetectives{
     NSString* consulta = [NSString stringWithFormat:@"select nombre from detective"];
+    NSArray* resultado = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
+    for (int i = 0; i==resultado.count; i++) {
+     //   _detectiveArr = [[resultado objectAtIndex:i] objectAtIndex:[self.gestorBD.arrNombresCols:@"nombre"]];
+    }
     _detectiveArr = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
+     NSLog(@"Conenido Array %@", _detectiveArr);
 }
 
 @end
