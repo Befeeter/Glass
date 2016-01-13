@@ -27,8 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.SI.layer.borderWidth=1.0;
-    self.SI.layer.borderColor=[UIColor greenColor].CGColor;
+    self.SiLabel.layer.borderWidth=1.0;
+    self.SiLabel.layer.borderColor=[UIColor greenColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning
