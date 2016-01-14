@@ -14,7 +14,7 @@
 {
  NSArray * _glassArray;
     NSString * _tipoCristal;
-    NSArray * _detectiveArr;
+    NSMutableArray * _detectiveArr;
     NSString *_detective;
     NSString *_nombre;
     float _rI;
@@ -48,7 +48,7 @@
     
     [self cargarDetectives];
     if (_detectiveArr == NULL)
-    _detectiveArr = @[@"Jorge",@"Salva"];
+    [_detectiveArr addObject:@"Jorge"];
     
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
     self.glassType.tag = 1;
@@ -204,11 +204,17 @@
 -(void)cargarDetectives{
     NSString* consulta = [NSString stringWithFormat:@"select nombre from detective"];
     NSArray* resultado = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
-    for (int i = 0; i==resultado.count; i++) {
-     //   _detectiveArr = [[resultado objectAtIndex:i] objectAtIndex:[self.gestorBD.arrNombresCols:@"nombre"]];
+    _detectiveArr = [[NSMutableArray alloc] init];
+    for (int i = 0; i<resultado.count; i++) {
+     //[_detectiveArr addObject:@[[[resultado objectAtIndex:i] objectAtIndex:0]]];
+        //NSString *aux = [NSString stringWithFormat:@"%@", [[resultado objectAtIndex:i] objectAtIndex:0]];
+        //NSLog(@"%@", aux);
+        //[_detectiveArr addObject:aux];
+        [_detectiveArr addObject:[[resultado objectAtIndex:i] objectAtIndex:0]];
+        NSLog(@"paso por el array la vez %d", i);
     }
-    _detectiveArr = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
-     NSLog(@"Conenido Array %@", _detectiveArr);
+    //[_detectiveArr addObject:@[[[resultado objectAtIndex:2] objectAtIndex:0]]];
+    NSLog(@"Conenido Array %@", _detectiveArr);
 }
 
 @end
