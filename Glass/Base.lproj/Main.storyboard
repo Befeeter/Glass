@@ -493,7 +493,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eX1-Od-c6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-305" y="1572"/>
+            <point key="canvasLocation" x="-307" y="1562"/>
         </scene>
         <!--Glass Type View Controller - Glass Type-->
         <scene sceneID="9Qu-bm-I4O">
@@ -574,7 +574,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5d-9e-q9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="80" y="720"/>
+            <point key="canvasLocation" x="80" y="730"/>
         </scene>
         <!--View Controller - Detective List-->
         <scene sceneID="g1U-38-FL6">
