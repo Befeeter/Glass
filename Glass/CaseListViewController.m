@@ -61,7 +61,7 @@
     NSInteger indexOfNombre = [self.gestorBD.arrNombresCols indexOfObject:@"nombre"];
     NSInteger indexOfRol = [self.gestorBD.arrNombresCols indexOfObject:@"detective"];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [[self.arrayDatos objectAtIndex: indexPath.row]
-                                                             objectAtIndex:indexOfNombre]]; cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",
+                                                             objectAtIndex:indexOfNombre]];cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",
                                                                                                                          [[self.arrayDatos objectAtIndex: indexPath.row] objectAtIndex:indexOfRol]];
     return cell;
 }
