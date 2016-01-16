@@ -2,7 +2,7 @@
 //  NewDetectiveViewController.m
 //  Glass
 //
-//  Created by Aula1 on 11/01/16.
+//  Created by Jorge Martinez Carvajal on 16/1/16.
 //  Copyright (c) 2016 grupo 04. All rights reserved.
 //
 
@@ -46,17 +46,4 @@
 }
 */
 
-- (IBAction)guardar:(id)sender {
-}
-- (IBAction)ocultarTeclado1:(id)sender {
-}
-
-- (IBAction)ocultarTeclado2:(id)sender {
-}
-
-- (IBAction)ocultarTeclado3:(id)sender {
-}
-
-- (IBAction)ocultarTeclado4:(id)sender {
-}
 @end

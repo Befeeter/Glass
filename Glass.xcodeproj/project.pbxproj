@@ -28,7 +28,9 @@
 		8443EB791C4422D60099A11F /* CaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB781C4422D60099A11F /* CaseListViewController.m */; };
 		CF0299FD1C1F2C780045C8E5 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
 		CF6E57201C4A9F9F0029495A /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E571F1C4A9F9F0029495A /* Case.m */; };
+		CF6E57231C4AD5A40029495A /* Detective.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E57221C4AD5A40029495A /* Detective.m */; };
 		CF7147EA1C3975370084F8AD /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
+		CF9B0F851C4ADC29009059E1 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F2B9A251C442A63002D8190 /* NewDetectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDetectiveViewController.h; sourceTree = "<group>"; };
-		1F2B9A261C442A63002D8190 /* NewDetectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetectiveViewController.m; sourceTree = "<group>"; };
 		1F2E41721C46B1E900468CB4 /* prueba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prueba.jpg; sourceTree = "<group>"; };
 		1F45DAEA1C0CAD4600418917 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F45DAED1C0CAD4600418917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,8 +74,12 @@
 		CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glass.sqlite; sourceTree = "<group>"; };
 		CF6E571E1C4A9F9F0029495A /* Case.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case.h; sourceTree = "<group>"; };
 		CF6E571F1C4A9F9F0029495A /* Case.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case.m; sourceTree = "<group>"; };
+		CF6E57211C4AD5A40029495A /* Detective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detective.h; sourceTree = "<group>"; };
+		CF6E57221C4AD5A40029495A /* Detective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detective.m; sourceTree = "<group>"; };
 		CF7147E81C3975370084F8AD /* GestorBD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestorBD.h; sourceTree = "<group>"; };
 		CF7147E91C3975370084F8AD /* GestorBD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestorBD.m; sourceTree = "<group>"; };
+		CF9B0F831C4ADC29009059E1 /* NewDetectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDetectiveViewController.h; sourceTree = "<group>"; };
+		CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetectiveViewController.m; sourceTree = "<group>"; };
 		F303ECEF1C4420E600A03C87 /* GlassTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassTypeViewController.h; sourceTree = "<group>"; };
 		F303ECF01C4420E600A03C87 /* GlassTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlassTypeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,12 +146,14 @@
 			children = (
 				1F2E41721C46B1E900468CB4 /* prueba.jpg */,
 				CF6E571E1C4A9F9F0029495A /* Case.h */,
+				CF6E57211C4AD5A40029495A /* Detective.h */,
+				CF6E57221C4AD5A40029495A /* Detective.m */,
+				CF9B0F831C4ADC29009059E1 /* NewDetectiveViewController.h */,
+				CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */,
 				CF6E571F1C4A9F9F0029495A /* Case.m */,
 				1F45DAFC1C0CAD4600418917 /* AppDelegate.h */,
 				1F45DAFD1C0CAD4600418917 /* AppDelegate.m */,
 				1F45DAFF1C0CAD4600418917 /* Main.storyboard */,
-				1F2B9A251C442A63002D8190 /* NewDetectiveViewController.h */,
-				1F2B9A261C442A63002D8190 /* NewDetectiveViewController.m */,
 				F303ECEF1C4420E600A03C87 /* GlassTypeViewController.h */,
 				F303ECF01C4420E600A03C87 /* GlassTypeViewController.m */,
 				843D1D8E1C1F35FA007365F5 /* CaseDetailViewController.h */,
@@ -297,8 +303,10 @@
 				CF7147EA1C3975370084F8AD /* GestorBD.m in Sources */,
 				1F45DB041C0CAD4600418917 /* NewCaseViewController.m in Sources */,
 				1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */,
+				CF9B0F851C4ADC29009059E1 /* NewDetectiveViewController.m in Sources */,
 				8443EB761C4422450099A11F /* GlassDetectiveViewController.m in Sources */,
 				8443EB791C4422D60099A11F /* CaseListViewController.m in Sources */,
+				CF6E57231C4AD5A40029495A /* Detective.m in Sources */,
 				CF6E57201C4A9F9F0029495A /* Case.m in Sources */,
 				1F45DAFA1C0CAD4600418917 /* main.m in Sources */,
 				843D1D901C1F35FA007365F5 /* CaseDetailViewController.m in Sources */,

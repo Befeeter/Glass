@@ -590,11 +590,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detective List" id="NLC-zk-0di">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="0QU-XS-sSl">
-                            <connections>
-                                <segue destination="sna-Zk-Oi5" kind="push" id="toA-uT-qWO"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="0QU-XS-sSl"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v4o-GM-HQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -639,7 +635,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guardar:" destination="sna-Zk-Oi5" eventType="touchUpInside" id="3IN-iH-hv9"/>
                                     <segue destination="Qig-kI-EpG" kind="push" id="YXH-NN-c2X"/>
                                 </connections>
                             </button>
@@ -648,37 +643,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="ocultarTeclado1:" destination="sna-Zk-Oi5" eventType="editingDidEndOnExit" id="5h4-8c-sVp"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q1g-XN-Zil">
-                                <rect key="frame" x="20" y="305" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="ocultarTeclado3:" destination="sna-Zk-Oi5" eventType="editingDidEnd" id="Yps-dV-Ohp"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tq3-Dk-G5k">
                                 <rect key="frame" x="20" y="211" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="ocultarTeclado2:" destination="sna-Zk-Oi5" eventType="editingDidEndOnExit" id="ztx-a8-Xql"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gd2-mc-bb8">
-                                <rect key="frame" x="20" y="398" width="280" height="30"/>
+                                <rect key="frame" x="20" y="311" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="ocultarTeclado4:" destination="sna-Zk-Oi5" eventType="editingDidEndOnExit" id="noB-cw-M6w"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZA-ow-ag5">
                                 <rect key="frame" x="20" y="84" width="89" height="21"/>
@@ -692,14 +669,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Id Number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4y-em-McW">
-                                <rect key="frame" x="20" y="276" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRw-nr-bQl">
-                                <rect key="frame" x="20" y="369" width="41" height="21"/>
+                                <rect key="frame" x="20" y="273" width="41" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -708,16 +679,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Detective" id="UcV-iT-gbC"/>
-                    <connections>
-                        <outlet property="apellidoText" destination="tq3-Dk-G5k" id="fep-WP-pjs"/>
-                        <outlet property="dateText" destination="Gd2-mc-bb8" id="IEu-hh-ypi"/>
-                        <outlet property="idNumeroText" destination="Q1g-XN-Zil" id="AZL-ao-upg"/>
-                        <outlet property="nombreText" destination="JID-In-TRX" id="W0Q-yw-olx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7d-2Z-tlo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1535" y="752"/>
+            <point key="canvasLocation" x="1545" y="740"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jac-Cb-Y79">
@@ -744,7 +709,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="7Zj-yL-hwq"/>
         <segue reference="iFH-DH-lPO"/>
+        <segue reference="YXH-NN-c2X"/>
     </inferredMetricsTieBreakers>
 </document>
