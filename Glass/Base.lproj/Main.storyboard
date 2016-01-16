@@ -297,7 +297,7 @@
                                 </state>
                                 <connections>
                                     <action selector="GuardaDatos:" destination="iCH-29-YpD" eventType="touchUpInside" id="7vi-90-zgX"/>
-                                    <segue destination="CxD-Jh-gPg" kind="push" id="AeO-Qq-xsj"/>
+                                    <segue destination="CxD-Jh-gPg" kind="push" identifier="idSegueGuardado" id="q8w-Ol-gB3"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -335,7 +335,7 @@
         <!--Case Detail View Controller - Case Detail-->
         <scene sceneID="Vh0-MY-2c2">
             <objects>
-                <viewController title="Case Detail" id="CxD-Jh-gPg" customClass="CaseDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Caso Detalle" title="Case Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CxD-Jh-gPg" customClass="CaseDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hKn-bP-JSg"/>
                         <viewControllerLayoutGuide type="bottom" id="dEZ-7I-7oZ"/>
@@ -481,13 +481,13 @@
                         <outlet property="AlLabel" destination="HTF-hd-GdQ" id="nKW-BS-sdS"/>
                         <outlet property="BaLabel" destination="A6C-Qm-FbY" id="JwE-C9-sj0"/>
                         <outlet property="CaLabel" destination="N8c-fG-YnK" id="rco-xI-Heq"/>
-                        <outlet property="FeLabelç" destination="NGX-Su-vFP" id="VWl-pi-C05"/>
+                        <outlet property="FeLabel" destination="NGX-Su-vFP" id="m3H-hG-jXS"/>
                         <outlet property="KLabel" destination="8nh-ve-mpN" id="Alk-T9-LP3"/>
                         <outlet property="MgLabel" destination="Bvy-iE-n5z" id="BSK-7a-QVp"/>
                         <outlet property="NaLabel" destination="t8p-Na-ozx" id="Wzf-c0-6HM"/>
                         <outlet property="RILabel" destination="2Bi-KA-ZLE" id="87O-TL-MXe"/>
-                        <outlet property="SI" destination="sq0-WL-ETM" id="GRC-jR-cdy"/>
                         <outlet property="SiLabel" destination="ret-Gd-lvc" id="yy9-Bb-WeQ"/>
+                        <outlet property="TitleBar" destination="5Hn-Bu-K6D" id="2pu-Tm-P9a"/>
                         <outlet property="botonImagen" destination="IDr-UV-FsT" id="foc-dw-4RS"/>
                     </connections>
                 </viewController>
@@ -745,6 +745,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="7Zj-yL-hwq"/>
-        <segue reference="ova-74-UXY"/>
+        <segue reference="iFH-DH-lPO"/>
     </inferredMetricsTieBreakers>
 </document>

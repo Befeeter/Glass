@@ -7,6 +7,7 @@
 //
 
 #import "NewCaseViewController.h"
+#import "CaseDetailViewController.h"
 #import "GestorBD.h"
 #import "Case.h"
 
@@ -190,6 +191,7 @@
     NSLog(@"Guardadatos");
 }
 
+
 - (IBAction)asignaNombre:(id)sender {
     caso._nombre = self.NameText.text;
     NSLog(@"%@", caso._nombre);
@@ -222,6 +224,13 @@
     }
     //[_detectiveArr addObject:@[[[resultado objectAtIndex:2] objectAtIndex:0]]];
     NSLog(@"Conenido Array %@", _detectiveArr);
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"idSegueGuardado"]) {
+        CaseDetailViewController *destino = [segue destinationViewController];
+        destino.casoGuardado = caso;
+    }
 }
 
 @end

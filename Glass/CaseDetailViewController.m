@@ -21,36 +21,22 @@
 
 @implementation CaseDetailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
     return self;
-}
+}*/
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self cargarDatos];
     
-    
-    self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
-    
-    
-    if( self.idRegistro != -1) {
-        [self cargarDatos];
     }
-    
-    
-    
-    
-    
-    
-    
-
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -71,38 +57,33 @@
 
 - (IBAction)botonImagen:(id)sender {
 }
-- (void) cargarDatos{
-    //seleccionamos la tabla CASO
-    NSString* consulta = [NSString stringWithFormat:@"select * from caso where id=%d", self.idRegistro]; //Llamamos solo al caso que nos interesa
+
+-(void) cargarDatos {
     
-    NSArray *resultado= [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
+    self.TitleBar.title = self.casoGuardado._nombre;
     
-    self.CaLabel.text=[[resultado objectAtIndex:0] objectAtIndex:[self.gestorBD.arrNombresCols indexOfObject:@"CA"]];
+    if (self.casoGuardado != NULL){
+    float total = self.casoGuardado._rI + self.casoGuardado._na + self.casoGuardado._mg + self.casoGuardado._al + self.casoGuardado._si + self.casoGuardado._k + self.casoGuardado._ca + self.casoGuardado._ba + self.casoGuardado._fe;
     
-    self.NaLabel.text=[[resultado objectAtIndex:0] objectAtIndex:[self.gestorBD.arrNombresCols indexOfObject:@"NA"]];
+    // establezco los valores:
+    self.RILabel.text = [NSString stringWithFormat:@"%.2f%%", (self.casoGuardado._rI/total)*100];
+    self.NaLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._na/total)*100];
+    self.MgLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._mg/total)*100];
+    self.AlLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._al/total)*100];
+    self.SiLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._si/total)*100];
+    self.KLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._k/total)*100];
+    self.CaLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._ca/total)*100];
+    self.BaLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._ba/total)*100];
+    self.FeLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._fe/total)*100];
     
-    self.MgLabel.text=[[resultado objectAtIndex:0] objectAtIndex:[self.gestorBD.arrNombresCols indexOfObject:@"MG"]];
+    UIImage *buttonBackground = [UIImage imageNamed:@"prueba.jpg"];
+    //UIImage *buttonBackground = [UIImage imageNamed:(@"@.jgp", self.casoGuardado._tipoCristal)];
+        [self.botonImagen setBackgroundImage:buttonBackground forState:UIControlStateNormal];
+    }
     
-    self.AlLabel.text=[[resultado objectAtIndex:0] objectAtIndex:[self.gestorBD.arrNombresCols indexOfObject:@"AL"]];
-    
-    self.SiLabel.text=[[resultado objectAtIndex:0] objectAtIndex:[self.gestorBD.arrNombresCols indexOfObject:@"SI"]];
-    
-    self.KLabel.text=[[resultado objectAtIndex:0] objectAtIndex:[self.gestorBD.arrNombresCols indexOfObject:@"K"]];
-    
-    self.BaLabel.text=[[resultado objectAtIndex:0] objectAtIndex:[self.gestorBD.arrNombresCols indexOfObject:@"BA"]];
-    
-    self.FeLabel.text=[[resultado objectAtIndex:0] objectAtIndex:[self.gestorBD.arrNombresCols indexOfObject:@"FE"]];
-    
-    //Obtenemos el nombre del caso
-    
-    NSString *nombre= [NSString stringWithFormat:@"select nombre from caso where id=%d", self.idRegistro];
-    // Le concatenamos un .jpg
-    NSString *nombreimagen= [nombre stringByAppendingString:@".jpg"];
-    
-    // Obtenemos la imagen con ese nombre
-    UIImage *imagen = [UIImage imageNamed: nombreimagen];
-    //Asignamos esa imagen al BackGround del boton
-    [self.botonImagen setBackgroundImage:imagen forState:UIControlStateNormal];
+    else{
+        NSLog(@"Errrrorrr");
+    }
 }
 
 @end
