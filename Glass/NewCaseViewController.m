@@ -8,14 +8,15 @@
 
 #import "NewCaseViewController.h"
 #import "GestorBD.h"
+#import "Case.h"
 
 @interface NewCaseViewController ()
 
 {
  NSArray * _glassArray;
-    NSString * _tipoCristal;
+    //NSString * _tipoCristal;
     NSMutableArray * _detectiveArr;
-    NSString *_detective;
+    /*NSString *_detective;
     NSString *_nombre;
     float _rI;
     float _na;
@@ -26,8 +27,8 @@
     float _ca;
     float _ba;
     float _fe;
-    
-    
+    */
+    Case *caso;
     
 }
 
@@ -39,11 +40,13 @@
 
 - (void)viewDidLoad
 {
+    caso = [[Case alloc] init];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
     self.NameText.text = @"Nombre";
-    _tipoCristal = @"Select Type Glass";
+    caso._tipoCristal = @"Select Type Glass";
     _glassArray = @[@"Edificio FLotado",@"Edificio no Flotado",@"Vehiculo Flotado",@"Vehiculo no Flotado",@"Contenedor", @"Vajilla",@"Lamparas"];
     
     [self cargarDetectives];
@@ -114,22 +117,22 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     if (pickerView.tag == 1){
-    _tipoCristal = _glassArray[row];
+    caso._tipoCristal = _glassArray[row];
         
-        [_selectType setTitle:_tipoCristal forState:UIControlStateNormal];
+        [_selectType setTitle:caso._tipoCristal forState:UIControlStateNormal];
         //_selectType = _glassArray[row];
         _glassType.hidden = !_glassType.hidden;
         _selectType.hidden = !_selectType.hidden;
-        NSLog(@"%@",_tipoCristal);
+        NSLog(@"%@",caso._tipoCristal);
     }
     else{
-        _detective = _detectiveArr[row];
+        caso._detective = _detectiveArr[row];
         
-        [_selectDetective setTitle:_detective forState:UIControlStateNormal];
+        [_selectDetective setTitle:caso._detective forState:UIControlStateNormal];
         //_selectType = _glassArray[row];
         _detectivePicker.hidden = !_detectivePicker.hidden;
         _selectDetective.hidden = !_selectDetective.hidden;
-        NSLog(@"%@",_detective);
+        NSLog(@"%@",caso._detective);
 
     }
     
@@ -163,24 +166,24 @@
     self.FeLabel.text = [NSString stringWithFormat:@"%.2f", self.FeSlider.value];
     
     //value asignation section
-    _rI = self.RISlider.value;
-    _na = self.NaSlider.value;
-    _mg = self.MgSlider.value;
-    _al = self.AlSlider.value;
-    _si = self.SiSlider.value;
-    _k = self.KSlider.value;
-    _ca = self.CaSlider.value;
-    _ba = self.BaSlider.value;
-    _fe = self.FeSlider.value;
+    caso._rI = self.RISlider.value;
+    caso._na = self.NaSlider.value;
+    caso._mg = self.MgSlider.value;
+    caso._al = self.AlSlider.value;
+    caso._si = self.SiSlider.value;
+    caso._k = self.KSlider.value;
+    caso._ca = self.CaSlider.value;
+    caso._ba = self.BaSlider.value;
+    caso._fe = self.FeSlider.value;
     
     //test section
-    NSLog(@"%f", _rI);
-    NSLog(@"%f", _na);
+    NSLog(@"%f", caso._rI);
+    NSLog(@"%f", caso._na);
     
 
 }
 - (IBAction)GuardaDatos:(id)sender {
-    NSString * consulta = [NSString stringWithFormat:@"INSERT INTO 'caso' ('nombre','detective','ri','na','mg','al','si','k','ca','ba','fe','tipo') VALUES ('%@','%@','%f','%f','%f','%f','%f','%f','%f','%f','%f','%@')", _nombre , _detective , _rI , _na , _mg , _al , _si , _k , _ca , _ba , _fe , _tipoCristal];
+    NSString * consulta = [NSString stringWithFormat:@"INSERT INTO 'caso' ('nombre','detective','ri','na','mg','al','si','k','ca','ba','fe','tipo') VALUES ('%@','%@','%f','%f','%f','%f','%f','%f','%f','%f','%f','%@')", caso._nombre , caso._detective , caso._rI , caso._na , caso._mg , caso._al , caso._si , caso._k , caso._ca , caso._ba , caso._fe , caso._tipoCristal];
     [self.gestorBD executeQuery:consulta];
     
     //Consulta Base de datos.
@@ -188,8 +191,8 @@
 }
 
 - (IBAction)asignaNombre:(id)sender {
-    _nombre = self.NameText.text;
-    NSLog(@"%@", _nombre);
+    caso._nombre = self.NameText.text;
+    NSLog(@"%@", caso._nombre);
 }
 
 //Cerrar Teclado al pinchar fuera de pantalla.
