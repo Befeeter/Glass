@@ -19,7 +19,7 @@
 -(void) copiarBDCarpetaDocumentos;
 -(void) ejecutaConsulta: (const char*) consulta
            esEjecutable: (BOOL) consultaEjecutable;
--(void) copiarBDCarpetaDocumentos;
+//-(void) copiarBDCarpetaDocumentos;
 
 @end
 

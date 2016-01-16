@@ -180,6 +180,9 @@
 
 }
 - (IBAction)GuardaDatos:(id)sender {
+    NSString * consulta = [NSString stringWithFormat:@"INSERT INTO 'caso' ('nombre','detective','ri','na','mg','al','si','k','ca','ba','fe','tipo') VALUES ('%@','%@','%f','%f','%f','%f','%f','%f','%f','%f','%f','%@')", _nombre , _detective , _rI , _na , _mg , _al , _si , _k , _ca , _ba , _fe , _tipoCristal];
+    [self.gestorBD executeQuery:consulta];
+    
     //Consulta Base de datos.
     NSLog(@"Guardadatos");
 }
@@ -204,6 +207,7 @@
 -(void)cargarDetectives{
     NSString* consulta = [NSString stringWithFormat:@"select nombre from detective"];
     NSArray* resultado = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
+    if(resultado != NULL)
     _detectiveArr = [[NSMutableArray alloc] init];
     for (int i = 0; i<resultado.count; i++) {
      //[_detectiveArr addObject:@[[[resultado objectAtIndex:i] objectAtIndex:0]]];
