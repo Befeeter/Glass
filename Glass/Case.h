@@ -10,6 +10,7 @@
 
 @interface Case : NSObject
 
+@property (nonatomic) int _id;
 @property (nonatomic) NSString * _tipoCristal;
 @property (nonatomic) NSString *_detective;
 @property (nonatomic) NSString *_nombre;
@@ -22,5 +23,6 @@
 @property (nonatomic) float _ca;
 @property (nonatomic) float _ba;
 @property (nonatomic) float _fe;
+
 
 @end

@@ -8,15 +8,27 @@
 
 #import "CaseListViewController.h"
 #import "GestorBD.h"
+#import "CaseDetailViewController.h"
+#import "Case.h"
+
 @interface CaseListViewController ()
+{
+    Case *caso;
+}
+
+
 
 @property (nonatomic, strong) GestorBD* gestorBD;
 @property (nonatomic, strong) NSArray* arrayDatos;
+@property (nonatomic) int idRegistroEditar;
 - (void) cargarDatos;
+
 
 @end
 
 @implementation CaseListViewController
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +42,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    caso = [[Case alloc]init];
     self.tabla.delegate = self;
     self.tabla.dataSource = self;
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
@@ -42,8 +55,7 @@
 -(void) cargarDatos{
     //seleccionamos la tabla CASO
     NSString *consulta = @"select * from caso";
-    if (self.arrayDatos != nil) self.arrayDatos = nil; self.arrayDatos = [[NSArray alloc] initWithArray:[self.gestorBD
-                                                                                                         selectFromDB:consulta]];
+    if (self.arrayDatos != nil) self.arrayDatos = nil; self.arrayDatos = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
     //actualizamos la tabla
     [self.tabla reloadData];
 }
@@ -66,15 +78,40 @@
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [[self.arrayDatos objectAtIndex: indexPath.row] objectAtIndex:indexOfRol]];
     return cell;
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) tableView: (UITableView *) tableView accessoryButtonTappedForRowWithIndexPath: (NSIndexPath *)indexPath{
+    
+    
+    //NSLog(@"Nombre del caso 1: %@",[[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:0]stringValue]);
+    
+    //self.idRegistroEditar = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:0]intValue];
+    //NSString *consulta = (@"select * from caso where id=%@", [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:0]stringValue]);
+    caso._id = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:0]intValue];
+    caso._nombre = [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:1]];
+    caso._detective = [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:2]];
+    caso._rI = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:3]floatValue];
+    caso._na = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:4]floatValue];
+    caso._mg = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:5]floatValue];
+    caso._al = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:6]floatValue];
+    caso._si = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:7]floatValue];
+    caso._k = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:8]floatValue];
+    caso._ca = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:9]floatValue];
+    caso._ba = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:10]floatValue];
+    caso._fe = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:11]floatValue];
+    caso._tipoCristal = [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:12]];
+    
+    //if (self.arrayDatos != nil) self.arrayDatos = nil; self.arrayDatos = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta]];
+    //NSLog(@"Nombre del caso: %@", caso._nombre);
+    [self performSegueWithIdentifier:@"idSegueCasoDetalle" sender:self];
 }
-*/
+
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"idSegueCasoDetalle"]) {
+        CaseDetailViewController *destino = [segue destinationViewController];
+        destino.casoGuardado = caso;
+    }
+}
 
 @end
