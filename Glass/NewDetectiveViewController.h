@@ -10,6 +10,10 @@
 
 @interface NewDetectiveViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *NombreTextBox;
 
+@property (weak, nonatomic) IBOutlet UITextField *ApellidosTextBox;
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *FechaPicker;
 
 @end

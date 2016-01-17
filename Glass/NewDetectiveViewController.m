@@ -35,6 +35,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)AsignaNombre:(id)sender {
+}
+
+- (IBAction)AsignaApellidos:(id)sender {
+}
+- (IBAction)AsignaFecha:(id)sender {
+}
+- (IBAction)GuardarDatos:(id)sender {
+}
+
+
+//Cerrar Teclado al pinchar fuera de pantalla.
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
+
+//Cerrar Teclado al pulsar Enter.
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO; //Retorna YES si se permiten saltos de linea
+}
 /*
 #pragma mark - Navigation
 

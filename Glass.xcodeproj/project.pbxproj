@@ -30,6 +30,7 @@
 		CF6E57201C4A9F9F0029495A /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E571F1C4A9F9F0029495A /* Case.m */; };
 		CF6E57231C4AD5A40029495A /* Detective.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E57221C4AD5A40029495A /* Detective.m */; };
 		CF7147EA1C3975370084F8AD /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
+		CF7843C11C4BF964002840DE /* DetectiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7843C01C4BF964002840DE /* DetectiveListViewController.m */; };
 		CF9B0F851C4ADC29009059E1 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,8 @@
 		CF6E57221C4AD5A40029495A /* Detective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detective.m; sourceTree = "<group>"; };
 		CF7147E81C3975370084F8AD /* GestorBD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestorBD.h; sourceTree = "<group>"; };
 		CF7147E91C3975370084F8AD /* GestorBD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestorBD.m; sourceTree = "<group>"; };
+		CF7843BF1C4BF964002840DE /* DetectiveListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectiveListViewController.h; sourceTree = "<group>"; };
+		CF7843C01C4BF964002840DE /* DetectiveListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectiveListViewController.m; sourceTree = "<group>"; };
 		CF9B0F831C4ADC29009059E1 /* NewDetectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDetectiveViewController.h; sourceTree = "<group>"; };
 		CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetectiveViewController.m; sourceTree = "<group>"; };
 		F303ECEF1C4420E600A03C87 /* GlassTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassTypeViewController.h; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */,
 				1F45DB021C0CAD4600418917 /* NewCaseViewController.h */,
 				1F45DB031C0CAD4600418917 /* NewCaseViewController.m */,
+				CF7843BF1C4BF964002840DE /* DetectiveListViewController.h */,
+				CF7843C01C4BF964002840DE /* DetectiveListViewController.m */,
 				1F45DB051C0CAD4600418917 /* Images.xcassets */,
 				1F45DAF41C0CAD4600418917 /* Supporting Files */,
 				CF7147E81C3975370084F8AD /* GestorBD.h */,
@@ -303,6 +308,7 @@
 				CF7147EA1C3975370084F8AD /* GestorBD.m in Sources */,
 				1F45DB041C0CAD4600418917 /* NewCaseViewController.m in Sources */,
 				1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */,
+				CF7843C11C4BF964002840DE /* DetectiveListViewController.m in Sources */,
 				CF9B0F851C4ADC29009059E1 /* NewDetectiveViewController.m in Sources */,
 				8443EB761C4422450099A11F /* GlassDetectiveViewController.m in Sources */,
 				8443EB791C4422D60099A11F /* CaseListViewController.m in Sources */,

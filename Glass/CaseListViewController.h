@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface CaseListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UITableView *tabla;
+
+
 -(IBAction)addRegistro:(id)sender;
+
 @end
