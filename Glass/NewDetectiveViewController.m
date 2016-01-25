@@ -36,7 +36,7 @@
 }
 
 - (IBAction)AsignaNombre:(id)sender {
-}
+    }
 
 - (IBAction)AsignaApellidos:(id)sender {
 }
