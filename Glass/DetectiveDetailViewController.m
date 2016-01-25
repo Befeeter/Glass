@@ -6,13 +6,19 @@
 //  Copyright (c) 2016 grupo 04. All rights reserved.
 //
 
+
 #import "DetectiveDetailViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "GestorBD.h"
 
 @interface DetectiveDetailViewController ()
+- (void) cargarDatos;
 
 @end
 
 @implementation DetectiveDetailViewController
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -56,7 +62,7 @@
         
         // establezco los valores:
         
-     self.nombre.text =[NSString stringWithFormat:@"%@", self.detectiveguardado.Nombre];
+        self.nombre.text =[NSString stringWithFormat:@"%@", self.detectiveguardado.Nombre];
         
         self.apellidos.text =[NSString stringWithFormat:@"%@", self.detectiveguardado.Apellidos];
         
@@ -71,6 +77,9 @@
         
         
     }
+    
+    
+    else {NSLog(@"ERROR");}
     
 }
         @end

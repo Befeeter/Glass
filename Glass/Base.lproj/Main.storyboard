@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8Fg-0E-QNI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -634,12 +634,7 @@
         <!--Detective Detail View Controller - Detective Detail-->
         <scene sceneID="FsP-YT-OcS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lry-u6-uMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Detective Detail" id="aUp-Ih-YYo" customClass="DetectiveDetailViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YWj-1A-gec"/>
-                        <viewControllerLayoutGuide type="bottom" id="hd6-wx-imh"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dLh-un-AB2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -681,7 +676,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u78-8j-1Kb">
-                                <rect key="frame" x="97" y="375" width="115" height="122"/>
+                                <rect key="frame" x="98" y="374" width="115" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -698,6 +693,7 @@
                         <outlet property="nombre" destination="tvT-Aa-kqL" id="9Yj-FU-Wg3"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lry-u6-uMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1075" y="1570"/>
         </scene>
@@ -808,11 +804,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </view>
                     <navigationItem key="navigationItem" title="New Detective" id="hct-HR-rUX"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="700"/>
                     <connections>
                         <outlet property="ApellidosTextBox" destination="tq3-Dk-G5k" id="zM3-XD-iDa"/>
                         <outlet property="FechaPicker" destination="CLB-I5-t6n" id="xHH-Y7-XwF"/>
                         <outlet property="NombreTextBox" destination="JID-In-TRX" id="sMc-01-Uds"/>
-                        <segue destination="aUp-Ih-YYo" kind="push" identifier="seguedetective2" id="Pbc-CW-KmL"/>
+                        <outlet property="imageView" destination="x7d-ZD-1EW" id="FZz-Tp-rjb"/>
+                        <outlet property="scroller" destination="OAT-1O-DMe" id="o6l-r0-gLD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7d-2Z-tlo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -847,8 +845,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="76A-zU-ctM"/>
-        <segue reference="ova-74-UXY"/>
         <segue reference="jXT-Fy-prq"/>
+        <segue reference="ova-74-UXY"/>
     </inferredMetricsTieBreakers>
 </document>
