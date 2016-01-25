@@ -7,6 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F167ECE1C5678EF00934000 /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
+		1F167ECF1C5678EF00934000 /* NewCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB031C0CAD4600418917 /* NewCaseViewController.m */; };
+		1F167ED01C5678EF00934000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAFD1C0CAD4600418917 /* AppDelegate.m */; };
+		1F167ED11C5678EF00934000 /* DetectiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7843C01C4BF964002840DE /* DetectiveListViewController.m */; };
+		1F167ED21C5678EF00934000 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
+		1F167ED31C5678EF00934000 /* GlassDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB751C4422450099A11F /* GlassDetectiveViewController.m */; };
+		1F167ED41C5678EF00934000 /* CaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB781C4422D60099A11F /* CaseListViewController.m */; };
+		1F167ED51C5678EF00934000 /* Detective.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E57221C4AD5A40029495A /* Detective.m */; };
+		1F167ED61C5678EF00934000 /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E571F1C4A9F9F0029495A /* Case.m */; };
+		1F167ED71C5678EF00934000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAF91C0CAD4600418917 /* main.m */; };
+		1F167ED81C5678EF00934000 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
+		1F167EDA1C5678EF00934000 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
+		1F167EDB1C5678EF00934000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
+		1F167EDC1C5678EF00934000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
+		1F167EDD1C5678EF00934000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
+		1F167EDF1C5678EF00934000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB051C0CAD4600418917 /* Images.xcassets */; };
+		1F167EE01C5678EF00934000 /* prueba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E41721C46B1E900468CB4 /* prueba.jpg */; };
+		1F167EE11C5678EF00934000 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAF61C0CAD4600418917 /* InfoPlist.strings */; };
+		1F167EE21C5678EF00934000 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
+		1F167EE31C5678EF00934000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAFF1C0CAD4600418917 /* Main.storyboard */; };
+		1F167EEB1C56794F00934000 /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
+		1F167EEC1C56794F00934000 /* NewCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB031C0CAD4600418917 /* NewCaseViewController.m */; };
+		1F167EED1C56794F00934000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAFD1C0CAD4600418917 /* AppDelegate.m */; };
+		1F167EEE1C56794F00934000 /* DetectiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7843C01C4BF964002840DE /* DetectiveListViewController.m */; };
+		1F167EEF1C56794F00934000 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
+		1F167EF01C56794F00934000 /* GlassDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB751C4422450099A11F /* GlassDetectiveViewController.m */; };
+		1F167EF11C56794F00934000 /* CaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB781C4422D60099A11F /* CaseListViewController.m */; };
+		1F167EF21C56794F00934000 /* Detective.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E57221C4AD5A40029495A /* Detective.m */; };
+		1F167EF31C56794F00934000 /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E571F1C4A9F9F0029495A /* Case.m */; };
+		1F167EF41C56794F00934000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAF91C0CAD4600418917 /* main.m */; };
+		1F167EF51C56794F00934000 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
+		1F167EF71C56794F00934000 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
+		1F167EF81C56794F00934000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
+		1F167EF91C56794F00934000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
+		1F167EFA1C56794F00934000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
+		1F167EFC1C56794F00934000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB051C0CAD4600418917 /* Images.xcassets */; };
+		1F167EFD1C56794F00934000 /* prueba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E41721C46B1E900468CB4 /* prueba.jpg */; };
+		1F167EFE1C56794F00934000 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAF61C0CAD4600418917 /* InfoPlist.strings */; };
+		1F167EFF1C56794F00934000 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
+		1F167F001C56794F00934000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAFF1C0CAD4600418917 /* Main.storyboard */; };
 		1F2E41731C46B1E900468CB4 /* prueba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E41721C46B1E900468CB4 /* prueba.jpg */; };
 		1F45DAEE1C0CAD4600418917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
 		1F45DAF01C0CAD4600418917 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
@@ -45,6 +85,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F167EE71C5678EF00934000 /* Glass copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F167EE81C5678EF00934000 /* Glass copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glass copy-Info.plist"; path = "/Users/Aula1/Documents/Glass/Glass copy-Info.plist"; sourceTree = "<absolute>"; };
+		1F167F041C56794F00934000 /* Glass copy 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass copy 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F167F051C56794F00934000 /* Glass copy 2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glass copy 2-Info.plist"; path = "/Users/Aula1/Documents/Glass/Glass copy 2-Info.plist"; sourceTree = "<absolute>"; };
 		1F2E41721C46B1E900468CB4 /* prueba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prueba.jpg; sourceTree = "<group>"; };
 		1F45DAEA1C0CAD4600418917 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F45DAED1C0CAD4600418917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +132,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F167ED91C5678EF00934000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F167EDA1C5678EF00934000 /* libsqlite3.dylib in Frameworks */,
+				1F167EDB1C5678EF00934000 /* CoreGraphics.framework in Frameworks */,
+				1F167EDC1C5678EF00934000 /* UIKit.framework in Frameworks */,
+				1F167EDD1C5678EF00934000 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F167EF61C56794F00934000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F167EF71C56794F00934000 /* libsqlite3.dylib in Frameworks */,
+				1F167EF81C56794F00934000 /* CoreGraphics.framework in Frameworks */,
+				1F167EF91C56794F00934000 /* UIKit.framework in Frameworks */,
+				1F167EFA1C56794F00934000 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F45DAE71C0CAD4600418917 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,6 +186,8 @@
 				1F45DB121C0CAD4700418917 /* GlassTests */,
 				1F45DAEC1C0CAD4600418917 /* Frameworks */,
 				1F45DAEB1C0CAD4600418917 /* Products */,
+				1F167EE81C5678EF00934000 /* Glass copy-Info.plist */,
+				1F167F051C56794F00934000 /* Glass copy 2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +196,8 @@
 			children = (
 				1F45DAEA1C0CAD4600418917 /* Glass.app */,
 				1F45DB0B1C0CAD4700418917 /* GlassTests.xctest */,
+				1F167EE71C5678EF00934000 /* Glass copy.app */,
+				1F167F041C56794F00934000 /* Glass copy 2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,9 +279,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F45DAE91C0CAD4600418917 /* Glass */ = {
+		1F167ECC1C5678EF00934000 /* VERSION2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "Glass" */;
+			buildConfigurationList = 1F167EE41C5678EF00934000 /* Build configuration list for PBXNativeTarget "VERSION2" */;
+			buildPhases = (
+				1F167ECD1C5678EF00934000 /* Sources */,
+				1F167ED91C5678EF00934000 /* Frameworks */,
+				1F167EDE1C5678EF00934000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VERSION2;
+			productName = Glass;
+			productReference = 1F167EE71C5678EF00934000 /* Glass copy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F167EE91C56794F00934000 /* VERSION3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F167F011C56794F00934000 /* Build configuration list for PBXNativeTarget "VERSION3" */;
+			buildPhases = (
+				1F167EEA1C56794F00934000 /* Sources */,
+				1F167EF61C56794F00934000 /* Frameworks */,
+				1F167EFB1C56794F00934000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VERSION3;
+			productName = Glass;
+			productReference = 1F167F041C56794F00934000 /* Glass copy 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F45DAE91C0CAD4600418917 /* VERSION1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "VERSION1" */;
 			buildPhases = (
 				1F45DAE61C0CAD4600418917 /* Sources */,
 				1F45DAE71C0CAD4600418917 /* Frameworks */,
@@ -221,7 +325,7 @@
 			);
 			dependencies = (
 			);
-			name = Glass;
+			name = VERSION1;
 			productName = Glass;
 			productReference = 1F45DAEA1C0CAD4600418917 /* Glass.app */;
 			productType = "com.apple.product-type.application";
@@ -271,13 +375,39 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F45DAE91C0CAD4600418917 /* Glass */,
+				1F45DAE91C0CAD4600418917 /* VERSION1 */,
 				1F45DB0A1C0CAD4700418917 /* GlassTests */,
+				1F167ECC1C5678EF00934000 /* VERSION2 */,
+				1F167EE91C56794F00934000 /* VERSION3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F167EDE1C5678EF00934000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F167EDF1C5678EF00934000 /* Images.xcassets in Resources */,
+				1F167EE01C5678EF00934000 /* prueba.jpg in Resources */,
+				1F167EE11C5678EF00934000 /* InfoPlist.strings in Resources */,
+				1F167EE21C5678EF00934000 /* Glass.sqlite in Resources */,
+				1F167EE31C5678EF00934000 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F167EFB1C56794F00934000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F167EFC1C56794F00934000 /* Images.xcassets in Resources */,
+				1F167EFD1C56794F00934000 /* prueba.jpg in Resources */,
+				1F167EFE1C56794F00934000 /* InfoPlist.strings in Resources */,
+				1F167EFF1C56794F00934000 /* Glass.sqlite in Resources */,
+				1F167F001C56794F00934000 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F45DAE81C0CAD4600418917 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,6 +431,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F167ECD1C5678EF00934000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F167ECE1C5678EF00934000 /* GestorBD.m in Sources */,
+				1F167ECF1C5678EF00934000 /* NewCaseViewController.m in Sources */,
+				1F167ED01C5678EF00934000 /* AppDelegate.m in Sources */,
+				1F167ED11C5678EF00934000 /* DetectiveListViewController.m in Sources */,
+				1F167ED21C5678EF00934000 /* NewDetectiveViewController.m in Sources */,
+				1F167ED31C5678EF00934000 /* GlassDetectiveViewController.m in Sources */,
+				1F167ED41C5678EF00934000 /* CaseListViewController.m in Sources */,
+				1F167ED51C5678EF00934000 /* Detective.m in Sources */,
+				1F167ED61C5678EF00934000 /* Case.m in Sources */,
+				1F167ED71C5678EF00934000 /* main.m in Sources */,
+				1F167ED81C5678EF00934000 /* CaseDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F167EEA1C56794F00934000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F167EEB1C56794F00934000 /* GestorBD.m in Sources */,
+				1F167EEC1C56794F00934000 /* NewCaseViewController.m in Sources */,
+				1F167EED1C56794F00934000 /* AppDelegate.m in Sources */,
+				1F167EEE1C56794F00934000 /* DetectiveListViewController.m in Sources */,
+				1F167EEF1C56794F00934000 /* NewDetectiveViewController.m in Sources */,
+				1F167EF01C56794F00934000 /* GlassDetectiveViewController.m in Sources */,
+				1F167EF11C56794F00934000 /* CaseListViewController.m in Sources */,
+				1F167EF21C56794F00934000 /* Detective.m in Sources */,
+				1F167EF31C56794F00934000 /* Case.m in Sources */,
+				1F167EF41C56794F00934000 /* main.m in Sources */,
+				1F167EF51C56794F00934000 /* CaseDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F45DAE61C0CAD4600418917 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,7 +498,7 @@
 /* Begin PBXTargetDependency section */
 		1F45DB111C0CAD4700418917 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F45DAE91C0CAD4600418917 /* Glass */;
+			target = 1F45DAE91C0CAD4600418917 /* VERSION1 */;
 			targetProxy = 1F45DB101C0CAD4700418917 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -365,6 +531,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1F167EE51C5678EF00934000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = VERSION2;
+				INFOPLIST_FILE = "Glass copy-Info.plist";
+				PRODUCT_NAME = "Glass copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F167EE61C5678EF00934000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				INFOPLIST_FILE = "Glass copy-Info.plist";
+				PRODUCT_NAME = "Glass copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1F167F021C56794F00934000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = VERSION3;
+				INFOPLIST_FILE = "Glass copy 2-Info.plist";
+				PRODUCT_NAME = "Glass copy 2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F167F031C56794F00934000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				INFOPLIST_FILE = "Glass copy 2-Info.plist";
+				PRODUCT_NAME = "Glass copy 2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		1F45DB1A1C0CAD4700418917 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,6 +662,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = VERSION1;
 				INFOPLIST_FILE = "Glass/Glass-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -504,6 +725,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F167EE41C5678EF00934000 /* Build configuration list for PBXNativeTarget "VERSION2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F167EE51C5678EF00934000 /* Debug */,
+				1F167EE61C5678EF00934000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F167F011C56794F00934000 /* Build configuration list for PBXNativeTarget "VERSION3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F167F021C56794F00934000 /* Debug */,
+				1F167F031C56794F00934000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1F45DAE51C0CAD4600418917 /* Build configuration list for PBXProject "Glass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -513,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "Glass" */ = {
+		1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "VERSION1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F45DB1D1C0CAD4700418917 /* Debug */,

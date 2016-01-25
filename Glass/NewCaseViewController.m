@@ -58,6 +58,9 @@
     self.glassType.tag = 1;
     self.detectivePicker.tag = 2;
     
+#ifdef VERSION2
+    _selectType.hidden = YES;
+#endif
 }
 
 - (void)didReceiveMemoryWarning
@@ -184,6 +187,77 @@
 
 }
 - (IBAction)GuardaDatos:(id)sender {
+    #ifdef VERSION2
+    
+    if (caso._mg < 2.55){
+        if (caso._na < 13.82){
+            if (caso._rI < 1.52){
+                caso._tipoCristal = @"Container";
+            }
+            else{
+                caso._tipoCristal = @"build wind non-float";
+            }
+                
+        }
+        else {
+            if (caso._ba < 0.2){
+                caso._tipoCristal = @"tableware";
+            }
+            else{
+                caso._tipoCristal = @"headlamp";
+            }
+        }
+    }
+    else{
+        if (caso._rI < 1.52) {
+            caso._tipoCristal = @"build wind non-float";
+        }
+        else{
+            if (caso._mg < 3.35) {
+                caso._tipoCristal = @"build wind non-float";
+            }
+            else{
+                if (caso._fe < 0.22) {
+                    if (caso._na <13.37){
+                        if (caso._rI < 1.52){
+                            caso._tipoCristal = @"build wind float";
+                        }
+                        else{
+                            if (caso._mg < 3.66) {
+                                caso._tipoCristal = @"build wind float";
+                            }
+                            else{
+                                caso._tipoCristal = @"build wind non-float";
+                            }
+                        }
+                    }
+                    else{
+                        if (caso._rI < 1.52) {
+                            if (caso._rI <1.52) {
+                                caso._tipoCristal = @"build wind float";
+                            }
+                            else{
+                                caso._tipoCristal = @"build wind non-float";
+                            }
+                        }
+                        else{
+                            caso._tipoCristal = @"build wind float";
+                        }
+                    }
+                }
+                else{
+                    caso._tipoCristal = @"build wind non-float";
+                }
+            }
+        }
+    }
+    
+    
+#endif
+
+#ifdef VERSION3
+    
+#endif
     NSString * consulta = [NSString stringWithFormat:@"INSERT INTO 'caso' ('nombre','detective','ri','na','mg','al','si','k','ca','ba','fe','tipo') VALUES ('%@','%@','%f','%f','%f','%f','%f','%f','%f','%f','%f','%@')", caso._nombre , caso._detective , caso._rI , caso._na , caso._mg , caso._al , caso._si , caso._k , caso._ca , caso._ba , caso._fe , caso._tipoCristal];
     [self.gestorBD executeQuery:consulta];
     
