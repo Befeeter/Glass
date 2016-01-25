@@ -90,7 +90,7 @@
 		1F167F041C56794F00934000 /* Glass copy 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass copy 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F167F051C56794F00934000 /* Glass copy 2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glass copy 2-Info.plist"; path = "/Users/Aula1/Documents/Glass/Glass copy 2-Info.plist"; sourceTree = "<absolute>"; };
 		1F2E41721C46B1E900468CB4 /* prueba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prueba.jpg; sourceTree = "<group>"; };
-		1F45DAEA1C0CAD4600418917 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F45DAEA1C0CAD4600418917 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Glass.app; path = VERSION1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F45DAED1C0CAD4600418917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1F45DAF11C0CAD4600418917 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -279,9 +279,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F167ECC1C5678EF00934000 /* VERSION2 */ = {
+		1F167ECC1C5678EF00934000 /* Glass copy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F167EE41C5678EF00934000 /* Build configuration list for PBXNativeTarget "VERSION2" */;
+			buildConfigurationList = 1F167EE41C5678EF00934000 /* Build configuration list for PBXNativeTarget "Glass copy" */;
 			buildPhases = (
 				1F167ECD1C5678EF00934000 /* Sources */,
 				1F167ED91C5678EF00934000 /* Frameworks */,
@@ -291,14 +291,14 @@
 			);
 			dependencies = (
 			);
-			name = VERSION2;
+			name = "Glass copy";
 			productName = Glass;
 			productReference = 1F167EE71C5678EF00934000 /* Glass copy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1F167EE91C56794F00934000 /* VERSION3 */ = {
+		1F167EE91C56794F00934000 /* Glass copy 2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F167F011C56794F00934000 /* Build configuration list for PBXNativeTarget "VERSION3" */;
+			buildConfigurationList = 1F167F011C56794F00934000 /* Build configuration list for PBXNativeTarget "Glass copy 2" */;
 			buildPhases = (
 				1F167EEA1C56794F00934000 /* Sources */,
 				1F167EF61C56794F00934000 /* Frameworks */,
@@ -308,14 +308,14 @@
 			);
 			dependencies = (
 			);
-			name = VERSION3;
+			name = "Glass copy 2";
 			productName = Glass;
 			productReference = 1F167F041C56794F00934000 /* Glass copy 2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1F45DAE91C0CAD4600418917 /* VERSION1 */ = {
+		1F45DAE91C0CAD4600418917 /* Glass */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "VERSION1" */;
+			buildConfigurationList = 1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "Glass" */;
 			buildPhases = (
 				1F45DAE61C0CAD4600418917 /* Sources */,
 				1F45DAE71C0CAD4600418917 /* Frameworks */,
@@ -325,7 +325,7 @@
 			);
 			dependencies = (
 			);
-			name = VERSION1;
+			name = Glass;
 			productName = Glass;
 			productReference = 1F45DAEA1C0CAD4600418917 /* Glass.app */;
 			productType = "com.apple.product-type.application";
@@ -375,10 +375,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F45DAE91C0CAD4600418917 /* VERSION1 */,
+				1F45DAE91C0CAD4600418917 /* Glass */,
 				1F45DB0A1C0CAD4700418917 /* GlassTests */,
-				1F167ECC1C5678EF00934000 /* VERSION2 */,
-				1F167EE91C56794F00934000 /* VERSION3 */,
+				1F167ECC1C5678EF00934000 /* Glass copy */,
+				1F167EE91C56794F00934000 /* Glass copy 2 */,
 			);
 		};
 /* End PBXProject section */
@@ -498,7 +498,7 @@
 /* Begin PBXTargetDependency section */
 		1F45DB111C0CAD4700418917 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F45DAE91C0CAD4600418917 /* VERSION1 */;
+			target = 1F45DAE91C0CAD4600418917 /* Glass */;
 			targetProxy = 1F45DB101C0CAD4700418917 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -725,7 +725,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F167EE41C5678EF00934000 /* Build configuration list for PBXNativeTarget "VERSION2" */ = {
+		1F167EE41C5678EF00934000 /* Build configuration list for PBXNativeTarget "Glass copy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F167EE51C5678EF00934000 /* Debug */,
@@ -734,7 +734,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F167F011C56794F00934000 /* Build configuration list for PBXNativeTarget "VERSION3" */ = {
+		1F167F011C56794F00934000 /* Build configuration list for PBXNativeTarget "Glass copy 2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F167F021C56794F00934000 /* Debug */,
@@ -752,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "VERSION1" */ = {
+		1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "Glass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F45DB1D1C0CAD4700418917 /* Debug */,
