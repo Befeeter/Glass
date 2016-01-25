@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewDetectiveViewController : UIViewController
+@interface NewDetectiveViewController : UIViewController {
+    IBOutlet UIScrollView *scroller;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *NombreTextBox;
 
 @property (weak, nonatomic) IBOutlet UITextField *ApellidosTextBox;
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *FechaPicker;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

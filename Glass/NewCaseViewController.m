@@ -256,8 +256,18 @@
 #endif
 
 #ifdef VERSION3
+    NSString * url_str = [NSString stringWithFormat:@"http://192.168.118.210:8080/WekaWrapper/glass;attr1=%f;attr2=%f;attr3=%f;attr4=%f;attr5=%f;attr6=%f;attr7=%f;attr8=%f", caso._rI, caso._na , caso._mg , caso._al , caso._k , caso._ca , caso._ba , caso._fe];
+    NSLog(@"%@", url_str);
     
-    NSString * url= 
+    NSURL *url = [NSURL URLWithString:url_str];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    
+    NSURLResponse *response;
+    NSError *error;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSString *strResponse = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+        
+    NSLog(@"%@",strResponse);
     
 #endif
     
