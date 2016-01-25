@@ -526,7 +526,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHQ-Re-51i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="168" y="1576"/>
+            <point key="canvasLocation" x="496" y="1570"/>
         </scene>
         <!--Case List View Controller - Case List-->
         <scene sceneID="5Z8-uf-5km">
@@ -590,7 +590,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5d-9e-q9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="80" y="730"/>
+            <point key="canvasLocation" x="206" y="790"/>
         </scene>
         <!--Detective List View Controller - Detective List-->
         <scene sceneID="g1U-38-FL6">
@@ -803,6 +803,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ova-74-UXY"/>
-        <segue reference="q8w-Ol-gB3"/>
+        <segue reference="jXT-Fy-prq"/>
     </inferredMetricsTieBreakers>
 </document>
