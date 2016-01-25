@@ -472,6 +472,13 @@
                                     <segue destination="191-Bu-lot" kind="push" id="xlk-2T-MKP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgZ-B3-7yS">
+                                <rect key="frame" x="58" y="326" width="205" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -488,6 +495,7 @@
                         <outlet property="RILabel" destination="2Bi-KA-ZLE" id="87O-TL-MXe"/>
                         <outlet property="SiLabel" destination="ret-Gd-lvc" id="yy9-Bb-WeQ"/>
                         <outlet property="TitleBar" destination="5Hn-Bu-K6D" id="2pu-Tm-P9a"/>
+                        <outlet property="TypeLabel" destination="SgZ-B3-7yS" id="JKw-dB-gWW"/>
                         <outlet property="botonImagen" destination="IDr-UV-FsT" id="foc-dw-4RS"/>
                     </connections>
                 </viewController>
@@ -794,7 +802,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="jXT-Fy-prq"/>
         <segue reference="ova-74-UXY"/>
+        <segue reference="q8w-Ol-gB3"/>
     </inferredMetricsTieBreakers>
 </document>
