@@ -61,6 +61,9 @@
 #ifdef VERSION2
     _selectType.hidden = YES;
 #endif
+#ifdef VERSION3
+    _selectType.hidden = YES;
+#endif
 }
 
 - (void)didReceiveMemoryWarning
@@ -187,6 +190,13 @@
 
 }
 - (IBAction)GuardaDatos:(id)sender {
+    #ifdef VERSION1
+        NSString * consulta = [NSString stringWithFormat:@"INSERT INTO 'caso' ('nombre','detective','ri','na','mg','al','si','k','ca','ba','fe','tipo') VALUES ('%@','%@','%f','%f','%f','%f','%f','%f','%f','%f','%f','%@')", caso._nombre , caso._detective , caso._rI , caso._na , caso._mg , caso._al , caso._si , caso._k , caso._ca , caso._ba , caso._fe , caso._tipoCristal];
+        [self.gestorBD executeQuery:consulta];
+    
+        //Consulta Base de datos.
+        NSLog(@"Guardadatos");
+    #endif
     #ifdef VERSION2
     
     if (caso._mg < 2.55){
@@ -264,18 +274,18 @@
     
     NSURLResponse *response;
     NSError *error;
+    //Realizamos la consulta
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    //Conversión de NSData a NSString
     NSString *strResponse = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-        
+    
+    //Mostramos el valor de la consulta a la etiqueta/label.
+    caso._tipoCristal = strResponse;
+    
     NSLog(@"%@",strResponse);
     
 #endif
-    
-    NSString * consulta = [NSString stringWithFormat:@"INSERT INTO 'caso' ('nombre','detective','ri','na','mg','al','si','k','ca','ba','fe','tipo') VALUES ('%@','%@','%f','%f','%f','%f','%f','%f','%f','%f','%f','%@')", caso._nombre , caso._detective , caso._rI , caso._na , caso._mg , caso._al , caso._si , caso._k , caso._ca , caso._ba , caso._fe , caso._tipoCristal];
-    [self.gestorBD executeQuery:consulta];
-    
-    //Consulta Base de datos.
-    NSLog(@"Guardadatos");
+
 }
 
 
