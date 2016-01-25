@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *selectDetective;
 @property (weak, nonatomic) IBOutlet UIPickerView *detectivePicker;
 
+@property (retain, nonatomic) NSData *responseData;
+
  //Sliders:
 @property (weak, nonatomic) IBOutlet UISlider *RISlider;
 @property (weak, nonatomic) IBOutlet UISlider *NaSlider;
