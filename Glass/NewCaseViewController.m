@@ -261,20 +261,13 @@
     
     NSURL *url = [NSURL URLWithString:url_str];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-    NSURLConnection *connection = [NSURLConnection connectionWithRequest:request delegate:self];
     
-    
-    if (connection) {
-        NSLog(@"Connecting...");
+    NSURLResponse *response;
+    NSError *error;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSString *strResponse = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
         
-        self.responseData = [[NSData alloc] init];
-        NSString *string = [NSString stringWithUTF8String:[self.responseData bytes]];
-        NSLog(@"%@", string);
-        
-    } else {
-        // Inform the user that the connection failed.
-        NSLog(@"ERROR: Unable to create connection.");
-    }
+    NSLog(@"%@",strResponse);
     
 #endif
     
