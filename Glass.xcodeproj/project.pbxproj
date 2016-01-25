@@ -72,6 +72,7 @@
 		CF7147EA1C3975370084F8AD /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
 		CF7843C11C4BF964002840DE /* DetectiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7843C01C4BF964002840DE /* DetectiveListViewController.m */; };
 		CF9B0F851C4ADC29009059E1 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
+		F3A06DE81C568AFF0032B91A /* DetectiveDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A06DE71C568AFF0032B91A /* DetectiveDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +91,7 @@
 		1F167F041C56794F00934000 /* Glass copy 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass copy 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F167F051C56794F00934000 /* Glass copy 2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glass copy 2-Info.plist"; path = "/Users/Aula1/Documents/Glass/Glass copy 2-Info.plist"; sourceTree = "<absolute>"; };
 		1F2E41721C46B1E900468CB4 /* prueba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prueba.jpg; sourceTree = "<group>"; };
-		1F45DAEA1C0CAD4600418917 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Glass.app; path = VERSION1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F45DAEA1C0CAD4600418917 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F45DAED1C0CAD4600418917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1F45DAF11C0CAD4600418917 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -129,6 +130,8 @@
 		CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetectiveViewController.m; sourceTree = "<group>"; };
 		F303ECEF1C4420E600A03C87 /* GlassTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassTypeViewController.h; sourceTree = "<group>"; };
 		F303ECF01C4420E600A03C87 /* GlassTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlassTypeViewController.m; sourceTree = "<group>"; };
+		F3A06DE61C568AFF0032B91A /* DetectiveDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectiveDetailViewController.h; sourceTree = "<group>"; };
+		F3A06DE71C568AFF0032B91A /* DetectiveDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectiveDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +246,8 @@
 				8443EB751C4422450099A11F /* GlassDetectiveViewController.m */,
 				8443EB771C4422D60099A11F /* CaseListViewController.h */,
 				8443EB781C4422D60099A11F /* CaseListViewController.m */,
+				F3A06DE61C568AFF0032B91A /* DetectiveDetailViewController.h */,
+				F3A06DE71C568AFF0032B91A /* DetectiveDetailViewController.m */,
 			);
 			path = Glass;
 			sourceTree = "<group>";
@@ -476,6 +481,7 @@
 				1F45DAFE1C0CAD4600418917 /* AppDelegate.m in Sources */,
 				CF7843C11C4BF964002840DE /* DetectiveListViewController.m in Sources */,
 				CF9B0F851C4ADC29009059E1 /* NewDetectiveViewController.m in Sources */,
+				F3A06DE81C568AFF0032B91A /* DetectiveDetailViewController.m in Sources */,
 				8443EB761C4422450099A11F /* GlassDetectiveViewController.m in Sources */,
 				8443EB791C4422D60099A11F /* CaseListViewController.m in Sources */,
 				CF6E57231C4AD5A40029495A /* Detective.m in Sources */,

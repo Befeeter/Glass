@@ -13,5 +13,5 @@
 @property (nonatomic) NSString * Nombre;
 @property (nonatomic) NSString * Apellidos;
 @property (nonatomic) NSString * Fecha;
-@property (nonatomic) int * IdPlaca;
+@property (nonatomic) int _IdPlaca;
 @end

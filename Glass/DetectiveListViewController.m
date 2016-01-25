@@ -8,8 +8,13 @@
 
 #import "DetectiveListViewController.h"
 #import "GestorBD.h"
+#import "DetectiveDetailViewController.h"
+#import "Detective.h"
 
-@interface DetectiveListViewController ()
+@interface DetectiveListViewController (){
+    
+    Detective *detective;
+}
 
 @property (nonatomic, strong) GestorBD* gestorBD;
 @property (nonatomic, strong) NSArray* arrayDatos;
@@ -65,9 +70,54 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     NSInteger indexOfNombre = [self.gestorBD.arrNombresCols indexOfObject:@"nombre"];
     NSInteger indexOfRol = [self.gestorBD.arrNombresCols indexOfObject:@"apellidos"];
+    
+    
+    
+    
+    
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [[self.arrayDatos objectAtIndex: indexPath.row] objectAtIndex:indexOfNombre]];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [[self.arrayDatos objectAtIndex: indexPath.row] objectAtIndex:indexOfRol]];
     return cell;
+    
+    
+    
 }
+
+-(void) tableView: (UITableView *) tableView accessoryButtonTappedForRowWithIndexPath: (NSIndexPath *)indexPath{
+    
+     detective._IdPlaca = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:0]intValue];
+     detective.nombre= [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:1]];
+    detective.apellidos= [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:2]];
+   //TERMINAR LO DE LA FECHA
+     
+    
+    
+[self performSegueWithIdentifier:@"seguedetective" sender:self];
+    
+    
+    
+}
+
+
+
+
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"seguedetective"]) {
+        DetectiveDetailViewController *destino = [segue destinationViewController];
+        destino.detectiveguardado= detective;
+    }
+
+
+}
+
+
+
+
+
+
+
+
 
 @end
