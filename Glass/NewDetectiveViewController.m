@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [scroller setScrollEnabled:YES];
+    [scroller setContentSize:CGSizeMake(320, 700)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,6 +59,7 @@
     [textField resignFirstResponder];
     return NO; //Retorna YES si se permiten saltos de linea
 }
+
 /*
 #pragma mark - Navigation
 
