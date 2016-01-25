@@ -510,7 +510,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHQ-Re-51i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="168" y="1576"/>
+            <point key="canvasLocation" x="496" y="1570"/>
         </scene>
         <!--Case List View Controller - Case List-->
         <scene sceneID="5Z8-uf-5km">
@@ -570,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5d-9e-q9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="80" y="730"/>
+            <point key="canvasLocation" x="206" y="790"/>
         </scene>
         <!--Detective List View Controller - Detective List-->
         <scene sceneID="g1U-38-FL6">
@@ -624,26 +624,82 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tabla" destination="KX3-HE-JG4" id="xm1-mc-WdB"/>
+                        <segue destination="aUp-Ih-YYo" kind="push" identifier="seguedetective" id="76A-zU-ctM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v4o-GM-HQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="967" y="720"/>
         </scene>
-        <!--View Controller - Detective Detail-->
+        <!--Detective Detail View Controller - Detective Detail-->
         <scene sceneID="FsP-YT-OcS">
             <objects>
-                <viewController title="Detective Detail" id="aUp-Ih-YYo" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lry-u6-uMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Detective Detail" id="aUp-Ih-YYo" customClass="DetectiveDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YWj-1A-gec"/>
+                        <viewControllerLayoutGuide type="bottom" id="hd6-wx-imh"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dLh-un-AB2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zm-Tx-tpZ">
+                                <rect key="frame" x="40" y="130" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzw-tg-nzL">
+                                <rect key="frame" x="40" y="221" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmc-Ej-PbQ">
+                                <rect key="frame" x="40" y="303" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvT-Aa-kqL">
+                                <rect key="frame" x="203" y="130" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoS-82-0wz">
+                                <rect key="frame" x="203" y="221" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vir-xM-7Tz">
+                                <rect key="frame" x="203" y="303" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u78-8j-1Kb">
+                                <rect key="frame" x="97" y="375" width="115" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9vM-wd-a6E"/>
+                    <navigationItem key="navigationItem" title="Detective Detail" id="9vM-wd-a6E"/>
+                    <connections>
+                        <outlet property="apellidos" destination="XoS-82-0wz" id="3mw-JT-tJZ"/>
+                        <outlet property="fecha" destination="vir-xM-7Tz" id="L2b-rQ-Vst"/>
+                        <outlet property="foto" destination="u78-8j-1Kb" id="vwO-Ot-8GP"/>
+                        <outlet property="nombre" destination="tvT-Aa-kqL" id="9Yj-FU-Wg3"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lry-u6-uMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1171" y="1529"/>
+            <point key="canvasLocation" x="1075" y="1570"/>
         </scene>
         <!--New Detective View Controller - New Detective-->
         <scene sceneID="QiN-8o-qXQ">
@@ -757,8 +813,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="ApellidosTextBox" destination="tq3-Dk-G5k" id="zM3-XD-iDa"/>
                         <outlet property="FechaPicker" destination="CLB-I5-t6n" id="xHH-Y7-XwF"/>
                         <outlet property="NombreTextBox" destination="JID-In-TRX" id="sMc-01-Uds"/>
-                        <outlet property="imageView" destination="x7d-ZD-1EW" id="FZz-Tp-rjb"/>
-                        <outlet property="scroller" destination="OAT-1O-DMe" id="o6l-r0-gLD"/>
+                        <segue destination="aUp-Ih-YYo" kind="push" identifier="seguedetective2" id="Pbc-CW-KmL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7d-2Z-tlo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -793,7 +848,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="76A-zU-ctM"/>
         <segue reference="ova-74-UXY"/>
-        <segue reference="q8w-Ol-gB3"/>
+        <segue reference="jXT-Fy-prq"/>
     </inferredMetricsTieBreakers>
 </document>
