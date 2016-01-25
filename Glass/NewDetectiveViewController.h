@@ -10,13 +10,17 @@
 
 @interface NewDetectiveViewController : UIViewController {
     IBOutlet UIScrollView *scroller;
+    
+    UIDatePicker *fechaPicker;
+    
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *NombreTextBox;
 
 @property (weak, nonatomic) IBOutlet UITextField *ApellidosTextBox;
+@property (weak, nonatomic) IBOutlet UITextField *fecha;
 
-@property (weak, nonatomic) IBOutlet UIDatePicker *FechaPicker;
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
