@@ -37,7 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    detective=[[Detective alloc]init];
     self.tabla.delegate = self;
     self.tabla.dataSource = self;
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
@@ -86,10 +86,11 @@
 -(void) tableView: (UITableView *) tableView accessoryButtonTappedForRowWithIndexPath: (NSIndexPath *)indexPath{
     
      detective._IdPlaca = [[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:0]intValue];
-     detective.nombre= [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:1]];
-    detective.apellidos= [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:2]];
+     detective._Nombre= [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:1]];
+    detective._Apellidos= [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:2]];
    //TERMINAR LO DE LA FECHA
-     
+    detective._Fecha= [NSString stringWithFormat:@"%@",[[self.arrayDatos objectAtIndex:indexPath.row] objectAtIndex:3]];
+    
     
     
 [self performSegueWithIdentifier:@"seguedetective" sender:self];
@@ -105,8 +106,8 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([[segue identifier] isEqualToString:@"seguedetective"]) {
-        DetectiveDetailViewController *destino = [segue destinationViewController];
-        destino.detectiveguardado= detective;
+        DetectiveDetailViewController *destination = [segue destinationViewController];
+        destination.detectiveguardado= detective;
     }
 
 

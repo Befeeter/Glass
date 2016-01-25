@@ -10,8 +10,8 @@
 
 @interface Detective : NSObject
 
-@property (nonatomic) NSString * Nombre;
-@property (nonatomic) NSString * Apellidos;
-@property (nonatomic) NSString * Fecha;
+@property (nonatomic) NSString *_Nombre;
+@property (nonatomic) NSString *_Apellidos;
+@property (nonatomic) NSString *_Fecha;
 @property (nonatomic) int _IdPlaca;
 @end

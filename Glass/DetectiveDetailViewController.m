@@ -12,6 +12,11 @@
 #import "GestorBD.h"
 
 @interface DetectiveDetailViewController ()
+
+
+@property (nonatomic, strong) GestorBD* gestorBD;
+@property (nonatomic, strong) NSArray* arrayDatos;
+@property (nonatomic) int idRegistro;
 - (void) cargarDatos;
 
 @end
@@ -20,14 +25,14 @@
 
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
     return self;
-}
+}*/
 
 - (void)viewDidLoad
 {
@@ -55,19 +60,17 @@
 */
 -(void) cargarDatos {
     
-    
-    
     if (self.detectiveguardado != NULL){
         
         
         // establezco los valores:
         
-        self.nombre.text =[NSString stringWithFormat:@"%@", self.detectiveguardado.Nombre];
+        self.nombre.text =[NSString stringWithFormat:@"%@", self.detectiveguardado._Nombre];
         
-        self.apellidos.text =[NSString stringWithFormat:@"%@", self.detectiveguardado.Apellidos];
+        self.apellidos.text =[NSString stringWithFormat:@"%@", self.detectiveguardado._Apellidos];
         
         
-        self.fecha.text =[NSString stringWithFormat:@"%@", self.detectiveguardado.Fecha];
+        self.fecha.text =[NSString stringWithFormat:@"%@", self.detectiveguardado._Fecha];
        
         
         
