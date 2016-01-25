@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Glass copy 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Glass copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Glass.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1F167ECC1C5678EF00934000</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F167EE91C56794F00934000</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1F45DAE91C0CAD4600418917</key>
 		<dict>
 			<key>primary</key>
