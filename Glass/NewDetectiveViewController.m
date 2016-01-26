@@ -59,13 +59,29 @@ UIToolbar *toolBar;
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space, doneBtn, nil]];
     [self.fecha setInputAccessoryView:toolBar];
-    
-    
-    
-    
-    
+}
+
+- (IBAction)chooseImage:(id)sender
+{
+    self.imagePicker = [[UIImagePickerController alloc] init];
+    self.imagePicker.delegate = self;
+    [self.imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    [self presentViewController:self.imagePicker animated:YES completion:nil];
     
 }
+
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    self.chosenImage = info[UIImagePickerControllerOriginalImage];
+    [self.imageView setImage:self.chosenImage];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil]; 
+}
+
 
 - (void) VerFechaSeleccionada{
     NSDateFormatter *formatter=[[NSDateFormatter alloc]init];

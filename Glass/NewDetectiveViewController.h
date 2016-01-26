@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewDetectiveViewController : UIViewController {
+@interface NewDetectiveViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     
     
     UIDatePicker *fechaPicker;
@@ -20,8 +20,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *ApellidosTextBox;
 @property (weak, nonatomic) IBOutlet UITextField *fecha;
 
-
-
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) UIImage *chosenImage;
+@property (strong, nonatomic) UIImagePickerController *imagePicker;
+
 
 @end
