@@ -527,7 +527,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="cell" textLabel="Eb8-ci-4Db" detailTextLabel="0ul-cw-nll" style="IBUITableViewCellStyleSubtitle" id="BOx-fa-jgr">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BOx-fa-jgr" id="A9Z-5g-Y6m">
                                             <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
@@ -587,7 +587,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="cell" textLabel="7FA-Fo-w4V" detailTextLabel="Tce-Cm-59G" style="IBUITableViewCellStyleSubtitle" id="9u9-dD-yR1">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9u9-dD-yR1" id="zTW-B0-aEE">
                                             <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
@@ -766,15 +766,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gdo-iz-b1r">
-                                <rect key="frame" x="134" y="230" width="99" height="30"/>
+                                <rect key="frame" x="41" y="268" width="240" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Choose Image"/>
                                 <connections>
                                     <action selector="chooseImage:" destination="sna-Zk-Oi5" eventType="touchUpInside" id="3f2-Ub-ZVY"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yh4-TF-3Dt">
-                                <rect key="frame" x="41" y="268" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-user-icon.jpg" id="yh4-TF-3Dt">
+                                <rect key="frame" x="39" y="268" width="240" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -812,6 +811,9 @@
             <point key="canvasLocation" x="-666" y="-32"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add-user-icon.jpg" width="1280" height="1024"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="iFH-DH-lPO"/>
         <segue reference="q8w-Ol-gB3"/>
