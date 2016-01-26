@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NewDetectiveViewController : UIViewController {
-    IBOutlet UIScrollView *scroller;
+    
     
     UIDatePicker *fechaPicker;
     

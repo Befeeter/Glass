@@ -8,12 +8,14 @@
 
 #import "NewDetectiveViewController.h"
 #import "DetectiveDetailViewController.h"
+#import "GestorBD.h"
 #import "Detective.h"
 
 @interface NewDetectiveViewController (){
     Detective *detective;
 }
 
+@property (nonatomic, strong) GestorBD* gestorBD;
 @end
 
 @implementation NewDetectiveViewController
@@ -33,15 +35,23 @@ UIToolbar *toolBar;
 
 - (void)viewDidLoad
 {
+    detective= [[Detective alloc] init];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [scroller setScrollEnabled:YES];
-    [scroller setContentSize:CGSizeMake(320, 700)];
+    
+    self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
+    
     
     fechaPicker=[[UIDatePicker alloc]init];
     fechaPicker.datePickerMode=UIDatePickerModeDate;
+    
+
+    
+    
     [self.fecha setInputView:fechaPicker];
     
+    
+        
     
     toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
     [toolBar setTintColor:[UIColor grayColor]];
@@ -49,7 +59,6 @@ UIToolbar *toolBar;
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space, doneBtn, nil]];
     [self.fecha setInputAccessoryView:toolBar];
-    
     
     
     
@@ -74,13 +83,24 @@ UIToolbar *toolBar;
 }
 
 - (IBAction)AsignaNombre:(id)sender {
+    detective._Nombre= self.NombreTextBox.text;
+    
     }
 
 - (IBAction)AsignaApellidos:(id)sender {
+    
+    detective._Apellidos= self.ApellidosTextBox.text;
 }
 - (IBAction)AsignaFecha:(id)sender {
+    detective._Fecha=self.fecha.text;
 }
+
+
 - (IBAction)GuardarDatos:(id)sender {
+       NSString * consulta= [NSString stringWithFormat:@"INSERT INTO 'detective' ('nombre','apellidos','fecha') VALUES ('%@','%@','%@')", detective._Nombre, detective._Apellidos, detective._Fecha];
+    [self.gestorBD executeQuery:consulta];
+    
+    NSLog(@"%@", detective._Fecha);
 }
 
 
