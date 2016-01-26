@@ -76,9 +76,10 @@
     self.BaLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._ba/total)*100];
     self.FeLabel.text = [NSString stringWithFormat:@"%.2f%%" , (self.casoGuardado._fe/total)*100];
         self.TypeLabel.text =[NSString stringWithFormat:@"%@", self.casoGuardado._tipoCristal];
-    UIImage *buttonBackground = [UIImage imageNamed:@"prueba.jpg"];
-    //UIImage *buttonBackground = [UIImage imageNamed:(@"@.jgp", self.casoGuardado._tipoCristal)];
-        [self.botonImagen setBackgroundImage:buttonBackground forState:UIControlStateNormal];
+    //UIImage *buttonBackground = [UIImage imageNamed:@"prueba.jpg"];
+    UIImage *buttonBackground = [UIImage imageNamed:(@"imagenesCasos/%@.png", self.casoGuardado._tipoCristal)];
+    //NSLog(@"imagenesCasos/%@.jgp", self.casoGuardado._tipoCristal);
+    [self.botonImagen setBackgroundImage:buttonBackground forState:UIControlStateNormal];
     }
     
     else{

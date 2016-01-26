@@ -72,6 +72,27 @@
 		1F45DB171C0CAD4700418917 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB151C0CAD4700418917 /* InfoPlist.strings */; };
 		1F45DB191C0CAD4700418917 /* GlassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB181C0CAD4700418917 /* GlassTests.m */; };
 		1F45DB231C0CAD5C00418917 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
+		840A71B81C57930500855B56 /* build wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B11C57930500855B56 /* build wind float.png */; };
+		840A71B91C57930500855B56 /* build wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B11C57930500855B56 /* build wind float.png */; };
+		840A71BA1C57930500855B56 /* build wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B11C57930500855B56 /* build wind float.png */; };
+		840A71BB1C57930500855B56 /* build wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B21C57930500855B56 /* build wind non-float.png */; };
+		840A71BC1C57930500855B56 /* build wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B21C57930500855B56 /* build wind non-float.png */; };
+		840A71BD1C57930500855B56 /* build wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B21C57930500855B56 /* build wind non-float.png */; };
+		840A71BE1C57930500855B56 /* containers.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B31C57930500855B56 /* containers.png */; };
+		840A71BF1C57930500855B56 /* containers.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B31C57930500855B56 /* containers.png */; };
+		840A71C01C57930500855B56 /* containers.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B31C57930500855B56 /* containers.png */; };
+		840A71C11C57930500855B56 /* headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B41C57930500855B56 /* headlamps.png */; };
+		840A71C21C57930500855B56 /* headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B41C57930500855B56 /* headlamps.png */; };
+		840A71C31C57930500855B56 /* headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B41C57930500855B56 /* headlamps.png */; };
+		840A71C41C57930500855B56 /* tableware.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B51C57930500855B56 /* tableware.png */; };
+		840A71C51C57930500855B56 /* tableware.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B51C57930500855B56 /* tableware.png */; };
+		840A71C61C57930500855B56 /* tableware.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B51C57930500855B56 /* tableware.png */; };
+		840A71C71C57930500855B56 /* vehic wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B61C57930500855B56 /* vehic wind float.png */; };
+		840A71C81C57930500855B56 /* vehic wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B61C57930500855B56 /* vehic wind float.png */; };
+		840A71C91C57930500855B56 /* vehic wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B61C57930500855B56 /* vehic wind float.png */; };
+		840A71CA1C57930500855B56 /* vehic wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B71C57930500855B56 /* vehic wind non-float.png */; };
+		840A71CB1C57930500855B56 /* vehic wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B71C57930500855B56 /* vehic wind non-float.png */; };
+		840A71CC1C57930500855B56 /* vehic wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B71C57930500855B56 /* vehic wind non-float.png */; };
 		843D1D901C1F35FA007365F5 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
 		8443EB761C4422450099A11F /* GlassDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB751C4422450099A11F /* GlassDetectiveViewController.m */; };
 		8443EB791C4422D60099A11F /* CaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB781C4422D60099A11F /* CaseListViewController.m */; };
@@ -123,6 +144,13 @@
 		1F45DB161C0CAD4700418917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F45DB181C0CAD4700418917 /* GlassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlassTests.m; sourceTree = "<group>"; };
 		1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		840A71B11C57930500855B56 /* build wind float.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "build wind float.png"; sourceTree = "<group>"; };
+		840A71B21C57930500855B56 /* build wind non-float.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "build wind non-float.png"; sourceTree = "<group>"; };
+		840A71B31C57930500855B56 /* containers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = containers.png; sourceTree = "<group>"; };
+		840A71B41C57930500855B56 /* headlamps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headlamps.png; sourceTree = "<group>"; };
+		840A71B51C57930500855B56 /* tableware.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableware.png; sourceTree = "<group>"; };
+		840A71B61C57930500855B56 /* vehic wind float.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vehic wind float.png"; sourceTree = "<group>"; };
+		840A71B71C57930500855B56 /* vehic wind non-float.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vehic wind non-float.png"; sourceTree = "<group>"; };
 		843D1D8E1C1F35FA007365F5 /* CaseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseDetailViewController.h; sourceTree = "<group>"; };
 		843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseDetailViewController.m; sourceTree = "<group>"; };
 		8443EB741C4422450099A11F /* GlassDetectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassDetectiveViewController.h; sourceTree = "<group>"; };
@@ -250,6 +278,7 @@
 		1F45DAF31C0CAD4600418917 /* Glass */ = {
 			isa = PBXGroup;
 			children = (
+				840A71B01C57930500855B56 /* imagenesCasos */,
 				1F167F121C56972E00934000 /* imagenesDetectives */,
 				1F2E41721C46B1E900468CB4 /* prueba.jpg */,
 				CF6E571E1C4A9F9F0029495A /* Case.h */,
@@ -310,6 +339,20 @@
 				1F45DB151C0CAD4700418917 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		840A71B01C57930500855B56 /* imagenesCasos */ = {
+			isa = PBXGroup;
+			children = (
+				840A71B11C57930500855B56 /* build wind float.png */,
+				840A71B21C57930500855B56 /* build wind non-float.png */,
+				840A71B31C57930500855B56 /* containers.png */,
+				840A71B41C57930500855B56 /* headlamps.png */,
+				840A71B51C57930500855B56 /* tableware.png */,
+				840A71B61C57930500855B56 /* vehic wind float.png */,
+				840A71B71C57930500855B56 /* vehic wind non-float.png */,
+			);
+			path = imagenesCasos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,14 +467,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840A71C81C57930500855B56 /* vehic wind float.png in Resources */,
+				840A71CB1C57930500855B56 /* vehic wind non-float.png in Resources */,
 				1F167F171C56972E00934000 /* black_officer_user_284.jpg in Resources */,
 				1F167EDF1C5678EF00934000 /* Images.xcassets in Resources */,
 				1F167EE01C5678EF00934000 /* prueba.jpg in Resources */,
+				840A71BF1C57930500855B56 /* containers.png in Resources */,
 				1F167EE11C5678EF00934000 /* InfoPlist.strings in Resources */,
 				1F167F1A1C56972E00934000 /* user.png in Resources */,
+				840A71BC1C57930500855B56 /* build wind non-float.png in Resources */,
+				840A71C51C57930500855B56 /* tableware.png in Resources */,
 				1F167F1D1C56972E00934000 /* user_91161.jpg in Resources */,
 				1F167EE21C5678EF00934000 /* Glass.sqlite in Resources */,
+				840A71B91C57930500855B56 /* build wind float.png in Resources */,
 				1F167EE31C5678EF00934000 /* Main.storyboard in Resources */,
+				840A71C21C57930500855B56 /* headlamps.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,14 +489,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840A71C91C57930500855B56 /* vehic wind float.png in Resources */,
+				840A71CC1C57930500855B56 /* vehic wind non-float.png in Resources */,
 				1F167F181C56972E00934000 /* black_officer_user_284.jpg in Resources */,
 				1F167EFC1C56794F00934000 /* Images.xcassets in Resources */,
 				1F167EFD1C56794F00934000 /* prueba.jpg in Resources */,
+				840A71C01C57930500855B56 /* containers.png in Resources */,
 				1F167EFE1C56794F00934000 /* InfoPlist.strings in Resources */,
 				1F167F1B1C56972E00934000 /* user.png in Resources */,
+				840A71BD1C57930500855B56 /* build wind non-float.png in Resources */,
+				840A71C61C57930500855B56 /* tableware.png in Resources */,
 				1F167F1E1C56972E00934000 /* user_91161.jpg in Resources */,
 				1F167EFF1C56794F00934000 /* Glass.sqlite in Resources */,
+				840A71BA1C57930500855B56 /* build wind float.png in Resources */,
 				1F167F001C56794F00934000 /* Main.storyboard in Resources */,
+				840A71C31C57930500855B56 /* headlamps.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,14 +511,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840A71C71C57930500855B56 /* vehic wind float.png in Resources */,
+				840A71CA1C57930500855B56 /* vehic wind non-float.png in Resources */,
 				1F167F161C56972E00934000 /* black_officer_user_284.jpg in Resources */,
 				1F45DB061C0CAD4600418917 /* Images.xcassets in Resources */,
 				1F2E41731C46B1E900468CB4 /* prueba.jpg in Resources */,
+				840A71BE1C57930500855B56 /* containers.png in Resources */,
 				1F45DAF81C0CAD4600418917 /* InfoPlist.strings in Resources */,
 				1F167F191C56972E00934000 /* user.png in Resources */,
+				840A71BB1C57930500855B56 /* build wind non-float.png in Resources */,
+				840A71C41C57930500855B56 /* tableware.png in Resources */,
 				1F167F1C1C56972E00934000 /* user_91161.jpg in Resources */,
 				CF0299FD1C1F2C780045C8E5 /* Glass.sqlite in Resources */,
+				840A71B81C57930500855B56 /* build wind float.png in Resources */,
 				1F45DB011C0CAD4600418917 /* Main.storyboard in Resources */,
+				840A71C11C57930500855B56 /* headlamps.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

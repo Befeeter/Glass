@@ -38,7 +38,6 @@
 @end
 
 @implementation NewCaseViewController
-
 - (void)viewDidLoad
 {
     caso = [[Case alloc] init];
@@ -48,7 +47,7 @@
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
     self.NameText.text = @"Nombre";
     caso._tipoCristal = @"Select Type Glass";
-    _glassArray = @[@"Edificio FLotado",@"Edificio no Flotado",@"Vehiculo Flotado",@"Vehiculo no Flotado",@"Contenedor", @"Vajilla",@"Lamparas"];
+    _glassArray = @[@"build wind float",@"build wind non-float",@"vehic wind float",@"vehic wind non-float",@"containers", @"tableware",@"headlamps"];
     
     [self cargarDetectives];
     if (_detectiveArr == NULL)
@@ -57,11 +56,14 @@
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
     self.glassType.tag = 1;
     self.detectivePicker.tag = 2;
+    ;
     
 #ifdef VERSION2
+    [_botonGuardar setTitle:@"Ok" forState:UIControlStateNormal];
     _selectType.hidden = YES;
 #endif
 #ifdef VERSION3
+    [_botonGuardar setTitle:@"Ok" forState:UIControlStateNormal];
     _selectType.hidden = YES;
 #endif
 }
@@ -82,7 +84,7 @@
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
     if (pickerView.tag == 1){
-    NSLog(@"Soy el picker 1");
+    //NSLog(@"Soy el picker 1");
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 22)];
     //label.backgroundColor = [UIColor lightGrayColor];
     label.textColor = [UIColor blueColor];
@@ -195,14 +197,15 @@
         [self.gestorBD executeQuery:consulta];
     
         //Consulta Base de datos.
-        NSLog(@"Guardadatos");
+        NSLog(@"Guarda datos");
     #endif
+    
     #ifdef VERSION2
     
     if (caso._mg < 2.55){
         if (caso._na < 13.82){
             if (caso._rI < 1.52){
-                caso._tipoCristal = @"Container";
+                caso._tipoCristal = @"containers";
             }
             else{
                 caso._tipoCristal = @"build wind non-float";
@@ -262,11 +265,11 @@
         }
     }
     
-    
+    NSLog(@"%@",caso._tipoCristal);
 #endif
 
 #ifdef VERSION3
-    NSString * url_str = [NSString stringWithFormat:@"http://192.168.118.210:8080/WekaWrapper/glass;attr1=%f;attr2=%f;attr3=%f;attr4=%f;attr5=%f;attr6=%f;attr7=%f;attr8=%f", caso._rI, caso._na , caso._mg , caso._al , caso._k , caso._ca , caso._ba , caso._fe];
+    NSString * url_str = [NSString stringWithFormat:@"http://www.manelme.com/WekaWrapper/glass;attr1=%f;attr2=%f;attr3=%f;attr4=%f;attr5=%f;attr6=%f;attr7=%f;attr8=%f", caso._rI, caso._na , caso._mg , caso._al , caso._k , caso._ca , caso._ba , caso._fe];
     NSLog(@"%@", url_str);
     
     NSURL *url = [NSURL URLWithString:url_str];

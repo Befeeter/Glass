@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *NameText;
 @property (weak, nonatomic) IBOutlet UIButton *selectDetective;
 @property (weak, nonatomic) IBOutlet UIPickerView *detectivePicker;
+@property (nonatomic,retain) IBOutlet UIButton *botonGuardar;
 
 @property (retain, nonatomic) NSData *responseData;
 
