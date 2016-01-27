@@ -458,7 +458,6 @@
                                 </state>
                                 <connections>
                                     <action selector="botonImagen:" destination="CxD-Jh-gPg" eventType="touchUpInside" id="I2B-Y5-C7k"/>
-                                    <segue destination="191-Bu-lot" kind="push" id="xlk-2T-MKP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Composition glass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xXS-1y-ehi">
@@ -490,27 +489,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eX1-Od-c6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="115" y="1504"/>
-        </scene>
-        <!--Glass Type View Controller - Glass Type-->
-        <scene sceneID="9Qu-bm-I4O">
-            <objects>
-                <viewController id="191-Bu-lot" customClass="GlassTypeViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RlL-g1-Iuk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="iME-iZ-1Dc">
-                                <rect key="frame" x="33" y="116" width="267" height="337"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Glass Type" id="iHT-Do-Zbt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sHQ-Re-51i" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="762" y="1504"/>
         </scene>
         <!--Case List View Controller - Case List-->
         <scene sceneID="5Z8-uf-5km">
@@ -636,7 +614,7 @@
             <objects>
                 <viewController title="Detective Detail" id="aUp-Ih-YYo" customClass="DetectiveDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dLh-un-AB2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zm-Tx-tpZ">
@@ -822,8 +800,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="q8w-Ol-gB3"/>
+        <segue reference="hAb-p7-14b"/>
         <segue reference="ova-74-UXY"/>
-        <segue reference="76A-zU-ctM"/>
+        <segue reference="q8w-Ol-gB3"/>
     </inferredMetricsTieBreakers>
 </document>

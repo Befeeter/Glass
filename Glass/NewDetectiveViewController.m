@@ -6,6 +6,8 @@
 //  Copyright (c) 2016 grupo 04. All rights reserved.
 //
 
+
+#import "DetectiveListViewController.h"
 #import "NewDetectiveViewController.h"
 #import "DetectiveDetailViewController.h"
 #import "GestorBD.h"
@@ -150,8 +152,18 @@ UIToolbar *toolBar;
         DetectiveDetailViewController *destination = [segue destinationViewController];
         destination.detectiveguardado= detective;
     }
+    
+    
+    
 
 
+}
+
+
+- (IBAction)regresandoLista:(UIStoryboardSegue *)segue{
+     *controlador = [segue sourceViewController];
+   
+    [self.tableView reloadData];
 }
 
 
