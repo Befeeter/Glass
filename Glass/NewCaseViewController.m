@@ -208,6 +208,16 @@
         [self.gestorBD executeQuery:consulta];
          [self.delegate editionDidFinished];         //Consulta Base de datos.
         NSLog(@"Guarda datos");
+    
+        //Consulta Base de datos.
+        //NSLog(@"Guarda datos");
+        NSString * mensaje = [NSString stringWithFormat:@"The Case '%@' has been created", caso._nombre];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Case Created"
+                                                    message:mensaje
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+        [alert show];
     #endif
     
     #ifdef VERSION2

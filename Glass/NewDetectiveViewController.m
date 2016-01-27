@@ -61,6 +61,21 @@ UIToolbar *toolBar;
     [self.fecha setInputView:fechaPicker];
     
     
+    
+    NSCalendar *gregorian = [NSCalendar currentCalendar];
+    NSDate *currentDate = [NSDate date];
+    
+    
+    NSLog(@"La fecha actual es%@",currentDate);
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    
+   
+    NSDate *maxDate = [gregorian dateByAddingComponents:comps toDate:currentDate  options:0];
+    
+        fechaPicker.maximumDate = maxDate;
+    
+    
+    
     toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
     [toolBar setTintColor:[UIColor grayColor]];
     UIBarButtonItem *doneBtn= [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action: @selector(VerFechaSeleccionada)];
@@ -99,6 +114,9 @@ UIToolbar *toolBar;
                      
                      
                      }
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
