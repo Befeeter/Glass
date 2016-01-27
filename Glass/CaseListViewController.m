@@ -53,6 +53,15 @@
     self.tabla.dataSource = self;
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
     [self cargarDatos];
+    
+    
+#ifdef VERSION2
+    _addCase.enabled = NO;
+#endif
+    
+#ifdef VERSION3
+    _addCase.enabled = NO;
+#endif
 }
 -(IBAction)addRegistro:(id)sender{
     //self.idRegistroEditar = -1;

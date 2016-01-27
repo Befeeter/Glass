@@ -13,6 +13,7 @@
 @interface CaseListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,NewCaseViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tabla;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addCase;
 
 
 -(IBAction)addRegistro:(id)sender;

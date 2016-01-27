@@ -58,13 +58,8 @@ UIToolbar *toolBar;
     fechaPicker=[[UIDatePicker alloc]init];
     fechaPicker.datePickerMode=UIDatePickerModeDate;
     
-
-    
-    
     [self.fecha setInputView:fechaPicker];
     
-    
-        
     
     toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
     [toolBar setTintColor:[UIColor grayColor]];

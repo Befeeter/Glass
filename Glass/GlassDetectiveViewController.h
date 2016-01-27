@@ -9,4 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface GlassDetectiveViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *botonConsultar;
 @end
