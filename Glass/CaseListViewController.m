@@ -79,6 +79,32 @@
     return cell;
 }
 
+-(void) tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    int idRegistro;
+    NSString *consulta;
+    
+    
+    
+    if (editingStyle != UITableViewCellEditingStyleDelete) return;
+    
+    NSInteger indexOfId = [self.gestorBD.arrNombresCols indexOfObject:@"id_caso"];
+    
+    idRegistro = [[[self.arrayDatos objectAtIndex:indexPath.row]
+                   objectAtIndex:indexOfId]intValue];
+    
+    
+    consulta = [NSString stringWithFormat:@"delete from caso where id_caso=%d",idRegistro];
+    
+    [self.gestorBD executeQuery:consulta];
+    [self cargarDatos];
+}
+
+
+
+
 -(void) tableView: (UITableView *) tableView accessoryButtonTappedForRowWithIndexPath: (NSIndexPath *)indexPath{
     
     

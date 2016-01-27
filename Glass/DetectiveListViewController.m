@@ -66,6 +66,29 @@
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.arrayDatos.count;
 }
+
+-(void) tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    int idRegistro;
+    NSString *consulta;
+    
+    
+    
+    if (editingStyle != UITableViewCellEditingStyleDelete) return;
+    
+      NSInteger indexOfId = [self.gestorBD.arrNombresCols indexOfObject:@"id_placa"];
+    
+    idRegistro = [[[self.arrayDatos objectAtIndex:indexPath.row]
+                   objectAtIndex:indexOfId]intValue];
+    
+    
+    consulta = [NSString stringWithFormat:@"delete from detective where id_placa=%d",idRegistro];
+    
+    [self.gestorBD executeQuery:consulta];
+    [self cargarDatos];
+}
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     NSInteger indexOfNombre = [self.gestorBD.arrNombresCols indexOfObject:@"nombre"];
