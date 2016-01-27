@@ -7,55 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F167ECE1C5678EF00934000 /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
-		1F167ECF1C5678EF00934000 /* NewCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB031C0CAD4600418917 /* NewCaseViewController.m */; };
-		1F167ED01C5678EF00934000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAFD1C0CAD4600418917 /* AppDelegate.m */; };
-		1F167ED11C5678EF00934000 /* DetectiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7843C01C4BF964002840DE /* DetectiveListViewController.m */; };
-		1F167ED21C5678EF00934000 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
-		1F167ED31C5678EF00934000 /* GlassDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB751C4422450099A11F /* GlassDetectiveViewController.m */; };
-		1F167ED41C5678EF00934000 /* CaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB781C4422D60099A11F /* CaseListViewController.m */; };
-		1F167ED51C5678EF00934000 /* Detective.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E57221C4AD5A40029495A /* Detective.m */; };
-		1F167ED61C5678EF00934000 /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E571F1C4A9F9F0029495A /* Case.m */; };
-		1F167ED71C5678EF00934000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAF91C0CAD4600418917 /* main.m */; };
-		1F167ED81C5678EF00934000 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
-		1F167EDA1C5678EF00934000 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
-		1F167EDB1C5678EF00934000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
-		1F167EDC1C5678EF00934000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
-		1F167EDD1C5678EF00934000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
-		1F167EDF1C5678EF00934000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB051C0CAD4600418917 /* Images.xcassets */; };
-		1F167EE01C5678EF00934000 /* prueba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E41721C46B1E900468CB4 /* prueba.jpg */; };
-		1F167EE11C5678EF00934000 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAF61C0CAD4600418917 /* InfoPlist.strings */; };
-		1F167EE21C5678EF00934000 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
-		1F167EE31C5678EF00934000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAFF1C0CAD4600418917 /* Main.storyboard */; };
-		1F167EEB1C56794F00934000 /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
-		1F167EEC1C56794F00934000 /* NewCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB031C0CAD4600418917 /* NewCaseViewController.m */; };
-		1F167EED1C56794F00934000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAFD1C0CAD4600418917 /* AppDelegate.m */; };
-		1F167EEE1C56794F00934000 /* DetectiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7843C01C4BF964002840DE /* DetectiveListViewController.m */; };
-		1F167EEF1C56794F00934000 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
-		1F167EF01C56794F00934000 /* GlassDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB751C4422450099A11F /* GlassDetectiveViewController.m */; };
-		1F167EF11C56794F00934000 /* CaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB781C4422D60099A11F /* CaseListViewController.m */; };
-		1F167EF21C56794F00934000 /* Detective.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E57221C4AD5A40029495A /* Detective.m */; };
-		1F167EF31C56794F00934000 /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E571F1C4A9F9F0029495A /* Case.m */; };
-		1F167EF41C56794F00934000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAF91C0CAD4600418917 /* main.m */; };
-		1F167EF51C56794F00934000 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
-		1F167EF71C56794F00934000 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
-		1F167EF81C56794F00934000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
-		1F167EF91C56794F00934000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
-		1F167EFA1C56794F00934000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
-		1F167EFC1C56794F00934000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB051C0CAD4600418917 /* Images.xcassets */; };
-		1F167EFD1C56794F00934000 /* prueba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E41721C46B1E900468CB4 /* prueba.jpg */; };
-		1F167EFE1C56794F00934000 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAF61C0CAD4600418917 /* InfoPlist.strings */; };
-		1F167EFF1C56794F00934000 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
-		1F167F001C56794F00934000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAFF1C0CAD4600418917 /* Main.storyboard */; };
 		1F167F161C56972E00934000 /* black_officer_user_284.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F131C56972E00934000 /* black_officer_user_284.jpg */; };
-		1F167F171C56972E00934000 /* black_officer_user_284.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F131C56972E00934000 /* black_officer_user_284.jpg */; };
-		1F167F181C56972E00934000 /* black_officer_user_284.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F131C56972E00934000 /* black_officer_user_284.jpg */; };
 		1F167F191C56972E00934000 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F141C56972E00934000 /* user.png */; };
-		1F167F1A1C56972E00934000 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F141C56972E00934000 /* user.png */; };
-		1F167F1B1C56972E00934000 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F141C56972E00934000 /* user.png */; };
 		1F167F1C1C56972E00934000 /* user_91161.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F151C56972E00934000 /* user_91161.jpg */; };
-		1F167F1D1C56972E00934000 /* user_91161.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F151C56972E00934000 /* user_91161.jpg */; };
-		1F167F1E1C56972E00934000 /* user_91161.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F151C56972E00934000 /* user_91161.jpg */; };
 		1F2E41731C46B1E900468CB4 /* prueba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E41721C46B1E900468CB4 /* prueba.jpg */; };
 		1F45DAEE1C0CAD4600418917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
 		1F45DAF01C0CAD4600418917 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
@@ -73,38 +27,86 @@
 		1F45DB191C0CAD4700418917 /* GlassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB181C0CAD4700418917 /* GlassTests.m */; };
 		1F45DB231C0CAD5C00418917 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
 		840A71B81C57930500855B56 /* build wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B11C57930500855B56 /* build wind float.png */; };
-		840A71B91C57930500855B56 /* build wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B11C57930500855B56 /* build wind float.png */; };
-		840A71BA1C57930500855B56 /* build wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B11C57930500855B56 /* build wind float.png */; };
 		840A71BB1C57930500855B56 /* build wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B21C57930500855B56 /* build wind non-float.png */; };
-		840A71BC1C57930500855B56 /* build wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B21C57930500855B56 /* build wind non-float.png */; };
-		840A71BD1C57930500855B56 /* build wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B21C57930500855B56 /* build wind non-float.png */; };
 		840A71BE1C57930500855B56 /* containers.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B31C57930500855B56 /* containers.png */; };
-		840A71BF1C57930500855B56 /* containers.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B31C57930500855B56 /* containers.png */; };
-		840A71C01C57930500855B56 /* containers.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B31C57930500855B56 /* containers.png */; };
 		840A71C11C57930500855B56 /* headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B41C57930500855B56 /* headlamps.png */; };
-		840A71C21C57930500855B56 /* headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B41C57930500855B56 /* headlamps.png */; };
-		840A71C31C57930500855B56 /* headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B41C57930500855B56 /* headlamps.png */; };
 		840A71C41C57930500855B56 /* tableware.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B51C57930500855B56 /* tableware.png */; };
-		840A71C51C57930500855B56 /* tableware.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B51C57930500855B56 /* tableware.png */; };
-		840A71C61C57930500855B56 /* tableware.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B51C57930500855B56 /* tableware.png */; };
 		840A71C71C57930500855B56 /* vehic wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B61C57930500855B56 /* vehic wind float.png */; };
-		840A71C81C57930500855B56 /* vehic wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B61C57930500855B56 /* vehic wind float.png */; };
-		840A71C91C57930500855B56 /* vehic wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B61C57930500855B56 /* vehic wind float.png */; };
 		840A71CA1C57930500855B56 /* vehic wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B71C57930500855B56 /* vehic wind non-float.png */; };
-		840A71CB1C57930500855B56 /* vehic wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B71C57930500855B56 /* vehic wind non-float.png */; };
-		840A71CC1C57930500855B56 /* vehic wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B71C57930500855B56 /* vehic wind non-float.png */; };
 		843D1D901C1F35FA007365F5 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
 		8443EB761C4422450099A11F /* GlassDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB751C4422450099A11F /* GlassDetectiveViewController.m */; };
 		8443EB791C4422D60099A11F /* CaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB781C4422D60099A11F /* CaseListViewController.m */; };
 		CE0B53081C57CF3200A94DD3 /* add-user-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0B53071C57CF3200A94DD3 /* add-user-icon.jpg */; };
-		CE0B53091C57CF3200A94DD3 /* add-user-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0B53071C57CF3200A94DD3 /* add-user-icon.jpg */; };
-		CE0B530A1C57CF3200A94DD3 /* add-user-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0B53071C57CF3200A94DD3 /* add-user-icon.jpg */; };
 		CF0299FD1C1F2C780045C8E5 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
 		CF6E57201C4A9F9F0029495A /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E571F1C4A9F9F0029495A /* Case.m */; };
 		CF6E57231C4AD5A40029495A /* Detective.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E57221C4AD5A40029495A /* Detective.m */; };
 		CF7147EA1C3975370084F8AD /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
 		CF7843C11C4BF964002840DE /* DetectiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7843C01C4BF964002840DE /* DetectiveListViewController.m */; };
 		CF9B0F851C4ADC29009059E1 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
+		F30A2DD51C5984A700FEEA48 /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
+		F30A2DD61C5984A700FEEA48 /* NewCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB031C0CAD4600418917 /* NewCaseViewController.m */; };
+		F30A2DD71C5984A700FEEA48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAFD1C0CAD4600418917 /* AppDelegate.m */; };
+		F30A2DD81C5984A700FEEA48 /* DetectiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7843C01C4BF964002840DE /* DetectiveListViewController.m */; };
+		F30A2DD91C5984A700FEEA48 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
+		F30A2DDA1C5984A700FEEA48 /* DetectiveDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A06DE71C568AFF0032B91A /* DetectiveDetailViewController.m */; };
+		F30A2DDB1C5984A700FEEA48 /* GlassDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB751C4422450099A11F /* GlassDetectiveViewController.m */; };
+		F30A2DDC1C5984A700FEEA48 /* CaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB781C4422D60099A11F /* CaseListViewController.m */; };
+		F30A2DDD1C5984A700FEEA48 /* Detective.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E57221C4AD5A40029495A /* Detective.m */; };
+		F30A2DDE1C5984A700FEEA48 /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E571F1C4A9F9F0029495A /* Case.m */; };
+		F30A2DDF1C5984A700FEEA48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAF91C0CAD4600418917 /* main.m */; };
+		F30A2DE01C5984A700FEEA48 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
+		F30A2DE21C5984A700FEEA48 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
+		F30A2DE31C5984A700FEEA48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
+		F30A2DE41C5984A700FEEA48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
+		F30A2DE51C5984A700FEEA48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
+		F30A2DE71C5984A700FEEA48 /* vehic wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B61C57930500855B56 /* vehic wind float.png */; };
+		F30A2DE81C5984A700FEEA48 /* vehic wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B71C57930500855B56 /* vehic wind non-float.png */; };
+		F30A2DE91C5984A700FEEA48 /* black_officer_user_284.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F131C56972E00934000 /* black_officer_user_284.jpg */; };
+		F30A2DEA1C5984A700FEEA48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB051C0CAD4600418917 /* Images.xcassets */; };
+		F30A2DEB1C5984A700FEEA48 /* prueba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E41721C46B1E900468CB4 /* prueba.jpg */; };
+		F30A2DEC1C5984A700FEEA48 /* containers.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B31C57930500855B56 /* containers.png */; };
+		F30A2DED1C5984A700FEEA48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAF61C0CAD4600418917 /* InfoPlist.strings */; };
+		F30A2DEE1C5984A700FEEA48 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F141C56972E00934000 /* user.png */; };
+		F30A2DEF1C5984A700FEEA48 /* build wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B21C57930500855B56 /* build wind non-float.png */; };
+		F30A2DF01C5984A700FEEA48 /* tableware.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B51C57930500855B56 /* tableware.png */; };
+		F30A2DF11C5984A700FEEA48 /* user_91161.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F151C56972E00934000 /* user_91161.jpg */; };
+		F30A2DF21C5984A700FEEA48 /* add-user-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0B53071C57CF3200A94DD3 /* add-user-icon.jpg */; };
+		F30A2DF31C5984A700FEEA48 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
+		F30A2DF41C5984A700FEEA48 /* build wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B11C57930500855B56 /* build wind float.png */; };
+		F30A2DF51C5984A700FEEA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAFF1C0CAD4600418917 /* Main.storyboard */; };
+		F30A2DF61C5984A700FEEA48 /* headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B41C57930500855B56 /* headlamps.png */; };
+		F30A2DFE1C5984B400FEEA48 /* GestorBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7147E91C3975370084F8AD /* GestorBD.m */; };
+		F30A2DFF1C5984B400FEEA48 /* NewCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DB031C0CAD4600418917 /* NewCaseViewController.m */; };
+		F30A2E001C5984B400FEEA48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAFD1C0CAD4600418917 /* AppDelegate.m */; };
+		F30A2E011C5984B400FEEA48 /* DetectiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7843C01C4BF964002840DE /* DetectiveListViewController.m */; };
+		F30A2E021C5984B400FEEA48 /* NewDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */; };
+		F30A2E031C5984B400FEEA48 /* DetectiveDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A06DE71C568AFF0032B91A /* DetectiveDetailViewController.m */; };
+		F30A2E041C5984B400FEEA48 /* GlassDetectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB751C4422450099A11F /* GlassDetectiveViewController.m */; };
+		F30A2E051C5984B400FEEA48 /* CaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EB781C4422D60099A11F /* CaseListViewController.m */; };
+		F30A2E061C5984B400FEEA48 /* Detective.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E57221C4AD5A40029495A /* Detective.m */; };
+		F30A2E071C5984B400FEEA48 /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6E571F1C4A9F9F0029495A /* Case.m */; };
+		F30A2E081C5984B400FEEA48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DAF91C0CAD4600418917 /* main.m */; };
+		F30A2E091C5984B400FEEA48 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D1D8F1C1F35FA007365F5 /* CaseDetailViewController.m */; };
+		F30A2E0B1C5984B400FEEA48 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DB221C0CAD5C00418917 /* libsqlite3.dylib */; };
+		F30A2E0C1C5984B400FEEA48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAEF1C0CAD4600418917 /* CoreGraphics.framework */; };
+		F30A2E0D1C5984B400FEEA48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAF11C0CAD4600418917 /* UIKit.framework */; };
+		F30A2E0E1C5984B400FEEA48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F45DAED1C0CAD4600418917 /* Foundation.framework */; };
+		F30A2E101C5984B400FEEA48 /* vehic wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B61C57930500855B56 /* vehic wind float.png */; };
+		F30A2E111C5984B400FEEA48 /* vehic wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B71C57930500855B56 /* vehic wind non-float.png */; };
+		F30A2E121C5984B400FEEA48 /* black_officer_user_284.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F131C56972E00934000 /* black_officer_user_284.jpg */; };
+		F30A2E131C5984B400FEEA48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DB051C0CAD4600418917 /* Images.xcassets */; };
+		F30A2E141C5984B400FEEA48 /* prueba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E41721C46B1E900468CB4 /* prueba.jpg */; };
+		F30A2E151C5984B400FEEA48 /* containers.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B31C57930500855B56 /* containers.png */; };
+		F30A2E161C5984B400FEEA48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAF61C0CAD4600418917 /* InfoPlist.strings */; };
+		F30A2E171C5984B400FEEA48 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F141C56972E00934000 /* user.png */; };
+		F30A2E181C5984B400FEEA48 /* build wind non-float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B21C57930500855B56 /* build wind non-float.png */; };
+		F30A2E191C5984B400FEEA48 /* tableware.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B51C57930500855B56 /* tableware.png */; };
+		F30A2E1A1C5984B400FEEA48 /* user_91161.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F167F151C56972E00934000 /* user_91161.jpg */; };
+		F30A2E1B1C5984B400FEEA48 /* add-user-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0B53071C57CF3200A94DD3 /* add-user-icon.jpg */; };
+		F30A2E1C1C5984B400FEEA48 /* Glass.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CF0299FC1C1F2C780045C8E5 /* Glass.sqlite */; };
+		F30A2E1D1C5984B400FEEA48 /* build wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B11C57930500855B56 /* build wind float.png */; };
+		F30A2E1E1C5984B400FEEA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAFF1C0CAD4600418917 /* Main.storyboard */; };
+		F30A2E1F1C5984B400FEEA48 /* headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B41C57930500855B56 /* headlamps.png */; };
 		F3A06DE81C568AFF0032B91A /* DetectiveDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A06DE71C568AFF0032B91A /* DetectiveDetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -119,9 +121,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F167EE71C5678EF00934000 /* Glass copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F167EE81C5678EF00934000 /* Glass copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glass copy-Info.plist"; path = "/Users/Aula1/Documents/Glass/Glass copy-Info.plist"; sourceTree = "<absolute>"; };
-		1F167F041C56794F00934000 /* Glass copy 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass copy 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F167F051C56794F00934000 /* Glass copy 2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glass copy 2-Info.plist"; path = "/Users/Aula1/Documents/Glass/Glass copy 2-Info.plist"; sourceTree = "<absolute>"; };
 		1F167F131C56972E00934000 /* black_officer_user_284.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black_officer_user_284.jpg; sourceTree = "<group>"; };
 		1F167F141C56972E00934000 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
@@ -174,33 +174,15 @@
 		CF9B0F841C4ADC29009059E1 /* NewDetectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetectiveViewController.m; sourceTree = "<group>"; };
 		F303ECEF1C4420E600A03C87 /* GlassTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassTypeViewController.h; sourceTree = "<group>"; };
 		F303ECF01C4420E600A03C87 /* GlassTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlassTypeViewController.m; sourceTree = "<group>"; };
+		F30A2DFA1C5984A700FEEA48 /* Glass copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30A2DFB1C5984A700FEEA48 /* Glass copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glass copy2-Info.plist"; path = "/Users/tarik/Desktop/Proyecto/Glass/Glass copy2-Info.plist"; sourceTree = "<absolute>"; };
+		F30A2E231C5984B400FEEA48 /* Glass copy 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass copy 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30A2E241C5984B400FEEA48 /* Glass copy 22-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glass copy 22-Info.plist"; path = "/Users/tarik/Desktop/Proyecto/Glass/Glass copy 22-Info.plist"; sourceTree = "<absolute>"; };
 		F3A06DE61C568AFF0032B91A /* DetectiveDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectiveDetailViewController.h; sourceTree = "<group>"; };
 		F3A06DE71C568AFF0032B91A /* DetectiveDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectiveDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F167ED91C5678EF00934000 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F167EDA1C5678EF00934000 /* libsqlite3.dylib in Frameworks */,
-				1F167EDB1C5678EF00934000 /* CoreGraphics.framework in Frameworks */,
-				1F167EDC1C5678EF00934000 /* UIKit.framework in Frameworks */,
-				1F167EDD1C5678EF00934000 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F167EF61C56794F00934000 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F167EF71C56794F00934000 /* libsqlite3.dylib in Frameworks */,
-				1F167EF81C56794F00934000 /* CoreGraphics.framework in Frameworks */,
-				1F167EF91C56794F00934000 /* UIKit.framework in Frameworks */,
-				1F167EFA1C56794F00934000 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1F45DAE71C0CAD4600418917 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +201,28 @@
 				1F45DB0D1C0CAD4700418917 /* XCTest.framework in Frameworks */,
 				1F45DB0F1C0CAD4700418917 /* UIKit.framework in Frameworks */,
 				1F45DB0E1C0CAD4700418917 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30A2DE11C5984A700FEEA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30A2DE21C5984A700FEEA48 /* libsqlite3.dylib in Frameworks */,
+				F30A2DE31C5984A700FEEA48 /* CoreGraphics.framework in Frameworks */,
+				F30A2DE41C5984A700FEEA48 /* UIKit.framework in Frameworks */,
+				F30A2DE51C5984A700FEEA48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30A2E0A1C5984B400FEEA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30A2E0B1C5984B400FEEA48 /* libsqlite3.dylib in Frameworks */,
+				F30A2E0C1C5984B400FEEA48 /* CoreGraphics.framework in Frameworks */,
+				F30A2E0D1C5984B400FEEA48 /* UIKit.framework in Frameworks */,
+				F30A2E0E1C5984B400FEEA48 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +258,8 @@
 				1F45DAEB1C0CAD4600418917 /* Products */,
 				1F167EE81C5678EF00934000 /* Glass copy-Info.plist */,
 				1F167F051C56794F00934000 /* Glass copy 2-Info.plist */,
+				F30A2DFB1C5984A700FEEA48 /* Glass copy2-Info.plist */,
+				F30A2E241C5984B400FEEA48 /* Glass copy 22-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,8 +268,8 @@
 			children = (
 				1F45DAEA1C0CAD4600418917 /* Glass.app */,
 				1F45DB0B1C0CAD4700418917 /* GlassTests.xctest */,
-				1F167EE71C5678EF00934000 /* Glass copy.app */,
-				1F167F041C56794F00934000 /* Glass copy 2.app */,
+				F30A2DFA1C5984A700FEEA48 /* Glass copy.app */,
+				F30A2E231C5984B400FEEA48 /* Glass copy 2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -363,40 +369,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F167ECC1C5678EF00934000 /* Glass copy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F167EE41C5678EF00934000 /* Build configuration list for PBXNativeTarget "Glass copy" */;
-			buildPhases = (
-				1F167ECD1C5678EF00934000 /* Sources */,
-				1F167ED91C5678EF00934000 /* Frameworks */,
-				1F167EDE1C5678EF00934000 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Glass copy";
-			productName = Glass;
-			productReference = 1F167EE71C5678EF00934000 /* Glass copy.app */;
-			productType = "com.apple.product-type.application";
-		};
-		1F167EE91C56794F00934000 /* Glass copy 2 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F167F011C56794F00934000 /* Build configuration list for PBXNativeTarget "Glass copy 2" */;
-			buildPhases = (
-				1F167EEA1C56794F00934000 /* Sources */,
-				1F167EF61C56794F00934000 /* Frameworks */,
-				1F167EFB1C56794F00934000 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Glass copy 2";
-			productName = Glass;
-			productReference = 1F167F041C56794F00934000 /* Glass copy 2.app */;
-			productType = "com.apple.product-type.application";
-		};
 		1F45DAE91C0CAD4600418917 /* Glass */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F45DB1C1C0CAD4700418917 /* Build configuration list for PBXNativeTarget "Glass" */;
@@ -432,6 +404,40 @@
 			productReference = 1F45DB0B1C0CAD4700418917 /* GlassTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F30A2DD31C5984A700FEEA48 /* Glass copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30A2DF71C5984A700FEEA48 /* Build configuration list for PBXNativeTarget "Glass copy" */;
+			buildPhases = (
+				F30A2DD41C5984A700FEEA48 /* Sources */,
+				F30A2DE11C5984A700FEEA48 /* Frameworks */,
+				F30A2DE61C5984A700FEEA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glass copy";
+			productName = Glass;
+			productReference = F30A2DFA1C5984A700FEEA48 /* Glass copy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F30A2DFC1C5984B400FEEA48 /* Glass copy 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30A2E201C5984B400FEEA48 /* Build configuration list for PBXNativeTarget "Glass copy 2" */;
+			buildPhases = (
+				F30A2DFD1C5984B400FEEA48 /* Sources */,
+				F30A2E0A1C5984B400FEEA48 /* Frameworks */,
+				F30A2E0F1C5984B400FEEA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glass copy 2";
+			productName = Glass;
+			productReference = F30A2E231C5984B400FEEA48 /* Glass copy 2.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -461,59 +467,13 @@
 			targets = (
 				1F45DAE91C0CAD4600418917 /* Glass */,
 				1F45DB0A1C0CAD4700418917 /* GlassTests */,
-				1F167ECC1C5678EF00934000 /* Glass copy */,
-				1F167EE91C56794F00934000 /* Glass copy 2 */,
+				F30A2DD31C5984A700FEEA48 /* Glass copy */,
+				F30A2DFC1C5984B400FEEA48 /* Glass copy 2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1F167EDE1C5678EF00934000 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				840A71C81C57930500855B56 /* vehic wind float.png in Resources */,
-				840A71CB1C57930500855B56 /* vehic wind non-float.png in Resources */,
-				1F167F171C56972E00934000 /* black_officer_user_284.jpg in Resources */,
-				1F167EDF1C5678EF00934000 /* Images.xcassets in Resources */,
-				1F167EE01C5678EF00934000 /* prueba.jpg in Resources */,
-				840A71BF1C57930500855B56 /* containers.png in Resources */,
-				1F167EE11C5678EF00934000 /* InfoPlist.strings in Resources */,
-				1F167F1A1C56972E00934000 /* user.png in Resources */,
-				840A71BC1C57930500855B56 /* build wind non-float.png in Resources */,
-				840A71C51C57930500855B56 /* tableware.png in Resources */,
-				1F167F1D1C56972E00934000 /* user_91161.jpg in Resources */,
-				CE0B53091C57CF3200A94DD3 /* add-user-icon.jpg in Resources */,
-				1F167EE21C5678EF00934000 /* Glass.sqlite in Resources */,
-				840A71B91C57930500855B56 /* build wind float.png in Resources */,
-				1F167EE31C5678EF00934000 /* Main.storyboard in Resources */,
-				840A71C21C57930500855B56 /* headlamps.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F167EFB1C56794F00934000 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				840A71C91C57930500855B56 /* vehic wind float.png in Resources */,
-				840A71CC1C57930500855B56 /* vehic wind non-float.png in Resources */,
-				1F167F181C56972E00934000 /* black_officer_user_284.jpg in Resources */,
-				1F167EFC1C56794F00934000 /* Images.xcassets in Resources */,
-				1F167EFD1C56794F00934000 /* prueba.jpg in Resources */,
-				840A71C01C57930500855B56 /* containers.png in Resources */,
-				1F167EFE1C56794F00934000 /* InfoPlist.strings in Resources */,
-				1F167F1B1C56972E00934000 /* user.png in Resources */,
-				840A71BD1C57930500855B56 /* build wind non-float.png in Resources */,
-				840A71C61C57930500855B56 /* tableware.png in Resources */,
-				1F167F1E1C56972E00934000 /* user_91161.jpg in Resources */,
-				CE0B530A1C57CF3200A94DD3 /* add-user-icon.jpg in Resources */,
-				1F167EFF1C56794F00934000 /* Glass.sqlite in Resources */,
-				840A71BA1C57930500855B56 /* build wind float.png in Resources */,
-				1F167F001C56794F00934000 /* Main.storyboard in Resources */,
-				840A71C31C57930500855B56 /* headlamps.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1F45DAE81C0CAD4600418917 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,45 +505,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F30A2DE61C5984A700FEEA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30A2DE71C5984A700FEEA48 /* vehic wind float.png in Resources */,
+				F30A2DE81C5984A700FEEA48 /* vehic wind non-float.png in Resources */,
+				F30A2DE91C5984A700FEEA48 /* black_officer_user_284.jpg in Resources */,
+				F30A2DEA1C5984A700FEEA48 /* Images.xcassets in Resources */,
+				F30A2DEB1C5984A700FEEA48 /* prueba.jpg in Resources */,
+				F30A2DEC1C5984A700FEEA48 /* containers.png in Resources */,
+				F30A2DED1C5984A700FEEA48 /* InfoPlist.strings in Resources */,
+				F30A2DEE1C5984A700FEEA48 /* user.png in Resources */,
+				F30A2DEF1C5984A700FEEA48 /* build wind non-float.png in Resources */,
+				F30A2DF01C5984A700FEEA48 /* tableware.png in Resources */,
+				F30A2DF11C5984A700FEEA48 /* user_91161.jpg in Resources */,
+				F30A2DF21C5984A700FEEA48 /* add-user-icon.jpg in Resources */,
+				F30A2DF31C5984A700FEEA48 /* Glass.sqlite in Resources */,
+				F30A2DF41C5984A700FEEA48 /* build wind float.png in Resources */,
+				F30A2DF51C5984A700FEEA48 /* Main.storyboard in Resources */,
+				F30A2DF61C5984A700FEEA48 /* headlamps.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30A2E0F1C5984B400FEEA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30A2E101C5984B400FEEA48 /* vehic wind float.png in Resources */,
+				F30A2E111C5984B400FEEA48 /* vehic wind non-float.png in Resources */,
+				F30A2E121C5984B400FEEA48 /* black_officer_user_284.jpg in Resources */,
+				F30A2E131C5984B400FEEA48 /* Images.xcassets in Resources */,
+				F30A2E141C5984B400FEEA48 /* prueba.jpg in Resources */,
+				F30A2E151C5984B400FEEA48 /* containers.png in Resources */,
+				F30A2E161C5984B400FEEA48 /* InfoPlist.strings in Resources */,
+				F30A2E171C5984B400FEEA48 /* user.png in Resources */,
+				F30A2E181C5984B400FEEA48 /* build wind non-float.png in Resources */,
+				F30A2E191C5984B400FEEA48 /* tableware.png in Resources */,
+				F30A2E1A1C5984B400FEEA48 /* user_91161.jpg in Resources */,
+				F30A2E1B1C5984B400FEEA48 /* add-user-icon.jpg in Resources */,
+				F30A2E1C1C5984B400FEEA48 /* Glass.sqlite in Resources */,
+				F30A2E1D1C5984B400FEEA48 /* build wind float.png in Resources */,
+				F30A2E1E1C5984B400FEEA48 /* Main.storyboard in Resources */,
+				F30A2E1F1C5984B400FEEA48 /* headlamps.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F167ECD1C5678EF00934000 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F167ECE1C5678EF00934000 /* GestorBD.m in Sources */,
-				1F167ECF1C5678EF00934000 /* NewCaseViewController.m in Sources */,
-				1F167ED01C5678EF00934000 /* AppDelegate.m in Sources */,
-				1F167ED11C5678EF00934000 /* DetectiveListViewController.m in Sources */,
-				1F167ED21C5678EF00934000 /* NewDetectiveViewController.m in Sources */,
-				1F167ED31C5678EF00934000 /* GlassDetectiveViewController.m in Sources */,
-				1F167ED41C5678EF00934000 /* CaseListViewController.m in Sources */,
-				1F167ED51C5678EF00934000 /* Detective.m in Sources */,
-				1F167ED61C5678EF00934000 /* Case.m in Sources */,
-				1F167ED71C5678EF00934000 /* main.m in Sources */,
-				1F167ED81C5678EF00934000 /* CaseDetailViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F167EEA1C56794F00934000 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F167EEB1C56794F00934000 /* GestorBD.m in Sources */,
-				1F167EEC1C56794F00934000 /* NewCaseViewController.m in Sources */,
-				1F167EED1C56794F00934000 /* AppDelegate.m in Sources */,
-				1F167EEE1C56794F00934000 /* DetectiveListViewController.m in Sources */,
-				1F167EEF1C56794F00934000 /* NewDetectiveViewController.m in Sources */,
-				1F167EF01C56794F00934000 /* GlassDetectiveViewController.m in Sources */,
-				1F167EF11C56794F00934000 /* CaseListViewController.m in Sources */,
-				1F167EF21C56794F00934000 /* Detective.m in Sources */,
-				1F167EF31C56794F00934000 /* Case.m in Sources */,
-				1F167EF41C56794F00934000 /* main.m in Sources */,
-				1F167EF51C56794F00934000 /* CaseDetailViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1F45DAE61C0CAD4600418917 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -608,6 +578,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F45DB191C0CAD4700418917 /* GlassTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30A2DD41C5984A700FEEA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30A2DD51C5984A700FEEA48 /* GestorBD.m in Sources */,
+				F30A2DD61C5984A700FEEA48 /* NewCaseViewController.m in Sources */,
+				F30A2DD71C5984A700FEEA48 /* AppDelegate.m in Sources */,
+				F30A2DD81C5984A700FEEA48 /* DetectiveListViewController.m in Sources */,
+				F30A2DD91C5984A700FEEA48 /* NewDetectiveViewController.m in Sources */,
+				F30A2DDA1C5984A700FEEA48 /* DetectiveDetailViewController.m in Sources */,
+				F30A2DDB1C5984A700FEEA48 /* GlassDetectiveViewController.m in Sources */,
+				F30A2DDC1C5984A700FEEA48 /* CaseListViewController.m in Sources */,
+				F30A2DDD1C5984A700FEEA48 /* Detective.m in Sources */,
+				F30A2DDE1C5984A700FEEA48 /* Case.m in Sources */,
+				F30A2DDF1C5984A700FEEA48 /* main.m in Sources */,
+				F30A2DE01C5984A700FEEA48 /* CaseDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30A2DFD1C5984B400FEEA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30A2DFE1C5984B400FEEA48 /* GestorBD.m in Sources */,
+				F30A2DFF1C5984B400FEEA48 /* NewCaseViewController.m in Sources */,
+				F30A2E001C5984B400FEEA48 /* AppDelegate.m in Sources */,
+				F30A2E011C5984B400FEEA48 /* DetectiveListViewController.m in Sources */,
+				F30A2E021C5984B400FEEA48 /* NewDetectiveViewController.m in Sources */,
+				F30A2E031C5984B400FEEA48 /* DetectiveDetailViewController.m in Sources */,
+				F30A2E041C5984B400FEEA48 /* GlassDetectiveViewController.m in Sources */,
+				F30A2E051C5984B400FEEA48 /* CaseListViewController.m in Sources */,
+				F30A2E061C5984B400FEEA48 /* Detective.m in Sources */,
+				F30A2E071C5984B400FEEA48 /* Case.m in Sources */,
+				F30A2E081C5984B400FEEA48 /* main.m in Sources */,
+				F30A2E091C5984B400FEEA48 /* CaseDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,60 +657,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1F167EE51C5678EF00934000 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = VERSION2;
-				INFOPLIST_FILE = "Glass copy-Info.plist";
-				PRODUCT_NAME = "Glass copy";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		1F167EE61C5678EF00934000 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
-				INFOPLIST_FILE = "Glass copy-Info.plist";
-				PRODUCT_NAME = "Glass copy";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		1F167F021C56794F00934000 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = VERSION3;
-				INFOPLIST_FILE = "Glass copy 2-Info.plist";
-				PRODUCT_NAME = "Glass copy 2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		1F167F031C56794F00934000 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
-				INFOPLIST_FILE = "Glass copy 2-Info.plist";
-				PRODUCT_NAME = "Glass copy 2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		1F45DB1A1C0CAD4700418917 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -840,27 +794,63 @@
 			};
 			name = Release;
 		};
+		F30A2DF81C5984A700FEEA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[sdk=*]" = VERSION2;
+				INFOPLIST_FILE = "Glass copy2-Info.plist";
+				PRODUCT_NAME = "Glass copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F30A2DF91C5984A700FEEA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				INFOPLIST_FILE = "Glass copy2-Info.plist";
+				PRODUCT_NAME = "Glass copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F30A2E211C5984B400FEEA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = VERSION3;
+				INFOPLIST_FILE = "Glass copy 22-Info.plist";
+				PRODUCT_NAME = "Glass copy 2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F30A2E221C5984B400FEEA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glass/Glass-Prefix.pch";
+				INFOPLIST_FILE = "Glass copy 22-Info.plist";
+				PRODUCT_NAME = "Glass copy 2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F167EE41C5678EF00934000 /* Build configuration list for PBXNativeTarget "Glass copy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F167EE51C5678EF00934000 /* Debug */,
-				1F167EE61C5678EF00934000 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1F167F011C56794F00934000 /* Build configuration list for PBXNativeTarget "Glass copy 2" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F167F021C56794F00934000 /* Debug */,
-				1F167F031C56794F00934000 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1F45DAE51C0CAD4600418917 /* Build configuration list for PBXProject "Glass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -884,6 +874,24 @@
 			buildConfigurations = (
 				1F45DB201C0CAD4700418917 /* Debug */,
 				1F45DB211C0CAD4700418917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30A2DF71C5984A700FEEA48 /* Build configuration list for PBXNativeTarget "Glass copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30A2DF81C5984A700FEEA48 /* Debug */,
+				F30A2DF91C5984A700FEEA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30A2E201C5984B400FEEA48 /* Build configuration list for PBXNativeTarget "Glass copy 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30A2E211C5984B400FEEA48 /* Debug */,
+				F30A2E221C5984B400FEEA48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
