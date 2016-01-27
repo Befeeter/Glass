@@ -28,6 +28,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.ç
+    
+#ifdef VERSION2
+    [_botonConsultar setTitle:@"Consult Case" forState:UIControlStateNormal];
+#endif
+#ifdef VERSION3
+    [_botonConsultar setTitle:@"Consult Case" forState:UIControlStateNormal];
+#endif
 
 }
 

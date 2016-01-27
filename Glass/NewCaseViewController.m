@@ -57,13 +57,19 @@
     self.glassType.tag = 1;
     self.detectivePicker.tag = 2;
     ;
-    
 #ifdef VERSION2
     [_botonGuardar setTitle:@"Ok" forState:UIControlStateNormal];
+    self.title = @"Consult Case";
+    _NameText.hidden = YES;
+    _selectDetective.hidden = YES;
     _selectType.hidden = YES;
 #endif
+    
 #ifdef VERSION3
     [_botonGuardar setTitle:@"Ok" forState:UIControlStateNormal];
+    self.title = @"Consult Case";
+    _NameText.hidden = YES;
+    _selectDetective.hidden = YES;
     _selectType.hidden = YES;
 #endif
 }
