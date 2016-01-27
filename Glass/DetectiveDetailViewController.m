@@ -40,6 +40,18 @@
     // Do any additional setup after loading the view.
     
     [self cargarDatos];
+    //*******Colorines :)*******
+    //Fondo barra navegación
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.01 green:0.25 blue:0.76 alpha:1.0];
+    
+    //Texto barra navegacion
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:0.23 green:0.88 blue:0.65 alpha:1.0], NSForegroundColorAttributeName,nil]];
+    //Fondo de la vista
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"fondo.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 }
 
 - (void)didReceiveMemoryWarning

@@ -50,6 +50,18 @@
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
     [self cargarDatos];
     
+    //*******Colorines :)*******
+    //Fondo barra navegación
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.01 green:0.25 blue:0.76 alpha:1.0];
+    
+    //Texto barra navegacion
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:0.23 green:0.88 blue:0.65 alpha:1.0], NSForegroundColorAttributeName,nil]];
+    //Fondo de la vista
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"fondo.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
 #ifdef VERSION2
     _addDetective.enabled = NO;
@@ -60,7 +72,19 @@
 #endif
     // Do any additional setup after loading the view.
 }
-
+//-metodo para cambiar de color las filas
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath
+                                                                                                      *)indexPath
+{
+    if((indexPath.row)%2==0)
+        cell.backgroundColor = [UIColor colorWithRed:0.23 green:0.55 blue:0.88 alpha:1.0]; //set image for cell 0
+    
+    if (indexPath.row%2==1)
+        cell.backgroundColor = [UIColor colorWithRed:0.23 green:0.78 blue:0.88 alpha:1.0]; //set color for cell 1
+    
+    tableView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed: @"cloud.jpg"]]; //set image for UITableView
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F1112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -13,9 +13,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="La5-0S-6U5">
-                                <rect key="frame" x="22" y="145" width="277" height="30"/>
+                                <rect key="frame" x="85" y="173" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.65098039215686276" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="New Case">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -23,9 +25,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7zR-ZZ-WtZ">
-                                <rect key="frame" x="128" y="240" width="64" height="30"/>
+                                <rect key="frame" x="85" y="243" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.65098039220000004" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Case List">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -33,9 +37,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8uH-a2-SJK">
-                                <rect key="frame" x="108" y="311" width="104" height="69"/>
+                                <rect key="frame" x="85" y="313" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.65098039220000004" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Detective List">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -295,6 +301,7 @@
                                     <segue destination="CxD-Jh-gPg" kind="push" identifier="idSegueGuardado" id="q8w-Ol-gB3"/>
                                 </connections>
                             </button>
+                            <color key="tintColor" red="0.1647058824" green="0.65098039220000004" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -536,8 +543,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Case List" id="Nkc-aa-NGe">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="S4q-cH-x2M"/>
+                        <barButtonItem key="backBarButtonItem" id="S4q-cH-x2M">
+                            <color key="tintColor" red="0.1647058824" green="0.65098039220000004" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="9Qu-7J-9ho">
+                            <color key="tintColor" red="0.1647058824" green="0.65098039220000004" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addRegistro:" destination="osR-Ea-Q3l" id="FZG-OD-Y1v"/>
                                 <segue destination="iCH-29-YpD" kind="push" identifier="seguelistacaso" id="ova-74-UXY"/>
@@ -599,6 +609,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Detective List" id="NLC-zk-0di">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="0QU-XS-sSl">
+                            <color key="tintColor" red="0.1647058824" green="0.65098039220000004" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="sna-Zk-Oi5" kind="push" identifier="seguelista" id="z2S-Zo-pCV"/>
                             </connections>
@@ -695,7 +706,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="0MH-2E-0sq">
-                                <rect key="frame" x="121" y="452" width="126" height="30"/>
+                                <rect key="frame" x="121" y="452" width="160" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -704,13 +715,13 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wRw-nr-bQl">
-                                <rect key="frame" x="55" y="455" width="41" height="21"/>
+                                <rect key="frame" x="44" y="456" width="41" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="JID-In-TRX">
-                                <rect key="frame" x="21" y="114" width="280" height="30"/>
+                                <rect key="frame" x="21" y="113" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -731,7 +742,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="tq3-Dk-G5k">
-                                <rect key="frame" x="29" y="180" width="280" height="30"/>
+                                <rect key="frame" x="21" y="180" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -740,9 +751,11 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r1z-pe-ti8">
-                                <rect key="frame" x="138" y="518" width="34" height="30"/>
+                                <rect key="frame" x="85" y="518" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cyan="0.70999999999999996" magenta="0.02" yellow="0.58999999999999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -765,7 +778,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Detective" id="hct-HR-rUX">
-                        <barButtonItem key="backBarButtonItem" title="Volver" id="oBz-PY-5Nz">
+                        <barButtonItem key="backBarButtonItem" id="oBz-PY-5Nz">
+                            <color key="tintColor" red="0.1647058824" green="0.65098039220000004" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="regresando:" destination="sna-Zk-Oi5" id="5gT-GK-iHI"/>
                             </connections>
@@ -791,6 +805,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h0e-ql-tTT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cyan="0.70999999999999996" magenta="0.02" yellow="0.58999999999999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -811,8 +826,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hAb-p7-14b"/>
         <segue reference="ova-74-UXY"/>
+        <segue reference="hAb-p7-14b"/>
         <segue reference="q8w-Ol-gB3"/>
     </inferredMetricsTieBreakers>
 </document>
