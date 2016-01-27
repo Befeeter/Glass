@@ -31,6 +31,8 @@
     */
     Case *caso;
     
+    
+    
 }
 
 @property (nonatomic, strong) GestorBD* gestorBD;
@@ -56,7 +58,10 @@
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
     self.glassType.tag = 1;
     self.detectivePicker.tag = 2;
-    ;
+    
+    
+    
+    
 #ifdef VERSION2
     [_botonGuardar setTitle:@"Ok" forState:UIControlStateNormal];
     self.title = @"Consult Case";
@@ -90,17 +95,18 @@
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
     if (pickerView.tag == 1){
-    //NSLog(@"Soy el picker 1");
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 22)];
-    //label.backgroundColor = [UIColor lightGrayColor];
-    label.textColor = [UIColor blueColor];
-    label.textAlignment = NSTextAlignmentCenter ;
-    label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:8];
-    label.text = [NSString stringWithFormat:@"  %@", _glassArray[row]];
-    return label;
+        //NSLog(@"Soy el picker 1");
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 22)];
+        //label.backgroundColor = [UIColor lightGrayColor];
+        label.textColor = [UIColor blueColor];
+        label.textAlignment = NSTextAlignmentCenter ;
+        label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:8];
+        label.text = [NSString stringWithFormat:@"  %@", _glassArray[row]];
+        return label;
     }
-    else
-        NSLog(@"Soy el picker 2");
+    //else
+        //NSLog(@"Soy el picker 2");
+    
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 22)];
     //label.backgroundColor = [UIColor lightGrayColor];
     label.textColor = [UIColor blueColor];
@@ -142,7 +148,6 @@
     }
     else{
         caso._detective = _detectiveArr[row];
-        
         [_selectDetective setTitle:caso._detective forState:UIControlStateNormal];
         //_selectType = _glassArray[row];
         _detectivePicker.hidden = !_detectivePicker.hidden;
@@ -203,7 +208,14 @@
         [self.gestorBD executeQuery:consulta];
     
         //Consulta Base de datos.
-        NSLog(@"Guarda datos");
+        //NSLog(@"Guarda datos");
+        NSString * mensaje = [NSString stringWithFormat:@"The Case '%@' has been created", caso._nombre];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Case Created"
+                                                    message:mensaje
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+        [alert show];
     #endif
     
     #ifdef VERSION2
@@ -270,8 +282,14 @@
             }
         }
     }
-    
-    NSLog(@"%@",caso._tipoCristal);
+    NSString * mensaje = [NSString stringWithFormat:@"Result of query is: '%@'", caso._tipoCristal];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Type of Glass"
+                                                    message:mensaje
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    //NSLog(@"%@",caso._tipoCristal);
 #endif
 
 #ifdef VERSION3
@@ -291,8 +309,15 @@
     //Mostramos el valor de la consulta a la etiqueta/label.
     caso._tipoCristal = strResponse;
     
-    NSLog(@"%@",strResponse);
-    
+    //NSLog(@"%@",strResponse);
+    NSString * mensaje = [NSString stringWithFormat:@"Result of query is: '%@'", caso._tipoCristal];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Type of Glass"
+                                                    message:mensaje
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+                        
 #endif
 
 }
