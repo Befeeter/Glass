@@ -43,6 +43,14 @@
     self.gestorBD = [[GestorBD alloc] initWithDatabaseFilename:@"Glass.sqlite"];
     [self cargarDatos];
     
+    
+#ifdef VERSION2
+    _addDetective.enabled = NO;
+#endif
+    
+#ifdef VERSION3
+    _addDetective.enabled = NO;
+#endif
     // Do any additional setup after loading the view.
 }
 

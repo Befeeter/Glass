@@ -12,5 +12,6 @@
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tabla;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addDetective;
 
 @end

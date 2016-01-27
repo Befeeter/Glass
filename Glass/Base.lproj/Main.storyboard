@@ -627,6 +627,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addDetective" destination="0QU-XS-sSl" id="eaB-8k-cAl"/>
                         <outlet property="tabla" destination="KX3-HE-JG4" id="xm1-mc-WdB"/>
                         <segue destination="aUp-Ih-YYo" kind="push" identifier="seguedetective" id="76A-zU-ctM"/>
                     </connections>
@@ -826,8 +827,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="q8w-Ol-gB3"/>
         <segue reference="ova-74-UXY"/>
-        <segue reference="jXT-Fy-prq"/>
-        <segue reference="hAb-p7-14b"/>
+        <segue reference="76A-zU-ctM"/>
     </inferredMetricsTieBreakers>
 </document>
