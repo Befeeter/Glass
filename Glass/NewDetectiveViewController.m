@@ -18,12 +18,23 @@
 }
 
 @property (nonatomic, strong) GestorBD* gestorBD;
+
+
+
+
 @end
+
+
+
+
 
 @implementation NewDetectiveViewController
 
 
 UIToolbar *toolBar;
+
+
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -118,8 +129,11 @@ UIToolbar *toolBar;
        NSString * consulta= [NSString stringWithFormat:@"INSERT INTO 'detective' ('nombre','apellidos','fecha') VALUES ('%@','%@','%@')", detective._Nombre, detective._Apellidos, detective._Fecha];
     [self.gestorBD executeQuery:consulta];
     
-    NSLog(@"%@", detective._Fecha);
+   [self.delegate editionDidFinished];
 }
+
+
+
 
 
 //Cerrar Teclado al pinchar fuera de pantalla.
@@ -160,11 +174,10 @@ UIToolbar *toolBar;
 }
 
 
-- (IBAction)regresandoLista:(UIStoryboardSegue *)segue{
-     *controlador = [segue sourceViewController];
-   
-    [self.tableView reloadData];
-}
+
+
+
+
 
 
 

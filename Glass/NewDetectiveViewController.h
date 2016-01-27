@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol NewDetectiveViewControllerDelegate
+-(void) editionDidFinished;
+@end
+
 @interface NewDetectiveViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     
     
@@ -15,6 +19,9 @@
     
 }
 
+
+@property (nonatomic, strong) id<NewDetectiveViewControllerDelegate>
+delegate;
 @property (weak, nonatomic) IBOutlet UITextField *NombreTextBox;
 
 @property (weak, nonatomic) IBOutlet UITextField *ApellidosTextBox;

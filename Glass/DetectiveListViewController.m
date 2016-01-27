@@ -25,6 +25,13 @@
 
 @implementation DetectiveListViewController
 
+
+-(void) editionDidFinished{
+    [self cargarDatos];
+}
+
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -131,10 +138,19 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
     if ([[segue identifier] isEqualToString:@"seguedetective"]) {
         DetectiveDetailViewController *destination = [segue destinationViewController];
         destination.detectiveguardado= detective;
+        
+    }
+    
+    if ([[segue identifier] isEqualToString:@"seguelista"]) {
+        NewDetectiveViewController *destination2 = [segue destinationViewController];
+        destination2.delegate=self;
+        
     }
 
 
 }
+
+
 
 
 

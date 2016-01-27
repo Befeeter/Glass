@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol NewCaseViewControllerDelegate
+-(void) editionDidFinished;
+@end
+
 @interface NewCaseViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
+
+
+@property (nonatomic, strong) id<NewCaseViewControllerDelegate>
+delegate;
 @property (weak, nonatomic) IBOutlet UIPickerView *glassType;
 @property (weak, nonatomic) IBOutlet UIButton *selectType;
 @property (weak, nonatomic) IBOutlet UITextField *NameText;

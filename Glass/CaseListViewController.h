@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewCaseViewController.h"
 
-@interface CaseListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@interface CaseListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,NewCaseViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tabla;
 

@@ -537,7 +537,7 @@
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="9Qu-7J-9ho">
                             <connections>
                                 <action selector="addRegistro:" destination="osR-Ea-Q3l" id="FZG-OD-Y1v"/>
-                                <segue destination="iCH-29-YpD" kind="push" id="ova-74-UXY"/>
+                                <segue destination="iCH-29-YpD" kind="push" identifier="seguelistacaso" id="ova-74-UXY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -548,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5d-9e-q9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="790"/>
+            <point key="canvasLocation" x="77" y="749"/>
         </scene>
         <!--Detective List View Controller - Detective List-->
         <scene sceneID="g1U-38-FL6">
@@ -596,7 +596,7 @@
                     <navigationItem key="navigationItem" title="Detective List" id="NLC-zk-0di">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="0QU-XS-sSl">
                             <connections>
-                                <segue destination="sna-Zk-Oi5" kind="push" id="z2S-Zo-pCV"/>
+                                <segue destination="sna-Zk-Oi5" kind="push" identifier="seguelista" id="z2S-Zo-pCV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -607,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v4o-GM-HQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781" y="791"/>
+            <point key="canvasLocation" x="535" y="749"/>
         </scene>
         <!--Detective Detail View Controller - Detective Detail-->
         <scene sceneID="FsP-YT-OcS">
@@ -673,7 +673,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lry-u6-uMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651" y="1543"/>
+            <point key="canvasLocation" x="1035" y="1597"/>
         </scene>
         <!--New Detective View Controller - New Detective-->
         <scene sceneID="QiN-8o-qXQ">
@@ -759,7 +759,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Detective" id="hct-HR-rUX"/>
+                    <navigationItem key="navigationItem" title="New Detective" id="hct-HR-rUX">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="oBz-PY-5Nz">
+                            <connections>
+                                <action selector="regresando:" destination="sna-Zk-Oi5" id="5gT-GK-iHI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="ApellidosTextBox" destination="tq3-Dk-G5k" id="zM3-XD-iDa"/>
@@ -770,7 +776,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7d-2Z-tlo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1528" y="555"/>
+            <point key="canvasLocation" x="1084" y="725"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jac-Cb-Y79">

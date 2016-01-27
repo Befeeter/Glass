@@ -39,6 +39,12 @@
     return self;
 }
 
+
+
+-(void) editionDidFinished{
+    [self cargarDatos];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -138,6 +144,14 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
         CaseDetailViewController *destino = [segue destinationViewController];
         destino.casoGuardado = caso;
     }
+    
+    if ([[segue identifier] isEqualToString:@"seguelistacaso"]) {
+        NewCaseViewController *destino2 = [segue destinationViewController];
+        destino2.delegate=self;
+    }
+    
+    
+    
 }
 
 @end

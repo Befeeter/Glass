@@ -6,9 +6,11 @@
 //  Copyright (c) 2016 grupo 04. All rights reserved.
 //
 
+
+#import "NewDetectiveViewController.h"
 #import <UIKit/UIKit.h>
 
-@interface DetectiveListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface DetectiveListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NewDetectiveViewControllerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tabla;
