@@ -85,7 +85,7 @@ UIToolbar *toolBar;
 
 - (void) VerFechaSeleccionada{
     NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"dd/mm/yyyy"];
+    [formatter setDateFormat:@"dd/MM/yyyy"];
     self.fecha.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:fechaPicker.date]];
     [self.fecha resignFirstResponder];
                      

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Glass Detective View Controller - Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController title="Home" id="vXZ-lx-hvc" customClass="GlassDetectiveViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="La5-0S-6U5">
@@ -52,12 +51,12 @@
             </objects>
             <point key="canvasLocation" x="27" y="-50"/>
         </scene>
-        <!--New Case-->
+        <!--New Case View Controller - New Case-->
         <scene sceneID="2LE-yD-lzG">
             <objects>
                 <viewController title="New Case" id="iCH-29-YpD" customClass="NewCaseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C8p-rY-nz4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <pickerView hidden="YES" contentMode="scaleToFill" id="ucz-Qa-5uL" userLabel="PickerGlass">
@@ -326,12 +325,12 @@
             </objects>
             <point key="canvasLocation" x="-627" y="740"/>
         </scene>
-        <!--Case Detail-->
+        <!--Case Detail View Controller - Case Detail-->
         <scene sceneID="Vh0-MY-2c2">
             <objects>
                 <viewController storyboardIdentifier="Caso Detalle" title="Case Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CxD-Jh-gPg" customClass="CaseDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aut-ny-ncn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      RI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sq0-WL-ETM">
@@ -492,16 +491,16 @@
             </objects>
             <point key="canvasLocation" x="115" y="1504"/>
         </scene>
-        <!--Glass Type-->
+        <!--Glass Type View Controller - Glass Type-->
         <scene sceneID="9Qu-bm-I4O">
             <objects>
                 <viewController id="191-Bu-lot" customClass="GlassTypeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RlL-g1-Iuk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="iME-iZ-1Dc">
-                                <rect key="frame" x="33" y="116" width="267" height="425"/>
+                                <rect key="frame" x="33" y="116" width="267" height="337"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -513,16 +512,16 @@
             </objects>
             <point key="canvasLocation" x="496" y="1570"/>
         </scene>
-        <!--Case List-->
+        <!--Case List View Controller - Case List-->
         <scene sceneID="5Z8-uf-5km">
             <objects>
                 <viewController title="Case List" id="osR-Ea-Q3l" customClass="CaseListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FeW-uP-jb8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4Il-pr-aSN">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -573,16 +572,16 @@
             </objects>
             <point key="canvasLocation" x="206" y="790"/>
         </scene>
-        <!--Detective List-->
+        <!--Detective List View Controller - Detective List-->
         <scene sceneID="g1U-38-FL6">
             <objects>
                 <viewController title="Detective List" id="Qig-kI-EpG" customClass="DetectiveListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DHQ-jd-RQH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KX3-HE-JG4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -632,7 +631,7 @@
             </objects>
             <point key="canvasLocation" x="781" y="791"/>
         </scene>
-        <!--Detective Detail-->
+        <!--Detective Detail View Controller - Detective Detail-->
         <scene sceneID="FsP-YT-OcS">
             <objects>
                 <viewController title="Detective Detail" id="aUp-Ih-YYo" customClass="DetectiveDetailViewController" sceneMemberID="viewController">
@@ -698,7 +697,7 @@
             </objects>
             <point key="canvasLocation" x="1651" y="1543"/>
         </scene>
-        <!--New Detective-->
+        <!--New Detective View Controller - New Detective-->
         <scene sceneID="QiN-8o-qXQ">
             <objects>
                 <viewController title="New Detective" id="sna-Zk-Oi5" customClass="NewDetectiveViewController" sceneMemberID="viewController">
@@ -713,10 +712,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="0MH-2E-0sq">
-                                <rect key="frame" x="120" y="452" width="126" height="30"/>
+                                <rect key="frame" x="121" y="452" width="126" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="AsignaFecha:" destination="sna-Zk-Oi5" eventType="editingDidEnd" id="YRY-Q3-Wyg"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wRw-nr-bQl">
                                 <rect key="frame" x="55" y="455" width="41" height="21"/>
@@ -814,6 +816,11 @@
     <resources>
         <image name="add-user-icon.jpg" width="1280" height="1024"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="iFH-DH-lPO"/>
         <segue reference="q8w-Ol-gB3"/>
