@@ -85,10 +85,10 @@
         self.fecha.text =[NSString stringWithFormat:@"%@", self.detectiveguardado._Fecha];
        
         
-        
-        UIImage *buttonBackground = [UIImage imageNamed:@"prueba.jpg"];
-        //UIImage *buttonBackground = [UIImage imageNamed:(@"@.jgp", self.casoGuardado._tipoCristal)];
-        [self.foto setBackgroundImage:buttonBackground forState:UIControlStateNormal];
+// Anterior boton imagen
+//        UIImage *buttonBackground = [UIImage imageNamed:@"prueba.jpg"];
+//        //UIImage *buttonBackground = [UIImage imageNamed:(@"@.jgp", self.casoGuardado._tipoCristal)];
+//        [self.foto setBackgroundImage:buttonBackground forState:UIControlStateNormal];
         
         
     }
