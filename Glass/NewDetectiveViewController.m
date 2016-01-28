@@ -97,6 +97,8 @@ UIToolbar *toolBar;
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 }
 
+
+//Selecion imagen galeria
 - (IBAction)chooseImage:(id)sender
 {
     self.imagePicker = [[UIImagePickerController alloc] init];
@@ -106,6 +108,8 @@ UIToolbar *toolBar;
     
 }
 
+
+//Obtencion imagen galeria
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     self.chosenImage = info[UIImagePickerControllerOriginalImage];
@@ -113,10 +117,30 @@ UIToolbar *toolBar;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
+//Cancelacion PickerController
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissViewControllerAnimated:YES completion:nil]; 
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    //OBTENER IMAGEN CAPTURADA
+//    UIImage *Image = (UIImage *)info[UIImagePickerControllerOriginalImage];
+//
+//    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+//    NSString *imageSubdirectory = [documentsDirectory stringByAppendingPathComponent:@"SubCarpetaNombre"];
+//    NSString *filePath = [imageSubdirectory stringByAppendingPathComponent:@"ImageNombre.png"];
+//
+//
+//    //CONVERTIR UIImage A NSData GENERADA EN PNG
+//    NSData *imageData = UIImagePNGRepresentation(self.chosenImage);
+//    [imageData writeToFile:filePath atomically:YES];
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 - (void) VerFechaSeleccionada{

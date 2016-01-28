@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *apellidos;
 @property (weak, nonatomic) IBOutlet UILabel *fecha;
 @property (nonatomic, strong) Detective *detectiveguardado;
-@property (weak, nonatomic) IBOutlet UIButton *foto;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 

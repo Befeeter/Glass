@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Glass Detective View Controller - Home-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController title="Home" id="vXZ-lx-hvc" customClass="GlassDetectiveViewController" sceneMemberID="viewController">
@@ -60,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="27" y="-50"/>
         </scene>
-        <!--New Case View Controller - New Case-->
+        <!--New Case-->
         <scene sceneID="2LE-yD-lzG">
             <objects>
                 <viewController title="New Case" id="iCH-29-YpD" customClass="NewCaseViewController" sceneMemberID="viewController">
@@ -335,7 +336,7 @@
             </objects>
             <point key="canvasLocation" x="-627" y="740"/>
         </scene>
-        <!--Case Detail View Controller - Case Detail-->
+        <!--Case Detail-->
         <scene sceneID="Vh0-MY-2c2">
             <objects>
                 <viewController storyboardIdentifier="Caso Detalle" title="Case Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CxD-Jh-gPg" customClass="CaseDetailViewController" sceneMemberID="viewController">
@@ -500,7 +501,7 @@
             </objects>
             <point key="canvasLocation" x="115" y="1504"/>
         </scene>
-        <!--Case List View Controller - Case List-->
+        <!--Case List-->
         <scene sceneID="5Z8-uf-5km">
             <objects>
                 <viewController title="Case List" id="osR-Ea-Q3l" customClass="CaseListViewController" sceneMemberID="viewController">
@@ -521,14 +522,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eb8-ci-4Db">
-                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                                    <rect key="frame" x="15" y="3" width="36" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0ul-cw-nll">
-                                                    <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                                    <rect key="frame" x="15" y="25" width="44" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -564,7 +565,7 @@
             </objects>
             <point key="canvasLocation" x="77" y="749"/>
         </scene>
-        <!--Detective List View Controller - Detective List-->
+        <!--Detective List-->
         <scene sceneID="g1U-38-FL6">
             <objects>
                 <viewController title="Detective List" id="Qig-kI-EpG" customClass="DetectiveListViewController" sceneMemberID="viewController">
@@ -585,14 +586,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7FA-Fo-w4V">
-                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                                    <rect key="frame" x="15" y="3" width="36" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tce-Cm-59G">
-                                                    <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                                    <rect key="frame" x="15" y="25" width="44" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -625,7 +626,7 @@
             </objects>
             <point key="canvasLocation" x="535" y="749"/>
         </scene>
-        <!--Detective Detail View Controller - Detective Detail-->
+        <!--Detective Detail-->
         <scene sceneID="FsP-YT-OcS">
             <objects>
                 <viewController title="Detective Detail" id="aUp-Ih-YYo" customClass="DetectiveDetailViewController" sceneMemberID="viewController">
@@ -669,13 +670,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u78-8j-1Kb">
-                                <rect key="frame" x="98" y="374" width="115" height="122"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.png" id="kY2-8f-syi">
+                                <rect key="frame" x="40" y="366" width="240" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -683,7 +681,7 @@
                     <connections>
                         <outlet property="apellidos" destination="XoS-82-0wz" id="3mw-JT-tJZ"/>
                         <outlet property="fecha" destination="vir-xM-7Tz" id="L2b-rQ-Vst"/>
-                        <outlet property="foto" destination="u78-8j-1Kb" id="vwO-Ot-8GP"/>
+                        <outlet property="imageView" destination="kY2-8f-syi" id="uEn-E1-dkb"/>
                         <outlet property="nombre" destination="tvT-Aa-kqL" id="9Yj-FU-Wg3"/>
                     </connections>
                 </viewController>
@@ -691,7 +689,7 @@
             </objects>
             <point key="canvasLocation" x="1035" y="1597"/>
         </scene>
-        <!--New Detective View Controller - New Detective-->
+        <!--New Detective-->
         <scene sceneID="QiN-8o-qXQ">
             <objects>
                 <viewController title="New Detective" id="sna-Zk-Oi5" customClass="NewDetectiveViewController" sceneMemberID="viewController">
@@ -819,6 +817,7 @@
     </scenes>
     <resources>
         <image name="add-user-icon.jpg" width="1280" height="1024"/>
+        <image name="user.png" width="256" height="256"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
