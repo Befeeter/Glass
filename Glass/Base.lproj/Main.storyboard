@@ -100,6 +100,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="touchUpInside" id="Jjf-gQ-alA"/>
                                     <action selector="selectDetective:" destination="iCH-29-YpD" eventType="touchUpInside" id="nY2-60-0sK"/>
                                 </connections>
                             </button>
@@ -107,6 +108,7 @@
                                 <rect key="frame" x="95" y="156" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="valueChanged" id="8hY-Jj-Sf3"/>
                                     <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="d8d-r1-bDi"/>
                                 </connections>
                             </slider>
@@ -114,6 +116,7 @@
                                 <rect key="frame" x="95" y="194" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="valueChanged" id="OaU-BW-607"/>
                                     <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="wSA-ie-rbM"/>
                                 </connections>
                             </slider>
@@ -121,6 +124,7 @@
                                 <rect key="frame" x="95" y="229" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="valueChanged" id="hAM-IE-MxC"/>
                                     <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="Ebn-IT-A9V"/>
                                 </connections>
                             </slider>
@@ -128,6 +132,7 @@
                                 <rect key="frame" x="95" y="261" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="valueChanged" id="oZE-rI-X61"/>
                                     <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="l7r-9m-3XV"/>
                                 </connections>
                             </slider>
@@ -135,6 +140,7 @@
                                 <rect key="frame" x="95" y="294" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="valueChanged" id="yq0-XH-Qt6"/>
                                     <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="Fs5-mm-w21"/>
                                 </connections>
                             </slider>
@@ -142,6 +148,7 @@
                                 <rect key="frame" x="94" y="330" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="valueChanged" id="s3W-SX-qTR"/>
                                     <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="WAH-xS-VbD"/>
                                 </connections>
                             </slider>
@@ -149,13 +156,15 @@
                                 <rect key="frame" x="95" y="370" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="valueChanged" id="Rgv-2E-SnE"/>
                                     <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="sc5-dE-ubS"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="Ba" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" id="n97-cD-vOP">
-                                <rect key="frame" x="94" y="412" width="118" height="31"/>
+                                <rect key="frame" x="95" y="412" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="valueChanged" id="jBy-9S-Ll7"/>
                                     <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="3v9-OK-9v8"/>
                                 </connections>
                             </slider>
@@ -163,6 +172,7 @@
                                 <rect key="frame" x="95" y="446" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="valueChanged" id="cr1-Cu-380"/>
                                     <action selector="slideValueChanged:" destination="iCH-29-YpD" eventType="valueChanged" id="yfU-9y-eTe"/>
                                 </connections>
                             </slider>
@@ -281,6 +291,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="editingChanged" id="bJj-wm-Ms5"/>
                                     <action selector="asignaNombre:" destination="iCH-29-YpD" eventType="editingDidEnd" id="4u0-Rz-QeF"/>
                                     <outlet property="delegate" destination="iCH-29-YpD" id="U3f-eE-YFY"/>
                                 </connections>
@@ -521,14 +532,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eb8-ci-4Db">
-                                                    <rect key="frame" x="15" y="3" width="36" height="22"/>
+                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0ul-cw-nll">
-                                                    <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                                    <rect key="frame" x="15" y="25" width="43" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -585,14 +596,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7FA-Fo-w4V">
-                                                    <rect key="frame" x="15" y="3" width="36" height="22"/>
+                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tce-Cm-59G">
-                                                    <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                                    <rect key="frame" x="15" y="25" width="43" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -828,8 +839,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ova-74-UXY"/>
         <segue reference="hAb-p7-14b"/>
+        <segue reference="ova-74-UXY"/>
         <segue reference="q8w-Ol-gB3"/>
     </inferredMetricsTieBreakers>
 </document>

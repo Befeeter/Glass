@@ -17,6 +17,8 @@
     Detective *detective;
 }
 
+
+@property (nonatomic, strong) NSArray* arrayDatos;
 @property (nonatomic, strong) GestorBD* gestorBD;
 @property (weak, nonatomic) IBOutlet UIButton *botonGuardar;
 
@@ -36,7 +38,7 @@ UIToolbar *toolBar;
 
 - (IBAction)activarbotonGuardar:(id)sender {
     
-    if ((self.NombreTextBox.text.length != 0) && (self.ApellidosTextBox.text.length != 0) && (self.fecha.text.length != 0)) {
+    if ((self.NombreTextBox.text.length != 0) && (self.ApellidosTextBox.text.length != 0) && (detective._Fecha.length != 0)) {
         [self.botonGuardar setEnabled:YES];
         [self.botonGuardar setBackgroundColor:[UIColor greenColor]];
     }
@@ -201,7 +203,14 @@ UIToolbar *toolBar;
 
 
 - (IBAction)GuardarDatos:(id)sender {
-       NSString * consulta= [NSString stringWithFormat:@"INSERT INTO 'detective' ('nombre','apellidos','fecha') VALUES ('%@','%@','%@')", detective._Nombre, detective._Apellidos, detective._Fecha];
+    
+    NSString * consulta2 = [NSString stringWithFormat:@"select * from 'detective' where nombre='%@' and apellidos='%@' and fecha='%@'", detective._Nombre, detective._Apellidos, detective._Fecha];
+  if (self.arrayDatos != nil) self.arrayDatos = nil; self.arrayDatos = [[NSArray alloc] initWithArray:[self.gestorBD selectFromDB:consulta2]];
+    
+    if([self.arrayDatos count]==0){
+    
+    
+    NSString * consulta= [NSString stringWithFormat:@"INSERT INTO 'detective' ('nombre','apellidos','fecha') VALUES ('%@','%@','%@')", detective._Nombre, detective._Apellidos, detective._Fecha];
     [self.gestorBD executeQuery:consulta];
     
    [self.delegate editionDidFinished];
@@ -209,10 +218,13 @@ UIToolbar *toolBar;
     
     
     
-    UIAlertView *alerta= [[UIAlertView alloc] initWithTitle:@"MENSAJE" message:@"Un nuevo Detective a sido creado" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+    UIAlertView *alerta= [[UIAlertView alloc] initWithTitle:@"CONGRATULATIONS!" message:@"New Detective has been Created " delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
     [alerta show];
-    
-    
+    }
+    else{
+    UIAlertView *alerta2= [[UIAlertView alloc] initWithTitle:@"REPLICATED" message:@"There is an identical record in the database , please change data" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+    [alerta2 show];
+    }
 }
 
 
