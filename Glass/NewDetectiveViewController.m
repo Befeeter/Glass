@@ -205,6 +205,14 @@ UIToolbar *toolBar;
     [self.gestorBD executeQuery:consulta];
     
    [self.delegate editionDidFinished];
+    
+    
+    
+    
+    UIAlertView *alerta= [[UIAlertView alloc] initWithTitle:@"MENSAJE" message:@"Un nuevo Detective a sido creado" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+    [alerta show];
+    
+    
 }
 
 
