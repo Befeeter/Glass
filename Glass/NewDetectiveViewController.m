@@ -18,6 +18,7 @@
 }
 
 @property (nonatomic, strong) GestorBD* gestorBD;
+@property (weak, nonatomic) IBOutlet UIButton *botonGuardar;
 
 
 
@@ -33,6 +34,27 @@
 
 UIToolbar *toolBar;
 
+- (IBAction)activarbotonGuardar:(id)sender {
+    
+    if ((self.NombreTextBox.text.length != 0) && (self.ApellidosTextBox.text.length != 0) && (self.fecha.text.length != 0)) {
+        [self.botonGuardar setEnabled:YES];
+        [self.botonGuardar setBackgroundColor:[UIColor greenColor]];
+    }
+    else {
+        [self.botonGuardar setBackgroundColor:[UIColor redColor]];
+        [self.botonGuardar setEnabled:NO];
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
 
 
 
@@ -47,7 +69,10 @@ UIToolbar *toolBar;
 }
 
 - (void)viewDidLoad
+
+
 {
+    [self.botonGuardar setBackgroundColor:[UIColor redColor]];    [self.botonGuardar setEnabled:NO];
     detective= [[Detective alloc] init];
     [super viewDidLoad];
     // Do any additional setup after loading the view.

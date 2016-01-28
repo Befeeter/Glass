@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Glass Detective View Controller - Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController title="Home" id="vXZ-lx-hvc" customClass="GlassDetectiveViewController" sceneMemberID="viewController">
@@ -61,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="27" y="-50"/>
         </scene>
-        <!--New Case-->
+        <!--New Case View Controller - New Case-->
         <scene sceneID="2LE-yD-lzG">
             <objects>
                 <viewController title="New Case" id="iCH-29-YpD" customClass="NewCaseViewController" sceneMemberID="viewController">
@@ -336,7 +335,7 @@
             </objects>
             <point key="canvasLocation" x="-627" y="740"/>
         </scene>
-        <!--Case Detail-->
+        <!--Case Detail View Controller - Case Detail-->
         <scene sceneID="Vh0-MY-2c2">
             <objects>
                 <viewController storyboardIdentifier="Caso Detalle" title="Case Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CxD-Jh-gPg" customClass="CaseDetailViewController" sceneMemberID="viewController">
@@ -501,7 +500,7 @@
             </objects>
             <point key="canvasLocation" x="115" y="1504"/>
         </scene>
-        <!--Case List-->
+        <!--Case List View Controller - Case List-->
         <scene sceneID="5Z8-uf-5km">
             <objects>
                 <viewController title="Case List" id="osR-Ea-Q3l" customClass="CaseListViewController" sceneMemberID="viewController">
@@ -565,7 +564,7 @@
             </objects>
             <point key="canvasLocation" x="77" y="749"/>
         </scene>
-        <!--Detective List-->
+        <!--Detective List View Controller - Detective List-->
         <scene sceneID="g1U-38-FL6">
             <objects>
                 <viewController title="Detective List" id="Qig-kI-EpG" customClass="DetectiveListViewController" sceneMemberID="viewController">
@@ -626,7 +625,7 @@
             </objects>
             <point key="canvasLocation" x="535" y="749"/>
         </scene>
-        <!--Detective Detail-->
+        <!--Detective Detail View Controller - Detective Detail-->
         <scene sceneID="FsP-YT-OcS">
             <objects>
                 <viewController title="Detective Detail" id="aUp-Ih-YYo" customClass="DetectiveDetailViewController" sceneMemberID="viewController">
@@ -689,7 +688,7 @@
             </objects>
             <point key="canvasLocation" x="1035" y="1597"/>
         </scene>
-        <!--New Detective-->
+        <!--New Detective View Controller - New Detective-->
         <scene sceneID="QiN-8o-qXQ">
             <objects>
                 <viewController title="New Detective" id="sna-Zk-Oi5" customClass="NewDetectiveViewController" sceneMemberID="viewController">
@@ -704,12 +703,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="0MH-2E-0sq">
-                                <rect key="frame" x="121" y="452" width="160" height="30"/>
+                                <rect key="frame" x="119" y="452" width="160" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="AsignaFecha:" destination="sna-Zk-Oi5" eventType="editingDidEnd" id="YRY-Q3-Wyg"/>
+                                    <action selector="activarbotonGuardar:" destination="sna-Zk-Oi5" eventType="editingChanged" id="aBc-3N-xT4"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wRw-nr-bQl">
@@ -725,6 +725,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="AsignaNombre:" destination="sna-Zk-Oi5" eventType="editingDidEnd" id="cJa-FK-Cp0"/>
+                                    <action selector="activarbotonGuardar:" destination="sna-Zk-Oi5" eventType="editingChanged" id="uQV-DW-PUl"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HZA-ow-ag5">
@@ -746,6 +747,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="AsignaApellidos:" destination="sna-Zk-Oi5" eventType="editingDidEnd" id="Xna-aM-5mL"/>
+                                    <action selector="activarbotonGuardar:" destination="sna-Zk-Oi5" eventType="editingChanged" id="n5R-Sl-pjK"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r1z-pe-ti8">
@@ -787,6 +789,7 @@
                     <connections>
                         <outlet property="ApellidosTextBox" destination="tq3-Dk-G5k" id="zM3-XD-iDa"/>
                         <outlet property="NombreTextBox" destination="JID-In-TRX" id="sMc-01-Uds"/>
+                        <outlet property="botonGuardar" destination="r1z-pe-ti8" id="r8p-YL-tRX"/>
                         <outlet property="fecha" destination="0MH-2E-0sq" id="iQI-dc-efY"/>
                         <outlet property="imageView" destination="yh4-TF-3Dt" id="8uF-1O-rSL"/>
                     </connections>
