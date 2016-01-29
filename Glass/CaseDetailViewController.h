@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Case.h"
 
-@protocol NewCaseViewControllerDelegate
 
-
-@end
 
 @interface CaseDetailViewController : UIViewController
 

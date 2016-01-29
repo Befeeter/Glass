@@ -38,7 +38,7 @@ UIToolbar *toolBar;
 
 - (IBAction)activarbotonGuardar:(id)sender {
     
-    if ((self.NombreTextBox.text.length != 0) && (self.ApellidosTextBox.text.length != 0) && (detective._Fecha.length != 0)) {
+    if ((self.NombreTextBox.text.length != 0) && (self.ApellidosTextBox.text.length != 0) && (self.fecha.text.length != 0)) {
         [self.botonGuardar setEnabled:YES];
         [self.botonGuardar setBackgroundColor:[UIColor greenColor]];
     }

@@ -243,8 +243,8 @@
 		1F167F1F1C5697DE00934000 /* ArtWork */ = {
 			isa = PBXGroup;
 			children = (
-				CE0B53071C57CF3200A94DD3 /* add-user-icon.jpg */,
 				1F167F131C56972E00934000 /* black_officer_user_284.jpg */,
+				CE0B53071C57CF3200A94DD3 /* add-user-icon.jpg */,
 				1F167F141C56972E00934000 /* user.png */,
 				1F167F151C56972E00934000 /* user_91161.jpg */,
 			);

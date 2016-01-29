@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Detective.h"
 
-@protocol NewDetectiveViewControllerDelegate
 
-
-@end
 @interface DetectiveDetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *nombre;
 @property (weak, nonatomic) IBOutlet UILabel *apellidos;
