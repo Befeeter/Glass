@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Glass copy 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Glass copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Glass.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1F45DAE91C0CAD4600418917</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F45DB0A1C0CAD4700418917</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F30A2DD31C5984A700FEEA48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F30A2DFC1C5984B400FEEA48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
