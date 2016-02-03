@@ -42,9 +42,9 @@
 @implementation NewCaseViewController
 - (void)viewDidLoad
 {
-    
+#ifdef VERSION1
     [self.botonGuardar setBackgroundColor:[UIColor redColor]];
-    
+#endif
     
     
     caso = [[Case alloc] init];
@@ -97,7 +97,7 @@
 
 
 - (IBAction)activarBotonGuardar:(id)sender {
-    
+ #ifdef VERSION1
     
     if (((caso._rI!=0)  ||(caso._mg!=0) ||(caso._si>50)||(caso._al!=0) ||(caso._fe!=0) ||(caso._k
                                                                                                           !=0) ||(caso._ca!=0) ||(caso._ba!=0))&&((![caso._detective isEqual:@""])&&(![self.NameText.text isEqual:@""])&&(![self.NameText.text isEqual:@"Nombre"])&&(![caso._tipoCristal isEqual:@""])&&(![caso._detective isEqual:@"Select Detective"])&&(![caso._tipoCristal isEqual:@"Select Type Glass"]))){
@@ -106,7 +106,12 @@
     }
     else {
         [self.botonGuardar setBackgroundColor:[UIColor redColor]];
-        [self.botonGuardar setEnabled:NO];}}
+        [self.botonGuardar setEnabled:NO];}
+
+
+
+#endif
+}
 
 
 

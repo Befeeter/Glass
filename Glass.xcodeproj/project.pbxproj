@@ -109,6 +109,8 @@
 		F30A2E1D1C5984B400FEEA48 /* build wind float.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B11C57930500855B56 /* build wind float.png */; };
 		F30A2E1E1C5984B400FEEA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DAFF1C0CAD4600418917 /* Main.storyboard */; };
 		F30A2E1F1C5984B400FEEA48 /* headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A71B41C57930500855B56 /* headlamps.png */; };
+		F3983CCA1C6250560038304A /* fondo.png in Sources */ = {isa = PBXBuildFile; fileRef = 843F359A1C597F7B0047FB3E /* fondo.png */; };
+		F3983CCB1C6250740038304A /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F359A1C597F7B0047FB3E /* fondo.png */; };
 		F3A06DE81C568AFF0032B91A /* DetectiveDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A06DE71C568AFF0032B91A /* DetectiveDetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -538,6 +540,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3983CCB1C6250740038304A /* fondo.png in Resources */,
 				F30A2E101C5984B400FEEA48 /* vehic wind float.png in Resources */,
 				F30A2E111C5984B400FEEA48 /* vehic wind non-float.png in Resources */,
 				F30A2E121C5984B400FEEA48 /* black_officer_user_284.jpg in Resources */,
@@ -610,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3983CCA1C6250560038304A /* fondo.png in Sources */,
 				F30A2DFE1C5984B400FEEA48 /* GestorBD.m in Sources */,
 				F30A2DFF1C5984B400FEEA48 /* NewCaseViewController.m in Sources */,
 				F30A2E001C5984B400FEEA48 /* AppDelegate.m in Sources */,

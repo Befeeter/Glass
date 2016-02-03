@@ -74,7 +74,13 @@ UIToolbar *toolBar;
 
 
 {
+    
+    
     [self.botonGuardar setBackgroundColor:[UIColor redColor]];    [self.botonGuardar setEnabled:NO];
+    
+    
+    
+    
     detective= [[Detective alloc] init];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
