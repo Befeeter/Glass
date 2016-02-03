@@ -807,7 +807,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7d-2Z-tlo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="725"/>
+            <point key="canvasLocation" x="1081" y="726"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jac-Cb-Y79">
