@@ -185,6 +185,7 @@
         _glassType.hidden = !_glassType.hidden;
         _selectType.hidden = !_selectType.hidden;
         NSLog(@"%@",caso._tipoCristal);
+        [self activarBotonGuardar:0];
     }
     else{
         caso._detective = _detectiveArr[row];
@@ -193,6 +194,7 @@
         _detectivePicker.hidden = !_detectivePicker.hidden;
         _selectDetective.hidden = !_selectDetective.hidden;
         NSLog(@"%@",caso._detective);
+        [self activarBotonGuardar:0];
 
     }
     

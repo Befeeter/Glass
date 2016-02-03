@@ -199,7 +199,7 @@ UIToolbar *toolBar;
 }
 - (IBAction)AsignaFecha:(id)sender {
     detective._Fecha=self.fecha.text;
-}
+    }
 
 
 - (IBAction)GuardarDatos:(id)sender {

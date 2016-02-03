@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8Fg-0E-QNI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -100,7 +100,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="activarBotonGuardar:" destination="iCH-29-YpD" eventType="touchUpInside" id="Jjf-gQ-alA"/>
                                     <action selector="selectDetective:" destination="iCH-29-YpD" eventType="touchUpInside" id="nY2-60-0sK"/>
                                 </connections>
                             </button>
@@ -720,6 +719,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="AsignaFecha:" destination="sna-Zk-Oi5" eventType="editingDidEnd" id="YRY-Q3-Wyg"/>
+                                    <action selector="activarbotonGuardar:" destination="sna-Zk-Oi5" eventType="editingDidEnd" id="YFV-cf-YGE"/>
                                     <action selector="activarbotonGuardar:" destination="sna-Zk-Oi5" eventType="editingChanged" id="aBc-3N-xT4"/>
                                 </connections>
                             </textField>
